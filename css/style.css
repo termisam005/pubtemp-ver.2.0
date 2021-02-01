@@ -488,7 +488,7 @@ header{
 } 
 .add_menu a{
 	display:block;
-	padding:16px 20px 16px 35px;
+	padding:15px 20px 15px 35px;
 	font-weight: 500;
     color: #718594;
 	font-size: 14px;
@@ -4833,6 +4833,12 @@ h3 .hormak.green{
 	width:14px;
 	height: 14px;
 	margin-top:3px;
+}
+.txtip{
+	font-size: 15px;
+}
+.txtip a{
+	color:#007bff;
 }
 
 

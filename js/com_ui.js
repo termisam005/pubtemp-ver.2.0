@@ -290,3 +290,35 @@ $(document).ready(function(){
 $(document).ready(function(){
 	$(".dropdown-toggle").dropdown();
 });
+
+
+/*tooltip*/
+$(document).ready(function(){
+	$('[data-toggle="tooltip"]').tooltip();
+	
+	$('.btn-ex1').tooltip({title: "링크이동 버튼입니다.", container: ".parent"});
+
+	$('.btn-ex2').tooltip({title: "<h1><strong>HTML</strong> inside <code>the</code> <em>tooltip</em></h1>", html: true, placement: "bottom"}); 
+});
+
+$(document).ready(function(){
+	$('.bt-op-top').tooltip({title: "Hellow", placement: "top"}); 
+	$('.bt-op-bottom').tooltip({title: "Hellow", placement: "bottom"}); 
+	$('.bt-op-left').tooltip({title: "Hellow", placement: "left"});
+	$('.bt-op-right').tooltip({title: "Hellow", placement: "right"});
+});
+
+$(document).ready(function(){
+	$(".bt-op-show").click(function(){
+	  $("[data-toggle='tooltip_op']").tooltip('show');
+	});
+	$(".bt-op-hide").click(function(){
+	  $("[data-toggle='tooltip_op']").tooltip('hide');
+	});
+	$(".bt-op-toggle").click(function(){
+	  $("[data-toggle='tooltip_op']").tooltip('toggle');
+	});
+	$(".bt-op-dis").click(function(){
+	  $("[data-toggle='tooltip_op']").tooltip('dispose');
+	});
+});
