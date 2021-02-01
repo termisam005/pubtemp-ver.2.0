@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+ <meta  http-equiv="Content-Type"  content="text/html;charset=utf-8"/> 
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Sample01 - dashboard</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../fontawesome-free-5.13.0-web/css/all.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/com_ui.js"></script> 
+</head>
+
+<body>
+
+<div class="wrap">
+	<div class="Dash_body">
+
+		<header>
+			<div class="header_in">
+				<div class="header_left">
+					<h1 class="logo biglogo">
+						<a href="../dash/dashboard.html"><img src="../images/logo_top.png" /></a>
+					</h1>
+					<p class="btn_trans"></p>
+				</div><!-- header_left -->
+
+				<div class="header_right">
+					<div class="right_div btbox">
+						<a class="go_right btn_togg">
+							<i class="fas fa-user-circle"></i>
+							<span class="user">
+								홍길동님 환영합니다.
+							</span>
+						</a>
+					</div><!-- right_div -->
+					<div class="right_div">
+						<button type="button" class="btn btn-mint3" onclick="location.href='../index.html'">로그아웃</button>
+					</div>
+				</div><!-- header_right -->
+			</div><!-- header_in -->
+		</header>
+
+		<aside class="dash_aside">
+			<div class="side_conts">
+				<h2 class="left_name">MENU</h2>
+				<ul class="left_menu">
+					<li>
+						<a class="selb_link" href="../dash/dashboard.html">
+							<img class="dash" src="../images/sv_dash.svg" />
+							<span class="menu_name">대시보드</span>
+						</a>
+					</li>
+					<li>
+						<a class="selb_link" href="../dash/dashboard_1.html">
+							<img class="dash" src="../images/sv_dash.svg" />
+							<span class="menu_name">대시보드_1</span>
+						</a>
+					</li>
+					<li>
+						<a class="selb_link" href="../dash/dashboard_2.html">
+							<img class="dash" src="../images/sv_dash.svg" />
+							<span class="menu_name">대시보드_2</span>
+						</a>
+					</li>
+					<li>
+						<a class="selb_link" href="../control/real_control.html">
+							<img src="../images/sv_time.svg" />
+							<span class="menu_name">실시간 관제</span>
+						</a>
+					</li>
+					<li>
+						<a class="selb_link" href="../drive/drive_history.html">
+							<img src="../images/sv_car.svg" />
+							<span class="menu_name">운행이력</span>
+						</a>
+					</li>
+					<li>
+						<a class="selb_link">
+							<img src="../images/sv_manage.svg" />
+							<span class="menu_name">관리메뉴</span>
+							<i class="fas fa-chevron-right"></i>
+						</a>
+						<div class="add_menu">
+							<a href="../manage/people.html">인사관리</a>
+							<a href="../manage/cars.html">차량관리</a>
+						</div>
+					</li>
+					<li>
+						<a class="selb_link">
+							<i class="fas fa-th-large link_fas"></i>
+							<span class="menu_name">레이아웃</span>
+							<i class="fas fa-chevron-right"></i>
+						</a>
+						<div class="add_menu">
+							<a href="../layout/grid.html">Grid</a>
+							<a href="../layout/flex.html">Flex</a>
+							<a href="../layout/display.html">Display</a>
+						</div>
+					</li>
+					<li>
+						<a class="selb_link">
+							<i class="fas fa-layer-group link_fas"></i>
+							<span class="menu_name">컴퍼넌트</span>
+							<i class="fas fa-chevron-right"></i>
+						</a>
+						<div class="add_menu">
+							<a href="../components/color.html">Color</a>
+							<a href="../components/button.html">Button</a>
+                            <a href="../components/modal.html">Modal</a>
+							<a href="../components/dropdown.html">Dropdown</a>
+							<a href="../components/table.html">table</a>
+						</div>
+					</li>
+				</ul><!-- left_menu -->
+			</div><!-- side_conts -->
+		</aside><!-- dash_aside -->
+
+		<section class="top_line">
+			<div class="jfbet">
+				<h2 class="top_title control_title">
+					실시간 관제
+					<div class="time_explain">
+                        <p class="call">현재시간</p>
+                        <p class="time_box">
+                            <span class="timer">2020년 11월 27일 (금) 10시 26분 43초</span>
+                        </p>
+					</div>
+				</h2>
+				<div class="location">
+					<p>
+						<img class="ion" src="../images/sv_home.svg" />Home
+					</p>
+					<p class="arrow">
+						<img src="../images/sv_arr_loc.svg" />
+					</p>
+					<p>실시간관제</p>
+				</div><!--location-->
+			</div>
+		</section><!-- top_line -->
+
+		<script>
+			$(document).ready(function(){
+				$(".Dash_body").addClass("control_body");
+				$(".top_line").addClass("control");
+			})
+		</script>
+
+		<section class="map_content">
+            <div class="map_container">
+
+				<div class="mark_contents">
+					<div class="mark_top">
+						<div class="mark_title">
+							<h3>
+								<span class="hormark"></span>
+								<span class="htitle">서울12사3111 김길동</span>
+							</h3>
+						</div>
+						<div class="mark_text">
+							<p class="tp_txt">
+								<span class="what">상태 :</span>
+								<span class="result p-r-5">운행불가</span>
+							</p>
+							<p class="tp_txt">
+							</p>
+						</div>
+						<p class="cancel">
+							<img src="../images/pop_cacel.png" />
+						</p>
+					</div><!--mark_top-->
+					<div class="mark_conts">
+						<div class="mark_text">
+							<p class="tp_txt tp_txt_one">
+								<span class="what">수익금 :</span>
+								<span class="result">45,200원</span>
+							</p>
+						</div>
+						<div class="mark_text">
+							<p class="tp_txt">
+								<span class="what">금일 주행 :</span>
+								<span class="result p-r-5">234km</span>
+							</p>
+							<p class="tp_txt tp_drive">
+								<span class="what">총 주행 :</span>
+								<span class="result">409,968km</span>
+							</p>
+						</div>
+						<div class="mark_text">
+							<p class="tp_txt">
+								<span class="what">금일 근무 :</span>
+								<span class="result p-r-5">05:58</span>
+							</p>
+							<p class="tp_txt tp_drive">
+								<span class="what">주 근무 :</span>
+								<span class="result">19시간</span>
+							</p>
+						</div>
+						<div class="icon_line m-t-5">
+							<div class="icon_box">
+								<button type="button" class="btn_mark" onclick="location.href='../manage/people.html'">
+									<span class="people"></span>
+									<span class="word">인사관리</span>
+								</button>
+							</div>
+							<div class="icon_box">
+								<button type="button" class="btn_mark" onclick="location.href='../manage/cars.html'">
+									<span class="taxi"></span>
+									<span class="word">차량관리</span>
+								</button>
+							</div>
+							<div class="icon_box">
+								<button type="button" class="btn_mark" onclick="location.href='../drive/drive_history.html'">
+									<span class="clock"></span>
+									<span class="word">운행이력</span>
+								</button>
+							</div>
+							<div class="icon_box">
+								<button type="button" class="btn_mark" onclick="location.href='../manage/cars.html'">
+									<span class="money"></span>
+									<span class="word">수입금</span>
+								</button>
+							</div>
+						</div><!--icon_line-->
+					</div><!--mark_conts-->
+					<p class="mark_tail"></p>
+				</div><!--mark_contents-->
+
+				<article class="zone_show">
+					<div class="show_wrap">
+						<button class="btn_click">
+							<span class="arrow"></span>
+						</button>
+
+						<div class="show_list">
+							<ul>
+								<li>
+									<p class="sh_name">전체차량</p>
+									<p class="sh_taxt">
+										<span class="numb">12</span>
+									</p>
+								</li>
+								<li>
+									<p class="sh_name">현재근무중</p>
+									<p class="sh_taxt">
+										<span class="numb">3</span>
+									</p>
+								</li>
+								<li>
+									<p class="sh_name">수입금최고</p>
+									<p class="sh_taxt">
+										<span class="numb">서울33아6278</span>
+										<span class="much">178,300원</span>
+									</p>
+								</li>
+								<li>
+									<p class="sh_name">수입금최고</p>
+									<p class="sh_taxt">
+										<span class="numb">서울33아6278</span>
+										<span class="much">178,300원</span>
+									</p>
+								</li>
+							</ul>
+						</div><!--show_list-->
+					</div><!--show_wrap-->
+				</article><!--zone_show-->
+
+				<article class="current_show">
+					<div class="go_liner">
+						<button type="button" class="btn_go"></button>
+					</div><!--go_liner-->
+					<div class="current_zone">
+						<div class="curr_sent">
+							<span class="curr_icon">
+								<img src="../images/mini_feel_att.svg" />
+							</span>
+							<span class="noticing">[경고]</span>
+							<span>김기동(서울12가3111) 근무기준시간 초과임박 퇴근조치 요망 2020-11-17 15:24:22</span>
+						</div>
+						<div class="curr_sent">
+							<span class="curr_icon">
+								<img src="../images/mini_coin_up.svg" />
+							</span>
+							<span class="noticing">[알림]</span>
+							<span>이강재(서울12가3111) 기준금 이상의 수입 2020-11-17 15:24:22</span>
+						</div>
+						<div class="curr_sent">
+							<span class="curr_icon">
+								<img src="../images/mini_coin_plus.svg" />
+							</span>
+							<span class="noticing">[알림]</span>
+							<span>김기영(서울33가5432) 적은 시간안에 많은 수입금 벌음 2020-11-17 15:24:22</span>
+						</div>
+						<div class="curr_sent">
+							<span class="curr_icon">
+								<img src="../images/mini_coin_down.svg" />
+							</span>
+							<span class="noticing">[알림]</span>
+							<span>서형욱(서울33아7602) 기준금 이하의 수입 2020-11-17 15:24:22</span>
+						</div>
+						<div class="curr_sent">
+							<span class="curr_icon">
+								<img src="../images/mini_coin_down.svg" />
+							</span>
+							<span class="noticing">[알림]</span>
+							<span>서형욱(서울33아7602) 기준금 이하의 수입 2020-11-17 15:24:22</span>
+						</div>
+					</div><!--current_zone-->
+				</article><!--current_show-->
+							
+				<div class="img_navi navi_red"></div>
+				<div class="img_navi navi_blue"></div>
+				<div class="img_navi navi_gray"></div>
+				<div class="img_navi navi_mint"></div>
+				<div class="img_navi navi_pink"></div>
+				<div class="img_navi navi_yellow"></div>
+
+            </div><!--map_container-->
+        </section><!--map_content-->
+        
+        <section class="Right_panel">
+            <article class="panel_body">
+
+                <div class="panel_over">
+                    <div class="call_conts">
+                        <div class="srch_box">
+                            <input type="text" class="put_srch" placeholder="차번호, 기사명 검색">
+                            <button type="button" class="btn_srch"></button>
+                        </div>
+                        <div class="call_line">
+                            <button type="button" class="btn btn-mint3 btn_call w-100">메세지 전송</button>
+                        </div>
+                    </div><!--calling_conts-->
+                </div><!--panel_over-->
+
+				<div class="control_filter">
+					<div class="filt_box">
+						<button type="button" class="btn_filt coup">
+							<span class="icon_filt"></span>
+						</button>
+					</div>
+					<div class="filt_box">
+						<button type="button" class="btn_filt coplus">
+							<span class="icon_filt"></span>
+						</button>
+					</div>
+					<div class="filt_box">
+						<button type="button" class="btn_filt wayup">
+							<span class="icon_filt"></span>
+						</button>
+					</div>
+					<div class="filt_box">
+						<button type="button" class="btn_filt codown">
+							<span class="icon_filt"></span>
+						</button>
+					</div>
+					<div class="filt_box">
+						<button type="button" class="btn_filt feel">
+							<span class="icon_filt"></span>
+						</button>
+					</div>
+					<div class="filt_box slct">
+						<button type="button" class="btn_filt fall slct">
+							<span class="icon_filt"></span>
+						</button>
+					</div>
+				</div><!--control_filter-->
+
+                <div class="panel_under control_under">
+					<section class="control_list">
+						<table class="right_table">
+							<tbody>
+								<tr>
+									<td class="td_check">
+										<div class="list_conts" onclick="rst_mint();">
+											<div class="top">
+												<div class="sign_taxi mint">
+													<img src="../images/sv_taxi_mint.svg">
+													<span class="condition">접속</span>
+												</div>
+												<div class="whois">
+													<span class="isname">김길동</span>
+													<span class="iscall">서울33아7602</span>
+												</div>
+											</div>
+											<div class="li_text w-100">
+												<span class="record tag">수익금</span>
+												<span class="record">40,300원</span>
+											</div>
+											<div class="flx_aicent w-100">
+												<div class="li_text">
+													<span class="record tag">금일주행</span>
+													<span class="record">4.51km</span>
+												</div>
+												<span class="pipe">|</span>
+												<div class="li_text">
+													<span class="record tag">총누적</span>
+													<span class="record">223,104.56km</span>
+												</div>
+											</div>
+											<div class="flx_aicent w-100">
+												<div class="li_text">
+													<span class="record tag">금일근무</span>
+													<span class="record">01:49</span>
+												</div>
+												<span class="pipe">|</span>
+												<div class="li_text">
+													<span class="record tag">총근무</span>
+													<span class="record">34시간</span>
+												</div>
+											</div>
+											<div class="mini_line">
+												<img class="icon_mini" src="../images/mini_coin_down.svg" />
+												<img class="icon_mini" src="../images/mini_coin_up.svg" />
+												<img class="icon_mini" src="../images/mini_way_up.svg" />
+												<img class="icon_mini" src="../images/mini_coin_plus.svg" />
+												<img class="icon_mini" src="../images/mini_feel_att.svg" />
+											</div>
+										</div><!--list_conts-->
+									</td>
+								</tr>
+								<tr>
+									<td class="td_check on_check">
+										<div class="list_conts" onclick="rst_pink();">
+											<div class="top">
+												<div class="sign_taxi pink">
+													<img src="../images/sv_taxi_pink.svg">
+													<span class="condition">이상징후</span>
+												</div>
+												<div class="whois">
+													<span class="isname">이강재</span>
+													<span class="iscall">서울33아7602</span>
+												</div>
+											</div>
+											<div class="li_text w-100">
+												<span class="record tag">수익금</span>
+												<span class="record">40,300원</span>
+											</div>
+											<div class="flx_aicent w-100">
+												<div class="li_text">
+													<span class="record tag">금일주행</span>
+													<span class="record">4.51km</span>
+												</div>
+												<span class="pipe">|</span>
+												<div class="li_text">
+													<span class="record tag">총누적</span>
+													<span class="record">223,104.56km</span>
+												</div>
+											</div>
+											<div class="flx_aicent w-100">
+												<div class="li_text">
+													<span class="record tag">금일근무</span>
+													<span class="record">01:49</span>
+												</div>
+												<span class="pipe">|</span>
+												<div class="li_text">
+													<span class="record tag">총근무</span>
+													<span class="record">34시간</span>
+												</div>
+											</div>
+											<div class="mini_line">
+												<img class="icon_mini" src="../images/mini_coin_down.svg" />
+												<img class="icon_mini" src="../images/mini_feel_att.svg" />
+											</div>
+										</div><!--list_conts-->
+									</td>
+								</tr>
+								<tr>
+									<td class="td_check">
+										<div class="list_conts" onclick="rst_blue();">
+											<div class="top">
+												<div class="sign_taxi blue">
+													<img src="../images/sv_taxi_blue.svg">
+													<span class="condition">승차</span>
+												</div>
+												<div class="whois">
+													<span class="isname">이원섭</span>
+													<span class="iscall">서울33아7602</span>
+												</div>
+											</div>
+											<div class="li_text w-100">
+												<span class="record tag">수익금</span>
+												<span class="record">40,300원</span>
+											</div>
+											<div class="flx_aicent w-100">
+												<div class="li_text">
+													<span class="record tag">금일주행</span>
+													<span class="record">4.51km</span>
+												</div>
+												<span class="pipe">|</span>
+												<div class="li_text">
+													<span class="record tag">총누적</span>
+													<span class="record">223,104.56km</span>
+												</div>
+											</div>
+											<div class="flx_aicent w-100">
+												<div class="li_text">
+													<span class="record tag">금일근무</span>
+													<span class="record">01:49</span>
+												</div>
+												<span class="pipe">|</span>
+												<div class="li_text">
+													<span class="record tag">총근무</span>
+													<span class="record">34시간</span>
+												</div>
+											</div>
+											<div class="mini_line">
+												<img class="icon_mini" src="../images/mini_coin_down.svg" />
+												<img class="icon_mini" src="../images/mini_feel_att.svg" />
+											</div>
+										</div><!--list_conts-->
+									</td>
+								</tr>
+								<tr>
+									<td class="td_check">
+										<div class="list_conts" onclick="rst_red();">
+											<div class="top">
+												<div class="sign_taxi red">
+													<img src="../images/sv_taxi_red.svg">
+													<span class="condition">근무</span>
+												</div>
+												<div class="whois">
+													<span class="isname">이원섭</span>
+													<span class="iscall">서울33아7602</span>
+												</div>
+											</div>
+											<div class="li_text w-100">
+												<span class="record tag">수익금</span>
+												<span class="record">40,300원</span>
+											</div>
+											<div class="flx_aicent w-100">
+												<div class="li_text">
+													<span class="record tag">금일주행</span>
+													<span class="record">4.51km</span>
+												</div>
+												<span class="pipe">|</span>
+												<div class="li_text">
+													<span class="record tag">총누적</span>
+													<span class="record">223,104.56km</span>
+												</div>
+											</div>
+											<div class="flx_aicent w-100">
+												<div class="li_text">
+													<span class="record tag">금일근무</span>
+													<span class="record">01:49</span>
+												</div>
+												<span class="pipe">|</span>
+												<div class="li_text">
+													<span class="record tag">총근무</span>
+													<span class="record">34시간</span>
+												</div>
+											</div>
+											<div class="mini_line">
+												<img class="icon_mini" src="../images/mini_coin_down.svg" />
+												<img class="icon_mini" src="../images/mini_feel_att.svg" />
+											</div>
+										</div><!--list_conts-->
+									</td>
+								</tr>
+								<tr>
+									<td class="td_check">
+										<div class="list_conts" onclick="rst_gray();">
+											<div class="top">
+												<div class="sign_taxi gray">
+													<img src="../images/sv_taxi_gray.svg">
+													<span class="condition">휴식</span>
+												</div>
+												<div class="whois">
+													<span class="isname">이원섭</span>
+													<span class="iscall">서울33아7602</span>
+												</div>
+											</div>
+											<div class="li_text w-100">
+												<span class="record tag">수익금</span>
+												<span class="record">40,300원</span>
+											</div>
+											<div class="flx_aicent w-100">
+												<div class="li_text">
+													<span class="record tag">금일주행</span>
+													<span class="record">4.51km</span>
+												</div>
+												<span class="pipe">|</span>
+												<div class="li_text">
+													<span class="record tag">총누적</span>
+													<span class="record">223,104.56km</span>
+												</div>
+											</div>
+											<div class="flx_aicent w-100">
+												<div class="li_text">
+													<span class="record tag">금일근무</span>
+													<span class="record">01:49</span>
+												</div>
+												<span class="pipe">|</span>
+												<div class="li_text">
+													<span class="record tag">총근무</span>
+													<span class="record">34시간</span>
+												</div>
+											</div>
+										</div><!--list_conts-->
+									</td>
+								</tr>
+								<tr>
+									<td class="td_check">
+										<div class="list_conts" onclick="rst_yellow();">
+											<div class="top">
+												<div class="sign_taxi yellow">
+													<img src="../images/sv_taxi_yellow.svg">
+													<span class="condition">예약</span>
+												</div>
+												<div class="whois">
+													<span class="isname">이원섭</span>
+													<span class="iscall">서울33아7602</span>
+												</div>
+											</div>
+											<div class="li_text w-100">
+												<span class="record tag">수익금</span>
+												<span class="record">40,300원</span>
+											</div>
+											<div class="flx_aicent w-100">
+												<div class="li_text">
+													<span class="record tag">금일주행</span>
+													<span class="record">4.51km</span>
+												</div>
+												<span class="pipe">|</span>
+												<div class="li_text">
+													<span class="record tag">총누적</span>
+													<span class="record">223,104.56km</span>
+												</div>
+											</div>
+											<div class="flx_aicent w-100">
+												<div class="li_text">
+													<span class="record tag">금일근무</span>
+													<span class="record">01:49</span>
+												</div>
+												<span class="pipe">|</span>
+												<div class="li_text">
+													<span class="record tag">총근무</span>
+													<span class="record">34시간</span>
+												</div>
+											</div>
+											<div class="mini_line">
+												<img class="icon_mini" src="../images/mini_coin_down.svg" />
+												<img class="icon_mini" src="../images/mini_feel_att.svg" />
+											</div>
+										</div><!--list_conts-->
+									</td>
+								</tr>
+							</tbody>
+						</table><!--right_table-->	
+					</section><!--control_list-->
+
+                </div><!--panel_under-->
+
+            </article><!--panel_body-->
+        </section><!--Right_panel-->
+
+	</div><!-- Dash_body -->
+</div><!-- wrap -->
+
+</body>
+
+ </html>

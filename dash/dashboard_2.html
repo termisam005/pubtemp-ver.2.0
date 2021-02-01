@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+ <meta  http-equiv="Content-Type"  content="text/html;charset=utf-8"/> 
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Sample01 - dashboard</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../fontawesome-free-5.13.0-web/css/all.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <!--<link rel="stylesheet" type="text/css" href="../css/style_newdash.css" />-->
+
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/com_ui.js"></script> 
+</head>
+
+<body>
+
+<div class="wrap">
+	<div class="Dash_body">
+
+		<header class="header_bgwh">
+			<div class="header_in">
+				<div class="header_left">
+					<h1 class="logo blue_logo">
+						<a href="../dash/dashboard.html"><img src="../images/logo_top.png" /></a>
+					</h1>
+					<p class="btn_trans"></p>
+				</div><!-- header_left -->
+
+				<div class="header_right">
+					<div class="right_div btbox">
+						<a class="go_right btn_togg">
+							<i class="fas fa-user-circle"></i>
+							<span class="user">
+								홍길동님 환영합니다.
+							</span>
+						</a>
+					</div><!-- right_div -->
+					<div class="right_div">
+						<button type="button" class="btn btn-yg1" onclick="location.href='../index.html'">로그아웃</button>
+					</div>
+				</div><!-- header_right -->
+			</div><!-- header_in -->
+		</header>
+
+		<aside class="dash_aside blue_aside">
+			<div class="side_conts">
+				<h2 class="left_name">MENU</h2>
+				<ul class="left_menu blue">
+					<li>
+						<a class="selb_link" href="../dash/dashboard.html">
+							<img class="dash" src="../images/sv_dash_blue.svg" />
+							<span class="menu_name">대시보드</span>
+						</a>
+					</li>
+					<li>
+						<a class="selb_link" href="../dash/dashboard_1.html">
+							<img class="dash" src="../images/sv_dash_blue.svg" />
+							<span class="menu_name">대시보드_1</span>
+						</a>
+					</li>
+					<li>
+						<a class="selb_link" href="../dash/dashboard_2.html">
+							<img class="dash" src="../images/sv_dash_blue.svg" />
+							<span class="menu_name">대시보드_2</span>
+						</a>
+					</li>
+					<li>
+						<a class="selb_link" href="../control/real_control.html">
+							<img src="../images/sv_time_blue.svg" />
+							<span class="menu_name">실시간 관제</span>
+						</a>
+					</li>
+					<li>
+						<a class="selb_link" href="../drive/drive_history.html">
+							<img src="../images/sv_car_blue.svg" />
+							<span class="menu_name">운행이력</span>
+						</a>
+					</li>
+					<li>
+						<a class="selb_link">
+							<img src="../images/sv_manage_blue.svg" />
+							<span class="menu_name">관리메뉴</span>
+							<i class="fas fa-chevron-right"></i>
+						</a>
+						<div class="add_menu">
+							<a href="../manage/people.html">인사관리</a>
+							<a href="../manage/cars.html">차량관리</a>
+						</div>
+					</li>
+					<li>
+						<a class="selb_link">
+							<i class="fas fa-th-large link_fas"></i>
+							<span class="menu_name">레이아웃</span>
+							<i class="fas fa-chevron-right"></i>
+						</a>
+						<div class="add_menu">
+							<a href="../layout/grid.html">Grid</a>
+							<a href="../layout/flex.html">Flex</a>
+							<a href="../layout/display.html">Display</a>
+						</div>
+                    </li>
+                    <li>
+						<a class="selb_link">
+							<i class="fas fa-layer-group link_fas"></i>
+							<span class="menu_name">컴퍼넌트</span>
+							<i class="fas fa-chevron-right"></i>
+						</a>
+						<div class="add_menu">
+							<a href="../components/color.html">Color</a>
+							<a href="../components/button.html">Button</a>
+                            <a href="../components/modal.html">Modal</a>
+							<a href="../components/dropdown.html">Dropdown</a>
+							<a href="../components/table.html">table</a>
+						</div>
+					</li>
+				</ul><!-- left_menu -->
+			</div><!-- side_conts -->
+		</aside><!-- dash_aside -->
+
+		<!--화면왼쪽 padding을 맞추기위한 스크립트 추가-->
+		<script>
+			$(document).ready(function(){
+				$(".Dash_body").addClass("blue_body");
+			});
+		</script>
+
+		<section class="top_line">
+			<div class="jfbet">
+				<h2 class="top_title control_title">
+					대시보드
+					<div class="time_explain">
+                        <p class="call">최종로딩시간</p>
+                        <p class="time_box">
+                            <span class="timer">2020-07-09 22:25:30</span>
+                        </p>
+					</div>
+				</h2>
+				<div class="location">
+					<p>
+						<img class="ion" src="../images/sv_home.svg" />Home
+					</p>
+					<p class="arrow">
+						<img src="../images/sv_arr_loc.svg" />
+					</p>
+					<p>대시보드</p>
+				</div><!--location-->
+			</div>
+		</section><!-- top_line -->
+
+		<section class="content">
+
+			<div class="row">
+				<div class="col-xl-4">
+					<dl class="dsconts h320">
+						<dt>
+							<article class="jfbet">
+								<h3>
+									<span class="hormak green"></span>
+									<span class="htitle">이용현황</span>
+								</h3>
+								<div class="betw_right">
+									<button type="button" class="btn btn-yg1">일간</button>
+									<button type="button" class="btn btn-wh1 m-l-5">월간</button>
+								</div>
+							</article>
+						</dt>
+						<dd>
+							<div class="big_respon1">
+								<article class="big_status flx_jfcent m-t-30">
+									<div class="another_status blue_status m-r-40">
+										<div class="ano_line">
+											<p class="left">
+												<span class="starting green"></span>
+												<span>사용자 수</span>
+											</p>
+										</div><!--ano_line-->
+										<div class="scores">
+											<h1>8</h1>
+											<span class="perc">/ 190</span>
+										</div><!--percents-->
+									</div><!--another_status-->
+									<div class="another_status blue_status">
+										<div class="ano_line">
+											<p class="left">
+												<span class="starting orange"></span>
+												<span>운행요청 수</span>
+											</p>
+										</div><!--ano_line-->
+										<div class="scores">
+											<h1>37</h1>
+											<span class="perc">/ 3392</span>
+										</div><!--percents-->
+									</div><!--another_status-->
+								</article><!--big_status-->
+							</div>
+						</dd>
+					</dl><!-- dsconts -->
+				</div><!-- col-xl-4 -->
+				<div class="col-xl-4">
+					<dl class="dsconts h320">
+						<dt>
+							<article class="jfbet">
+								<h3>
+									<span class="hormak green"></span>
+									<span class="htitle">용도별</span>
+								</h3>
+								<div class="betw_right">
+									<button type="button" class="btn btn-yg1">일간</button>
+									<button type="button" class="btn btn-wh1 m-l-5">월간</button>
+								</div>
+							</article>
+						</dt>
+						<dd>
+							<div class="big_respon1">
+								<article class="flx_jfcent flx_aicent m-t-30">
+									<div class="img_chart w-35 p-r-15 m-b-5">
+										<img src="../images/chart_blue1.png" />
+									</div>
+									<div class="another_status purpose_status">
+										<div class="ano_line">
+											<p class="left">
+												<span class="starting blue"></span>
+												<span>기관업무</span>
+											</p>
+											<p class="right">
+												<span class="bold">
+													830<span class="unit">(87%)</span>
+												</span>
+											</p>
+										</div><!--ano_line-->
+										<div class="ano_line">
+											<p class="left">
+												<span class="starting sky"></span>
+												<span>교통약자 지원</span>
+											</p>
+											<p class="right">
+												<span class="bold">
+													132<span class="unit">(13%)</span>
+												</span>
+											</p>
+										</div><!--ano_line-->
+									</div><!--another_status-->
+								</article><!--big_status-->
+							</div>
+						</dd>
+					</dl><!-- dsconts -->
+				</div><!-- col-xl-4 -->
+				<div class="col-xl-4">
+					<dl class="dsconts h320">
+						<dt>
+							<article class="jfbet">
+								<h3>
+									<span class="hormak green"></span>
+									<span class="htitle">이용현황</span>
+								</h3>
+								<div class="betw_right">
+									<button type="button" class="btn btn-yg1">일간</button>
+									<button type="button" class="btn btn-wh1 m-l-5">월간</button>
+								</div>
+							</article>
+						</dt>
+						<dd>
+							<div class="big_respon1">
+								<article class="flx_jfcent flx_aicent m-t-30">
+									<div class="img_chart w-35 p-r-15 m-b-5">
+										<img src="../images/chart_red1.png" />
+									</div>
+									<div class="another_status purpose_status">
+										<div class="ano_line">
+											<p class="left">
+												<span class="starting red"></span>
+												<span>공공지원용</span>
+											</p>
+											<p class="right">
+												<span class="bold">
+													7315<span class="unit">(87%)</span>
+												</span>
+											</p>
+										</div><!--ano_line-->
+										<div class="ano_line">
+											<p class="left">
+												<span class="starting pink"></span>
+												<span>행정지원용</span>
+											</p>
+											<p class="right">
+												<span class="bold">
+													1300<span class="unit">(13%)</span>
+												</span>
+											</p>
+										</div><!--ano_line-->
+									</div><!--another_status-->
+								</article><!--big_status-->
+							</div>
+						</dd>
+					</dl><!-- dsconts -->
+				</div><!-- col-xl-4 -->
+			</div><!-- row -->
+
+			<div class="row">
+				<div class="col-xl-6">
+					<dl class="dsconts h370">
+						<dt>
+							<article class="jfbet">
+								<h3>
+									<span class="hormak green"></span>
+									<span class="htitle">최근 이용내역</span>
+								</h3>
+							</article>
+						</dt>
+						<dd>
+							<div class="big_respon1">
+								<div class="table_box">
+									<table class="gray_table bigger_table grtable1">
+										<thead>
+											<tr>
+												<th>번호</th>
+												<th>종료시간</th>
+												<th>성명</th>
+												<th>소속기관명</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>10</td>
+												<td>
+													2020.08.30<span class="m-l-8">12:49:21</span>
+												</td>
+												<td>행정지원</td>
+												<td>
+													<p class="road">
+													영광군청<i class="fas fa-arrow-right"></i>영광리
+													</p>
+												</td>
+											</tr>
+											<tr>
+												<td>9</td>
+												<td>
+													2020.08.30<span class="m-l-8">12:49:21</span>
+												</td>
+												<td>행정지원</td>
+												<td>
+													<p class="road">
+													영광군청<i class="fas fa-arrow-right"></i>영광리
+													</p>
+												</td>
+											</tr>
+											<tr>
+												<td>8</td>
+												<td>
+													2020.08.30<span class="m-l-8">12:49:21</span>
+												</td>
+												<td>행정지원</td>
+												<td>
+													<p class="road">
+													영광군청<i class="fas fa-arrow-right"></i>영광리
+													</p>
+												</td>
+											</tr>
+											<tr>
+												<td>7</td>
+												<td>
+													2020.08.30<span class="m-l-8">12:49:21</span>
+												</td>
+												<td>행정지원</td>
+												<td>
+													<p class="road">
+													영광군청<i class="fas fa-arrow-right"></i>영광리
+													</p>
+												</td>
+											</tr>
+											<tr>
+												<td>6</td>
+												<td>
+													2020.08.30<span class="m-l-8">12:49:21</span>
+												</td>
+												<td>행정지원</td>
+												<td>
+													<p class="road">
+													영광군청<i class="fas fa-arrow-right"></i>영광리
+													</p>
+												</td>
+											</tr>
+										</tbody>
+                                    </table>
+								</div><!--table_box-->
+							</div>
+						</dd>
+					</dl><!-- dsconts -->
+				</div><!--col-xl-6-->
+				<div class="col-xl-6">
+					<dl class="dsconts h370">
+						<dt>
+							<article class="jfbet">
+								<h3>
+									<span class="hormak green"></span>
+									<span class="htitle">설문조사 현황</span>
+								</h3>
+								<div class="betw_right">
+									<select class="form-control selbox slmr1 w150">
+										<option value="">설문조사1</option>
+										<option value="">설문조사2</option>
+										<option value="">설문조사3</option>
+										<option value="">설문조사4</option>
+										<option value="">설문조사5</option>
+									</select>
+								</div>
+							</article>
+						</dt>
+						<dd>
+							<div class="big_respon1">
+								<article class="big_status flx_jfcent flx_aicent">
+									<div class="the_graph m-t-20">
+										<span class="unit_word">평점</span>
+										<div class="gr_bars">
+											<div class="linebar">
+												<p class="bar_space">
+													<span class="the_bar red" style="height: 52%;"></span>
+												</p>
+												<p class="how">5</p>
+											</div><!--linebar-->
+											<div class="linebar">
+												<p class="bar_space">
+													<span class="the_bar orange" style="height: 46%;"></span>
+												</p>
+												<p class="how">4</p>
+											</div><!--linebar-->
+											<div class="linebar">
+												<p class="bar_space">
+													<span class="the_bar green" style="height: 24%;"></span>
+												</p>
+												<p class="how">3</p>
+											</div><!--linebar-->
+											<div class="linebar">
+												<p class="bar_space">
+													<span class="the_bar sky" style="height: 12%;"></span>
+												</p>
+												<p class="how">2</p>
+											</div><!--linebar-->
+											<div class="linebar">
+												<p class="bar_space">
+													<span class="the_bar blue" style="height: 3%;"></span>
+												</p>
+												<p class="how">1</p>
+											</div><!--linebar-->
+										</div><!--gr_bars-->
+										<div class="gr_vertic">
+											<div class="vertic_line">
+												<span class="verpan ver1">20</span>
+												<span class="verpan ver2">40</span>
+												<span class="verpan ver3">60</span>
+												<span class="verpan ver4">80</span>
+												<span class="verpan ver5">100</span>
+											</div>
+										</div><!--gr_vertic-->
+										<div class="grph_back"></div>
+									</div><!--the_graph-->
+
+									<div class="purpose_status star m-t-10">
+										<div class="dash_line">
+											<p class="left">
+												<img src="../images/sv_star1.svg"/>
+												<span class="point">5점</span>
+											</p>
+											<p class="right">
+												11,345<span class="unit">(52%)</span>
+											</p>
+										</div><!--dash_line-->
+										<div class="dash_line">
+											<p class="left">
+												<img src="../images/sv_star1.svg"/>
+												<span class="point">4점</span>
+											</p>
+											<p class="right">
+												9,345 (46%)</span>
+											</p>
+										</div><!--dash_line-->
+										<div class="dash_line">
+											<p class="left">
+												<img src="../images/sv_star1.svg"/>
+												<span class="point">3점</span>
+											</p>
+											<p class="right">
+												3,345 (24%)</span>
+											</p>
+										</div><!--dash_line-->
+										<div class="dash_line">
+											<p class="left">
+												<img src="../images/sv_star1.svg"/>
+												<span class="point">2점</span>
+											</p>
+											<p class="right">
+												1,345 (12%)</span>
+											</p>
+										</div><!--dash_line-->
+										<div class="dash_line">
+											<p class="left">
+												<img src="../images/sv_star1.svg"/>
+												<span class="point">1점</span>
+											</p>
+											<p class="right">
+												345 (3%)</span>
+											</p>
+										</div><!--dash_line-->
+									</div><!--purpose_status-->
+								</article><!--big_status-->
+							</div>
+						</dd>
+					</dl><!-- dsconts -->
+				</div><!--col-xl-6-->
+			</div><!--row-->
+
+			<div class="row">
+				<div class="col-xl-6">
+					<dl class="dsconts h370">
+						<dt>
+							<article class="jfbet">
+								<h3>
+									<span class="hormak green"></span>
+									<span class="htitle">기관별 이용내역</span>
+								</h3>
+							</article>
+						</dt>
+						<dd>
+							<div class="big_respon1">
+								<div class="table_box">
+									<table class="gray_table bigger_table grtable1">
+										<thead>
+											<tr>
+												<th>순위</th>
+												<th>기관명</th>
+												<th>목적</th>
+												<th>이용횟수</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>1</td>
+												<td>영광 장애인복지센터</td>
+												<td>공공목적</td>
+												<td>324회</td>
+											</tr>
+											<tr>
+												<td>2</td>
+												<td>영광 장애인복지센터</td>
+												<td>공공목적</td>
+												<td>290회</td>
+											</tr>
+											<tr>
+												<td>3</td>
+												<td>쏘카</td>
+												<td>행정지원</td>
+												<td>272회</td>
+											</tr>
+											<tr>
+												<td>4</td>
+												<td>영광 장애인복지센터</td>
+												<td>공공목적</td>
+												<td>234회</td>
+											</tr>
+											<tr>
+												<td>5</td>
+												<td>쏘카</td>
+												<td>행정지원</td>
+												<td>174회</td>
+											</tr>
+										</tbody>
+                                    </table>
+								</div><!--table_box-->
+							</div>
+						</dd>
+					</dl><!-- dsconts -->
+				</div><!--col-xl-6-->
+				<div class="col-xl-6">
+					<dl class="dsconts h370">
+						<dt>
+							<article class="jfbet">
+								<h3>
+									<span class="hormak green"></span>
+									<span class="htitle">주요 목적지</span>
+								</h3>
+							</article>
+						</dt>
+						<dd>
+							<div class="big_respon1">
+								<div class="table_box">
+									<table class="gray_table bigger_table grtable1">
+										<thead>
+											<tr>
+												<th>순위</th>
+												<th>목적지명</th>
+												<th>이용목적</th>
+												<th>이용횟수</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>1</td>
+												<td>영광군청</td>
+												<td>행정지원</td>
+												<td>825회</td>
+											</tr>
+											<tr>
+												<td>2</td>
+												<td>영광스포렉스</td>
+												<td>공공목적</td>
+												<td>811회</td>
+											</tr>
+											<tr>
+												<td>3</td>
+												<td>영광시장</td>
+												<td>행정지원</td>
+												<td>285회</td>
+											</tr>
+											<tr>
+												<td>4</td>
+												<td>영광군청</td>
+												<td>행정지원</td>
+												<td>271회</td>
+											</tr>
+											<tr>
+												<td>5</td>
+												<td>영광군청</td>
+												<td>행정지원</td>
+												<td>255회</td>
+											</tr>
+										</tbody>
+                                    </table>
+								</div><!--table_box-->
+							</div>
+						</dd>
+					</dl><!-- dsconts -->
+				</div><!--col-xl-6-->
+			</div><!--row-->
+
+		</section><!-- content -->
+
+	</div><!-- Dash_body -->
+</div><!-- wrap -->
+
+</body>
+
+ </html>

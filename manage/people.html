@@ -1,0 +1,2631 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+ <meta  http-equiv="Content-Type"  content="text/html;charset=utf-8"/> 
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Sample01 - dashboard</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../fontawesome-free-5.13.0-web/css/all.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/com_ui.js"></script>
+</head>
+
+<body>
+
+<div class="wrap">
+	<div class="Dash_body">
+
+		<header>
+			<div class="header_in">
+				<div class="header_left">
+					<h1 class="logo biglogo">
+						<a href="../dash/dashboard.html"><img src="../images/logo_top.png" /></a>
+					</h1>
+					<p class="btn_trans"></p>
+				</div><!-- header_left -->
+
+				<div class="header_right">
+					<div class="right_div btbox">
+						<a class="go_right btn_togg">
+							<i class="fas fa-user-circle"></i>
+							<span class="user">
+								홍길동님 환영합니다.
+							</span>
+						</a>
+					</div><!-- right_div -->
+					<div class="right_div">
+						<button type="button" class="btn btn-mint3" onclick="location.href='../index.html'">로그아웃</button>
+					</div>
+				</div><!-- header_right -->
+			</div><!-- header_in -->
+		</header>
+
+		<aside class="dash_aside">
+			<div class="side_conts">
+				<h2 class="left_name">MENU</h2>
+				<ul class="left_menu">
+					<li>
+						<a class="selb_link" href="../dash/dashboard.html">
+							<img class="dash" src="../images/sv_dash.svg" />
+							<span class="menu_name">대시보드</span>
+						</a>
+					</li>
+					<li>
+						<a class="selb_link" href="../dash/dashboard_1.html">
+							<img class="dash" src="../images/sv_dash.svg" />
+							<span class="menu_name">대시보드_1</span>
+						</a>
+					</li>
+					<li>
+						<a class="selb_link" href="../dash/dashboard_2.html">
+							<img class="dash" src="../images/sv_dash.svg" />
+							<span class="menu_name">대시보드_2</span>
+						</a>
+					</li>
+					<li>
+						<a class="selb_link" href="../control/real_control.html">
+							<img src="../images/sv_time.svg" />
+							<span class="menu_name">실시간 관제</span>
+						</a>
+					</li>
+					<li>
+						<a class="selb_link" href="../drive/drive_history.html">
+							<img src="../images/sv_car.svg" />
+							<span class="menu_name">운행이력</span>
+						</a>
+					</li>
+					<li>
+						<a class="selb_link">
+							<img src="../images/sv_manage.svg" />
+							<span class="menu_name">관리메뉴</span>
+							<i class="fas fa-chevron-right"></i>
+						</a>
+						<div class="add_menu">
+							<a href="../manage/people.html">인사관리</a>
+							<a href="../manage/cars.html">차량관리</a>
+						</div>
+					</li>
+					<li>
+						<a class="selb_link">
+							<i class="fas fa-th-large link_fas"></i>
+							<span class="menu_name">레이아웃</span>
+							<i class="fas fa-chevron-right"></i>
+						</a>
+						<div class="add_menu">
+							<a href="../layout/grid.html">Grid</a>
+							<a href="../layout/flex.html">Flex</a>
+							<a href="../layout/display.html">Display</a>
+						</div>
+					</li>
+					<li>
+						<a class="selb_link">
+							<i class="fas fa-layer-group link_fas"></i>
+							<span class="menu_name">컴퍼넌트</span>
+							<i class="fas fa-chevron-right"></i>
+						</a>
+						<div class="add_menu">
+							<a href="../components/color.html">Color</a>
+							<a href="../components/button.html">Button</a>
+                            <a href="../components/modal.html">Modal</a>
+							<a href="../components/dropdown.html">Dropdown</a>
+							<a href="../components/table.html">table</a>
+						</div>
+					</li>
+				</ul><!-- left_menu -->
+			</div><!-- side_conts -->
+		</aside><!-- dash_aside -->
+
+		<section class="top_line">
+			<div class="jfbet">
+				<h2 class="top_title control_title">
+					인사관리
+				</h2>
+				<div class="location">
+					<p>
+						<img class="ion" src="../images/sv_home.svg" />Home
+					</p>
+					<p class="arrow">
+						<img src="../images/sv_arr_loc.svg" />
+					</p>
+                    <p>관리메뉴</p>
+                    <p class="arrow">
+						<img src="../images/sv_arr_loc.svg" />
+					</p>
+					<p>인사관리</p>
+				</div><!--location-->
+			</div>
+		</section><!-- top_line -->
+
+		<script>
+			$(document).ready(function(){
+				$(".Dash_body").addClass("control_body");
+				$(".top_line").addClass("control");
+			})
+		</script>
+
+		<section class="content">
+            <div class="row">
+				<div class="col-lg-12">
+					<dl class="dsconts">
+						<dt>
+							<article class="jfbet">
+								<h3>
+									<span class="hormark"></span>
+									<span class="htitle">기본정보</span>
+								</h3>
+							</article>
+						</dt>
+						<dd>
+							<div class="big_respon1 m-t-10">
+								<div class="row">
+									<div class="col-xl-5 big_respon1">
+										<div class="row">
+											<div class="col-lg-5">
+												<article class="group_photo">
+													<div class="jop_tab">
+														<p class="job wh">기사</p>
+														<p class="job">직원</p>
+													</div>
+													<div class="photo_zone">
+														<div class="photo_box">
+															<img class="img_pho" src="../images/pho_face.png" />
+														</div>
+														<div class="btn_box">
+															사진등록
+															<input type="file" class="file_put">
+														</div>
+													</div><!--photo_zone-->
+												</article><!--group_photo-->
+											</div>
+											<div class="col-lg-7">
+												<article class="record_box">
+													<div class="record_line">
+														<div class="reco_name">상태</div>
+														<div class="reco_text">
+															<span class="rctxt">근무중</span>
+														</div>
+													</div><!--record_line-->
+													<div class="record_line">
+														<div class="reco_name">소속</div>
+														<div class="reco_text">
+															<span class="rctxt">서울시</span>
+														</div>
+													</div><!--record_line-->
+													<div class="record_line">
+														<div class="reco_name">직급</div>
+														<div class="reco_text">
+															<span class="rctxt">기사</span>
+														</div>
+													</div><!--record_line-->
+													<div class="record_line">
+														<div class="reco_name">입사일자</div>
+														<div class="reco_text">
+															<span class="rctxt">2018-05-10</span>
+														</div>
+													</div><!--record_line-->
+													<div class="record_line">
+														<div class="reco_name">퇴사일자</div>
+														<div class="reco_text">
+															<span class="rctxt">2020-08-14</span>
+														</div>
+													</div><!--record_line-->
+												</article><!--record_box-->
+											</div>
+										</div>
+									</div><!--col-xl-5-->
+
+									<div class="col-xl-7 big_respon1">
+										<div class="row">
+											<div class="col-lg-6 p-r-15">
+												<article class="record_box">
+													<div class="record_line">
+														<div class="reco_name">이름</div>
+														<div class="reco_text">
+															<span class="rctxt">김기동</span>
+														</div>
+													</div><!--record_line-->
+													<div class="record_line">
+														<div class="reco_name">생년월일</div>
+														<div class="reco_text">
+															<span class="rctxt">2010-02-25</span>
+														</div>
+													</div><!--record_line-->
+												</article><!--record_box-->
+											</div><!--col-lg-6-->
+											<div class="col-lg-6 p-r-15">
+												<article class="record_box">
+													<div class="record_line">
+														<div class="reco_name">휴대폰</div>
+														<div class="reco_text">
+															<span class="rctxt">010-1234-5678</span>
+														</div>
+													</div><!--record_line-->
+													<div class="record_line">
+														<div class="reco_name">이메일</div>
+														<div class="reco_text">
+															<span class="rctxt">junny@naver.com</span>
+														</div>
+													</div><!--record_line-->
+												</article><!--record_box-->
+											</div><!--col-lg-6-->
+										</div>
+										<div class="row">
+											<div class="col-lg-12 p-r-15">
+												<div class="long_record m-t-20">
+													<article class="record_box">
+														<div class="record_line">
+															<div class="reco_name">주소</div>
+															<div class="reco_text">
+																<span class="rctxt">서울 은평구 응암로xx길 xx-xx(신한아파트) 1동 111호</span>
+															</div>
+														</div><!--record_line-->
+													</article><!--record_box-->
+												</div><!--long_record-->
+											</div><!--col-lg-12-->
+										</div>
+									</div><!--col-xl-7-->
+								</div><!--row-->
+							</div><!--big_respon1-->
+						</dd>
+					</dl><!-- dsconts -->
+				</div><!-- col-lg-12 -->
+            </div><!-- row -->
+            <div class="row">
+				<div class="col-lg-12">
+					<dl class="dsconts m-b-20">
+						<dt>
+							<article class="jfbet">
+								<h3>
+									<span class="hormark"></span>
+									<span class="htitle">인사정보</span>
+								</h3>
+							</article>
+						</dt>
+						<dd>
+							<div class="big_respon1">
+
+								<section class="tab_line mgtab">
+									<button type="button" class="tab_btn on mgbtn1" onclick="mnge1();">학력/경력</button>
+									<button type="button" class="tab_btn mgbtn2" onclick="mnge2();">가족/보훈</button>
+									<button type="button" class="tab_btn mgbtn3" onclick="mnge3();">개인신상</button>
+									<button type="button" class="tab_btn mgbtn4" onclick="mnge4();">자격/교육</button>
+									<button type="button" class="tab_btn mgbtn6" onclick="mnge6();">인사기록</button>
+									<button type="button" class="tab_btn mgbtn7" onclick="mnge7();">전산정보</button>
+								</section>
+
+								<section class="manage_conts maconts1">
+									<div class="group_manage">
+										<article class="jfbet m-b-10">
+											<div class="betw_left">
+												<h4 class="innter_title">학력사항</h4>
+											</div><!--betw_left-->
+											<div class="betw_right">
+												<div class="flx_aicent">
+													<p class="bllabel">
+														최종학력 :
+														<span class="sp_result">대학교졸</span>
+													</p>
+													<div class="m-l-20">
+														<button type="button" class="btn_step" data-toggle="modal" data-target="#add_edu01">
+															<span>+</span>
+														</button>
+													</div>
+											</div><!--betw_right-->
+										</article>
+										<div class="table_box">
+											<table class="gray_table nodd_table manage_table1">
+												<thead>
+													<tr>
+														<th>기간</th>
+														<th>학교명</th>
+														<th>전공</th>
+														<th>비고</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr class="rep_tr" data-toggle="modal" data-target="#add_edu01">
+														<td class="calen_double">2010-3-2 ~ 2016-11-30</td>
+														<td>아주대학교</td>
+														<td>경영학과</td>
+														<td class="compare">-</td>
+													</tr>
+												</tbody>
+											</table>
+										</div><!--table_box-->
+									</div><!--group_manage-->
+									<div class="group_manage">
+										<article class="jfbet m-b-10">
+											<div class="betw_left">
+												<h4 class="innter_title">경력사항</h4>
+											</div><!--betw_left-->
+											<div class="betw_right">
+												<div class="flx_aicent">
+													<p class="bllabel">총경력 :
+														<span class="sp_result">5년 10개월</span>
+													</p>
+													<div class="m-l-20">
+														<button type="button" class="btn_step" data-toggle="modal" data-target="#add_edu02">
+															<span>+</span>
+														</button>
+													</div>
+												</div>
+											</div><!--betw_right-->
+										</article>
+										<div class="table_box">
+											<table class="gray_table nodd_table manage_table1">
+												<thead>
+													<tr>
+														<th>기간</th>
+														<th>회사명</th>
+														<th>부서</th>
+														<th>비고</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr class="rep_tr" data-toggle="modal" data-target="#add_edu02">
+														<td class="calen_double">2010-3-2 ~ 2016-11-30</td>
+														<td>lg전자</td>
+														<td>서비스팀</td>
+														<td class="compare">-</td>
+													</tr>
+												</tbody>
+											</table>
+										</div><!--table_box-->
+									</div><!--group_manage-->
+								</section><!--maconts1-->
+
+								<section class="manage_conts maconts2">
+									<div class="group_manage">
+										<article class="jfbet m-b-10">
+											<div class="betw_left">
+												<h4 class="innter_title">가족사항</h4>
+											</div><!--betw_left-->
+											<div class="betw_right">
+												<div class="m-l-20">
+													<button type="button" class="btn_step" data-toggle="modal" data-target="#add_fam01">
+														<span>+</span>
+													</button>
+												</div>
+											</div>
+										</article>
+										<div class="table_box">
+											<table class="gray_table nodd_table manage_table2">
+												<thead>
+													<tr>
+														<th>관계</th>
+														<th>성명</th>
+														<th>나이</th>
+														<th>연락처</th>
+														<th>동거(부양)여부</th>
+														<th>취학아동</th>
+														<th>장애인</th>
+														<th>외국인</th>
+														<th>비고</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr class="rep_tr" data-toggle="modal" data-target="#add_fam01">
+														<td>부</td>
+														<td>김길동</td>
+														<td>55</td>
+														<td>010-1234-56678</td>
+														<td>Y</td>
+														<td>N</td>
+														<td>N</td>
+														<td>N</td>
+														<td>-</td>
+													</tr>	
+												</tbody>
+											</table>
+										</div><!--table_box-->
+									</div><!--group_manage-->
+							
+									<div class="group_manage">
+										<article class="jfbet m-b-10">
+											<div class="betw_left">
+												<h4 class="innter_title">추가인적사항</h4>
+											</div><!--betw_left-->
+											<div class="betw_right">
+												<div class="m-l-20">
+													<button type="button" class="btn_step" data-toggle="modal" data-target="#add_fam02">
+														<span><i class="fas fa-cog"></i></span>	
+													</button>
+												</div>
+											</div>
+										</article>
+										<div class="row orgin_row">
+											<div class="col-md-6 col-lg-3">
+												<article class="record_box">
+													<div class="record_line">
+														<div class="reco_name">세대주구분</div>
+														<div class="reco_text">
+															<span class="rctxt">Y</span>
+														</div>
+													</div><!--record_line-->
+												</article><!--record_box-->
+											</div>
+											<div class="col-md-6 col-lg-3">
+												<article class="record_box">
+													<div class="record_line">
+														<div class="reco_name">한부모가정</div>
+														<div class="reco_text">
+															<span class="rctxt">Y</span>
+														</div>
+													</div><!--record_line-->
+												</article><!--record_box-->
+											</div>
+											<div class="col-md-6 col-lg-3">
+												<article class="record_box">
+													<div class="record_line">
+														<div class="reco_name">부녀자세대</div>
+														<div class="reco_text">
+															<span class="rctxt">N</span>
+														</div>
+													</div><!--record_line-->
+												</article><!--record_box-->
+											</div>
+											<div class="col-md-6 col-lg-3">
+												<article class="record_box">
+													<div class="record_line">
+														<div class="reco_name">부양가족수</div>
+														<div class="reco_text">
+															<span class="rctxt">2</span>
+														</div>
+													</div><!--record_line-->
+												</article><!--record_box-->	
+											</div>
+											<div class="col-md-6 col-lg-3">
+												<article class="record_box">
+													<div class="record_line">
+														<div class="reco_name">경로자</div>
+														<div class="reco_text">
+															<span class="rctxt">1</span>
+														</div>
+													</div><!--record_line-->
+												</article><!--record_box-->	
+											</div>
+											<div class="col-md-6 col-lg-3">
+												<article class="record_box">
+													<div class="record_line">
+														<div class="reco_name">장애인</div>
+														<div class="reco_text">
+															<span class="rctxt">0</span>
+														</div>
+													</div><!--record_line-->
+												</article><!--record_box-->	
+											</div>
+										</div><!--orgin_row-->
+									</div><!--group_manage-->
+								</section><!--maconts2-->
+
+								<section class="manage_conts maconts3">
+									<div class="group_manage m-b-10">
+										<article class="jfbet m-b-10">
+											<div class="betw_left">
+												<h4 class="innter_title">병역사항</h4>
+											</div><!--betw_left-->
+											<div class="betw_right">
+												<div class="m-l-20">
+													<button type="button" class="btn_step" data-toggle="modal" data-target="#add_person01">
+														<span><i class="fas fa-cog"></i></span>
+													</button>
+												</div>
+											</div>
+										</article>
+										<div class="row orgin_row">
+											<div class="col-md-6 col-lg-3">
+												<article class="record_box">
+													<div class="record_line">
+														<div class="reco_name">제대구분</div>
+														<div class="reco_text">
+															<span class="rctxt">Y</span>
+														</div>
+													</div><!--record_line-->
+												</article><!--record_box-->
+											</div>
+											<div class="col-md-6 col-lg-3">
+												<article class="record_box">
+													<div class="record_line">
+														<div class="reco_name">군별</div>
+														<div class="reco_text">
+															<span class="rctxt">육군</span>
+														</div>
+													</div><!--record_line-->
+												</article><!--record_box-->
+											</div>
+											<div class="col-md-6 col-lg-3">
+												<article class="record_box">
+													<div class="record_line">
+														<div class="reco_name">전역일자</div>
+														<div class="reco_text">
+															<span class="rctxt">2002-07-18</span>
+														</div>
+													</div><!--record_line-->
+												</article><!--record_box-->
+											</div>
+											<div class="col-md-6 col-lg-3">
+												<article class="record_box">
+													<div class="record_line">
+														<div class="reco_name">면제사유</div>
+														<div class="reco_text">
+															<span class="rctxt"></span>
+														</div>
+													</div><!--record_line-->
+												</article><!--record_box-->	
+											</div>
+										</div><!--orgin_row-->
+									</div>
+
+									<div class="group_manage m-b-10">
+										<article class="jfbet m-b-10">
+											<div class="betw_left">
+												<h4 class="innter_title">장애 및 보훈사항</h4>
+											</div><!--betw_left-->
+											<div class="betw_right">
+												<div class="m-l-20">
+													<button type="button" class="btn_step" data-toggle="modal" data-target="#add_person02">
+														<span><i class="fas fa-cog"></i></span>
+													</button>
+												</div>
+											</div>
+										</article>				
+										<div class="row orgin_row">
+											<div class="col-md-6 col-lg-3">
+												<article class="record_box">
+													<div class="record_line">
+														<div class="reco_name">장애유형</div>
+														<div class="reco_text">
+															<span class="rctxt">지체장애</span>
+														</div>
+													</div><!--record_line-->
+												</article><!--record_box-->
+											</div>
+											<div class="col-md-6 col-lg-3">
+												<article class="record_box">
+													<div class="record_line">
+														<div class="reco_name">장애인정구분</div>
+														<div class="reco_text">
+															<span class="rctxt">장애인복지법상 등록장애인</span>
+														</div>
+													</div><!--record_line-->
+												</article><!--record_box-->
+											</div>
+											<div class="col-md-6 col-lg-3">
+												<article class="record_box">
+													<div class="record_line">
+														<div class="reco_name">장애등급</div>
+														<div class="reco_text">
+															<span class="rctxt">3급</span>
+														</div>
+													</div><!--record_line-->
+												</article><!--record_box-->
+											</div>
+											<div class="col-md-6 col-lg-3">
+												<article class="record_box">
+													<div class="record_line">
+														<div class="reco_name">장애인정일</div>
+														<div class="reco_text">
+															<span class="rctxt">2015-03-16</span>
+														</div>
+													</div><!--record_line-->
+												</article><!--record_box-->	
+											</div>
+											<div class="col-md-6 col-lg-3">
+												<article class="record_box">
+													<div class="record_line">
+														<div class="reco_name">중증여부</div>
+														<div class="reco_text">
+															<span class="rctxt">N</span>
+														</div>
+													</div><!--record_line-->
+												</article><!--record_box-->	
+											</div>
+											<div class="col-md-6 col-lg-3">
+												<article class="record_box">
+													<div class="record_line">
+														<div class="reco_name">중증2배수<br>인정여부</div>
+														<div class="reco_text">
+															<span class="rctxt">Y</span>
+														</div>
+													</div><!--record_line-->
+												</article><!--record_box-->	
+											</div>
+											<div class="col-md-6 col-lg-3">
+												<article class="record_box">
+													<div class="record_line">
+														<div class="reco_name">보훈여부</div>
+														<div class="reco_text">
+															<span class="rctxt">Y</span>
+														</div>
+													</div><!--record_line-->
+												</article><!--record_box-->	
+											</div>
+										</div><!--orgin_row-->
+									</div>
+
+									<div class="group_manage m-b-10">
+										<article class="jfbet m-b-10">
+											<div class="betw_left">
+												<h4 class="innter_title">노조 가입여부</h4>
+											</div><!--betw_left-->
+											<div class="betw_right">
+												<div class="m-l-20">
+													<button type="button" class="btn_step" data-toggle="modal" data-target="#add_person03">
+														<span><i class="fas fa-cog"></i></span>
+													</button>
+												</div>
+											</div>
+										</article>
+										<div class="row orgin_row">
+											<div class="col-md-6 col-lg-3">
+												<article class="record_box">
+													<div class="record_line">
+														<div class="reco_name">노조명</div>
+														<div class="reco_text">
+															<span class="rctxt"></span>
+														</div>
+													</div><!--record_line-->
+												</article><!--record_box-->
+											</div>
+											<div class="col-md-6 col-lg-3">
+												<article class="record_box">
+													<div class="record_line">
+														<div class="reco_name">가입일</div>
+														<div class="reco_text">
+															<span class="rctxt"></span>
+														</div>
+													</div><!--record_line-->
+												</article><!--record_box-->
+											</div>
+										</div><!--orgin_row-->
+									</div>
+								</section><!--maconts3-->
+
+								<section class="manage_conts maconts4">
+									<div class="group_manage">
+										<article class="jfbet m-b-10">
+											<div class="betw_left">
+												<h4 class="innter_title">자격사항</h4>
+											</div><!--betw_left-->
+											<div class="betw_right">
+												<div class="m-l-20">
+													<button type="button" class="btn_step" data-toggle="modal" data-target="#add_qualifi01">
+														<span>+</span>
+													</button>
+												</div>
+											</div>
+										</article>
+										<div class="table_box">
+											<table class="gray_table nodd_table manage_table1">
+												<thead>
+													<tr>
+														<th>취득일자</th>
+														<th>자격증명</th>
+														<th>자격번호</th>
+														<th>발급처</th>
+														<th>비고</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr class="rep_tr" data-toggle="modal" data-target="#add_qualifi01">
+														<td>2016-09-12</td>
+														<td>택시운전자격증</td>
+														<td>42345</td>
+														<td>택시조합</td>
+														<td>-</td>
+													</tr>
+												</tbody>
+											</table>
+										</div><!--table_box-->
+									</div><!--group_manage-->
+
+									<div class="group_manage">
+										<article class="jfbet m-b-10">
+											<div class="betw_left">
+												<h4 class="innter_title">교육사항</h4>
+											</div><!--betw_left-->
+											<div class="betw_right">
+												<div class="m-l-20">
+													<button type="button" class="btn_step" data-toggle="modal" data-target="#add_qualifi02">
+														<span>+</span>
+													</button>
+												</div>
+											</div>
+										</article>
+										<div class="table_box">
+											<table class="gray_table nodd_table manage_table3">
+												<thead>
+													<tr>
+														<th>시행일</th>
+														<th>교육내용</th>
+														<th>교육기관</th>
+														<th>비고</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr class="rep_tr" data-toggle="modal" data-target="#add_qualifi02">
+														<td>2016-09-12</td>
+														<td></td>
+														<td>택시조합</td>
+														<td class="compare">-</td>
+													</tr>	
+												</tbody>
+											</table>
+										</div><!--table_box-->
+									</div><!--group_manage-->
+								</section><!--maconts4-->
+
+								<section class="manage_conts maconts6">
+									<div class="group_manage">
+										<article class="jfbet m-b-10">
+											<div class="betw_left">
+												<h4 class="innter_title">인사기록</h4>
+											</div><!--betw_left-->
+											<div class="betw_right">
+												<div class="m-l-20">
+													<button type="button" class="btn_step" data-toggle="modal" data-target="#add_record01">
+														<span>+</span>
+													</button>
+												</div>
+											</div>
+										</article>
+										<div class="table_box">
+											<table class="gray_table nodd_table manage_table4">
+												<thead>
+													<tr>
+														<th>시행일</th>
+														<th>종류</th>
+														<th>구분</th>
+														<th>내용</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr class="rep_tr" data-toggle="modal" data-target="#add_record01">
+														<td>2020-07-15</td>
+														<td>포상</td>
+														<td>임명</td>
+														<td></td>
+													</tr>
+												</tbody>
+											</table>
+										</div><!--table_box-->
+									</div><!--group_manage-->
+								</section><!--maconts6-->
+
+								<section class="manage_conts maconts7">
+									<div class="group_manage m-b-10">
+										<article class="jfbet m-b-10">
+											<div class="betw_left">
+												<h4 class="innter_title">계좌정보</h4>
+											</div><!--betw_left-->
+											<div class="betw_right">
+												<div class="m-l-20">
+													<button type="button" class="btn_step" data-toggle="modal" data-target="#add_account01">
+														<span><i class="fas fa-cog"></i></span>	
+													</button>
+												</div>
+											</div>
+										</article>
+										<div class="row orgin_row">
+											<div class="col-lg-3">
+												<article class="record_box">
+													<div class="record_line">
+														<div class="reco_name">은행명</div>
+														<div class="reco_text">
+															<span class="rctxt">신한은행</span>
+														</div>
+													</div><!--record_line-->
+												</article><!--record_box-->
+											</div>
+											<div class="col-lg-6">
+												<article class="record_box">
+													<div class="record_line">
+														<div class="reco_name">계좌번호</div>
+														<div class="reco_text">
+															<span class="rctxt">1234-56789-00000</span>
+														</div>
+													</div><!--record_line-->
+												</article><!--record_box-->
+											</div>
+											<div class="col-lg-3">
+												<article class="record_box">
+													<div class="record_line">
+														<div class="reco_name">예금주</div>
+														<div class="reco_text">
+															<span class="rctxt">허영무</span>
+														</div>
+													</div><!--record_line-->
+												</article><!--record_box-->
+											</div>
+										</div><!--orgin_row-->
+									</div>
+									<div class="row orgin_row">
+										<div class="col-lg-3">
+											<div class="group_manage m-b-10">
+												<article class="jfbet m-b-10">
+													<div class="betw_left">
+														<h4 class="innter_title">기준금</h4>
+													</div><!--betw_left-->
+												</article>
+												<div class="status_board">
+													<div class="board_cont">
+														<div class="board_line">
+															<p class="call">
+																<span class="starting pink"></span>
+																<span>오전</span>
+															</p>
+															<p class="text">
+																<span class="count">78,000</span>
+																<span class="unit">원</span>
+															</p>
+														</div>
+														<div class="board_line">
+															<p class="call">
+																<span class="starting pink"></span>
+																<span>오후</span>
+															</p>
+															<p class="text">
+																<span class="count">453,000</span>
+																<span class="unit">원</span>
+															</p>
+														</div>
+														<div class="board_line">
+															<p class="call">
+																<span class="starting pink"></span>
+																<span>종일</span>
+															</p>
+															<p class="text">
+																<span class="count">1,270,000</span>
+																<span class="unit">원</span>
+															</p>
+														</div>
+													</div><!--board_cont-->
+												</div><!--status_board-->
+											</div>
+										</div>
+										<div class="col-lg-9">
+											<div class="group_manage m-b-10">
+												<article class="jfbet m-b-10">
+													<div class="betw_left">
+														<h4 class="innter_title">메모</h4>
+													</div><!--betw_left-->
+												</article>
+												<div class="memo_board">
+													<div class="the_memo">
+														대인관계가 원만하고 근명성실 합니다.
+													</div>
+												</div><!--memo_board-->
+											</div>
+										</div>
+									</div><!--orgin_row-->
+								</section><!--maconts7-->
+								
+							</div><!--big_respon1-->
+						</dd>
+					</dl><!-- dsconts -->
+				</div><!-- col-lg-12 -->
+			</div><!-- row --> 
+        </section><!--content-->
+        
+        <section class="Right_panel">
+            <article class="panel_body">
+
+                <div class="panel_over">
+                    <div class="call_conts">
+                        <div class="srch_box">
+                            <input type="text" class="put_srch" placeholder="차번호, 기사명 검색">
+                            <button type="button" class="btn_srch"></button>
+                        </div>
+                        <div class="call_line">
+                            <button type="button" class="btn btn-mint3 btn_call">기사</button>
+                            <button type="button" class="btn btn-mint3 btn_call">직원</button>
+                            <button type="button" class="btn btn-mint3 btn_call">전체</button>
+                        </div>
+                    </div><!--calling_conts-->
+                </div><!--panel_over-->
+
+                <div class="panel_under mange_under">
+					<section class="control_list manage_list">
+						
+							<table class="right_table">
+								<thead>
+									<tr>
+										<td class="td_one td_stat">구분</td>
+								
+										<td class="td_one">이름</td>
+								
+										<td class="td_one">차량</td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="td_one td_stat">
+											<div class="sign_taxi blue">
+												<img class="icon_taxi" src="../images/sv_taxi_blue.svg">
+												<span class="condition">기사</span>
+											</div>
+										</td>
+										<td class="td_one">
+											김기영
+										</td>
+										<td class="td_one">
+											서울12사3111
+										</td>
+									</tr>
+									<tr>
+										<td class="td_one td_stat">
+											<div class="sign_taxi pink">
+												<img class="icon_taxi" src="../images/sv_person_pink.svg">
+												<span class="condition">대리</span>
+											</div>
+										</td>
+										<td class="td_one">
+											홍길동
+										</td>
+										<td class="td_one">
+											<div class="whois">
+												<span class="iscall"></span>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td class="td_one td_stat">
+											<div class="sign_taxi pink">
+												<img class="icon_taxi" src="../images/sv_person_pink.svg">
+												<span class="condition">주임</span>
+											</div>
+										</td>
+										<td class="td_one">
+											최소영
+										</td>
+										<td class="td_one">
+											<div class="whois">
+												<span class="iscall"></span>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td class="td_one td_stat">
+											<div class="sign_taxi blue">
+												<img class="icon_taxi" src="../images/sv_taxi_blue.svg">
+												<span class="condition">기사</span>
+											</div>
+										</td>
+										<td class="td_one">
+											정대만
+										</td>
+										<td class="td_one">
+											서울33아4892
+										</td>
+									</tr>
+									<tr>
+										<td class="td_one td_stat">
+											<div class="sign_taxi pink">
+												<img class="icon_taxi" src="../images/sv_person_pink.svg">
+												<span class="condition">대리</span>
+											</div>
+										</td>
+										<td class="td_one">
+											홍길동
+										</td>
+										<td class="td_one">
+											<div class="whois">
+												<span class="iscall"></span>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td class="td_one td_stat">
+											<div class="sign_taxi pink">
+												<img class="icon_taxi" src="../images/sv_person_pink.svg">
+												<span class="condition">사원</span>
+											</div>
+										</td>
+										<td class="td_one">
+											이명기
+										</td>
+										<td class="td_one">
+											<div class="whois">
+												<span class="iscall"></span>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td class="td_one td_stat">
+											<div class="sign_taxi blue">
+												<img class="icon_taxi" src="../images/sv_taxi_blue.svg">
+												<span class="condition">기사</span>
+											</div>
+										</td>
+										<td class="td_one">
+											정대만
+										</td>
+										<td class="td_one">
+											서울33아4892
+										</td>
+									</tr>
+									<tr>
+										<td class="td_one td_stat">
+											<div class="sign_taxi blue">
+												<img class="icon_taxi" src="../images/sv_taxi_blue.svg">
+												<span class="condition">기사</span>
+											</div>
+										</td>
+										<td class="td_one">
+											이정민
+										</td>
+										<td class="td_one">
+											서울33아4892
+										</td>
+									</tr>
+									<tr>
+										<td class="td_one td_stat">
+											<div class="sign_taxi blue">
+												<img class="icon_taxi" src="../images/sv_taxi_blue.svg">
+												<span class="condition">기사</span>
+											</div>
+										</td>
+										<td class="td_one">
+											오지훈
+										</td>
+										<td class="td_one">
+											서울33아4892
+										</td>
+									</tr>
+									<tr>
+										<td class="td_one td_stat">
+											<div class="sign_taxi pink">
+												<img class="icon_taxi" src="../images/sv_person_pink.svg">
+												<span class="condition">대리</span>
+											</div>
+										</td>
+										<td class="td_one">
+											홍길동
+										</td>
+										<td class="td_one">
+											<div class="whois">
+												<span class="iscall"></span>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td class="td_one td_stat">
+											<div class="sign_taxi pink">
+												<img class="icon_taxi" src="../images/sv_person_pink.svg">
+												<span class="condition">사원</span>
+											</div>
+										</td>
+										<td class="td_one">
+											이명기
+										</td>
+										<td class="td_one">
+											<div class="whois">
+												<span class="iscall"></span>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td class="td_one td_stat">
+											<div class="sign_taxi blue">
+												<img class="icon_taxi" src="../images/sv_taxi_blue.svg">
+												<span class="condition">기사</span>
+											</div>
+										</td>
+										<td class="td_one">
+											정대만
+										</td>
+										<td class="td_one">
+											서울33아4892
+										</td>
+									</tr>
+									<tr>
+										<td class="td_one td_stat">
+											<div class="sign_taxi blue">
+												<img class="icon_taxi" src="../images/sv_taxi_blue.svg">
+												<span class="condition">기사</span>
+											</div>
+										</td>
+										<td class="td_one">
+											이정민
+										</td>
+										<td class="td_one">
+											서울33아4892
+										</td>
+									</tr>
+									<tr>
+										<td class="td_one td_stat">
+											<div class="sign_taxi blue">
+												<img class="icon_taxi" src="../images/sv_taxi_blue.svg">
+												<span class="condition">기사</span>
+											</div>
+										</td>
+										<td class="td_one">
+											오지훈
+										</td>
+										<td class="td_one">
+											서울33아4892
+										</td>
+									</tr>
+									<tr>
+										<td class="td_one td_stat">
+											<div class="sign_taxi blue">
+												<img class="icon_taxi" src="../images/sv_taxi_blue.svg">
+												<span class="condition">기사</span>
+											</div>
+										</td>
+										<td class="td_one">
+											정대만
+										</td>
+										<td class="td_one">
+											서울33아4892
+										</td>
+									</tr>
+									<tr>
+										<td class="td_one td_stat">
+											<div class="sign_taxi blue">
+												<img class="icon_taxi" src="../images/sv_taxi_blue.svg">
+												<span class="condition">기사</span>
+											</div>
+										</td>
+										<td class="td_one">
+											이정민
+										</td>
+										<td class="td_one">
+											서울33아4892
+										</td>
+									</tr>
+									<tr>
+										<td class="td_one td_stat">
+											<div class="sign_taxi blue">
+												<img class="icon_taxi" src="../images/sv_taxi_blue.svg">
+												<span class="condition">기사</span>
+											</div>
+										</td>
+										<td class="td_one">
+											오지훈
+										</td>
+										<td class="td_one">
+											서울33아4892
+										</td>
+									</tr>
+									<tr>
+										<td class="td_one td_stat">
+											<div class="sign_taxi blue">
+												<img class="icon_taxi" src="../images/sv_taxi_blue.svg">
+												<span class="condition">기사</span>
+											</div>
+										</td>
+										<td class="td_one">
+											정대만
+										</td>
+										<td class="td_one">
+											서울33아4892
+										</td>
+									</tr>
+									<tr>
+										<td class="td_one td_stat">
+											<div class="sign_taxi blue">
+												<img class="icon_taxi" src="../images/sv_taxi_blue.svg">
+												<span class="condition">기사</span>
+											</div>
+										</td>
+										<td class="td_one">
+											이정민
+										</td>
+										<td class="td_one">
+											서울33아4892
+										</td>
+									</tr>
+									<tr>
+										<td class="td_one td_stat">
+											<div class="sign_taxi blue">
+												<img class="icon_taxi" src="../images/sv_taxi_blue.svg">
+												<span class="condition">기사</span>
+											</div>
+										</td>
+										<td class="td_one">
+											오지훈
+										</td>
+										<td class="td_one">
+											서울33아4892
+										</td>
+									</tr>
+								</tbody>
+							</table>
+					</section><!--control_list-->
+
+					<section class="manage_bottom">
+						<div class="jfbet">
+							<button type="button" class="btn_manage" data-toggle="modal" data-target="#exampleModal01">
+								추가
+							</button>
+							<button type="button" class="btn_manage green" data-toggle="modal" data-target="#exampleModal02">
+								수정 / 삭제
+							</button>
+						</div>
+						<div class="m-t-15">
+							<button type="button" class="btn_manage whbt w-100" data-toggle="modal" data-target="#print_report">보고서 출력</button>
+						</div>
+					</section><!--manage_bottom-->
+                </div><!--panel_under-->
+
+            </article><!--panel_body-->
+        </section><!--Right_panel-->
+
+	</div><!-- Dash_body -->
+</div><!-- wrap -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal01" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h3 class="pop_tlt">
+					<span class="hormark"></span>
+					<span class="htitle">인사추가</span>
+				</h5>
+				<div class="p-l-30 m-t-3">
+					<span class="circ red"></span>
+					<span class="m-r-8">필수</span>
+					<span class="circ green"></span>
+					<span>선택</span>
+				</div>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<form>
+			<div class="modal-body">
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ red"></span>
+						<span class="the_name">이름</span>
+					</div>
+					<div class="pp_right">
+						<input type="text" class="form-control fomr1" id="" name="">
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ red"></span>
+						<span class="the_name">상태</span>
+					</div>
+					<div class="pp_right">
+						<select class="form-control selbox slmr1 w-100">
+							<option value="">재직</option>
+							<option value="">휴직</option>
+							<option value="">퇴사</option>
+						</select>
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ red"></span>
+						<span class="the_name">부서</span>
+					</div>
+					<div class="pp_right">
+						<select class="form-control selbox slmr1 w-100">
+							<option value="">배차부</option>
+							<option value="">경리부</option>
+							<option value="">기사부</option>
+						</select>
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ red"></span>
+						<span class="the_name">직책</span>
+					</div>
+					<div class="pp_right">
+						<select class="form-control selbox slmr1 w-100">
+							<option value="">기사</option>
+							<option value="">대표</option>
+							<option value="">수습</option>
+							<option value="">인턴</option>
+						</select>
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ red"></span>
+						<span class="the_name">입사일자</span>
+					</div>
+					<div class="pp_right">
+						<div class="input-group date" id="datetimepicker5" data-target-input="nearest">
+							<input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker5"/>
+							<div class="input-group-append" data-target="#datetimepicker5" data-toggle="datetimepicker">
+								<div class="input-group-text"><i class="fa fa-calendar"></i></div>
+							</div>
+						</div>
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ green"></span>
+						<span class="the_name">사진</span>
+					</div>
+					<div class="pp_right">
+						<button type="button" class="btn btn-primary">프로필 등록</button>
+						<span class="dpblock m-t-2 red f-s-13">사진이 등록되지 않았습니다.</span>
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ red"></span>
+						<span class="the_name">생년월일</span>
+					</div>
+					<div class="pp_right">
+						<div class="input-group date" id="datetimepicker6" data-target-input="nearest">
+							<input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker6"/>
+							<div class="input-group-append" data-target="#datetimepicker6" data-toggle="datetimepicker">
+								<div class="input-group-text"><i class="fa fa-calendar"></i></div>
+							</div>
+						</div>
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ red"></span>
+						<span class="the_name">이메일</span>
+					</div>
+					<div class="pp_right">
+						<input type="text" class="form-control fomr1" id="" name="">
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ red"></span>
+						<span class="the_name">주소</span>
+					</div>
+					<div class="pp_right">
+						<div class="flx_aicent">
+							<input type="text" class="form-control fomr1 w-70" readonly>
+							<button type="button" class="btn btn-primary btmr1 m-l-5" onclick="">찾기</button>
+						</div>
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ red"></span>
+						<span class="the_name">상세주소</span>
+					</div>
+					<div class="pp_right">
+						<input type="text" class="form-control fomr1" id="" name="">
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ red"></span>
+						<span class="the_name">휴대전화</span>
+					</div>
+					<div class="pp_right">
+						<input type="text" class="form-control fomr1" id="" name="">
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ red"></span>
+						<span class="the_name">최종학력</span>
+					</div>
+					<div class="pp_right">
+						<select class="form-control selbox slmr1 w-100">
+							<option value="">초졸</option>
+							<option value="">중졸</option>
+							<option value="">고졸</option>
+							<option value="">전문대졸</option>
+							<option value="">대졸</option>
+						</select>
+					</div>
+				</div><!--pp_texts-->		
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btmr2 btn-mint2 w130">등록하기</button>
+			</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="exampleModal02" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h3 class="pop_tlt">
+					<span class="hormark"></span>
+					<span class="htitle">인사수정</span>
+				</h5>
+				<div class="p-l-30 m-t-3">
+					<span class="circ red"></span>
+					<span class="m-r-8">필수</span>
+					<span class="circ green"></span>
+					<span>선택</span>
+				</div>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<form>
+			<div class="modal-body">
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ red"></span>
+						<span class="the_name">이름</span>
+					</div>
+					<div class="pp_right">
+						<input type="text" class="form-control fomr1" id="" name="">
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ red"></span>
+						<span class="the_name">상태</span>
+					</div>
+					<div class="pp_right">
+						<select class="form-control selbox slmr1 w-100">
+							<option value="">재직</option>
+							<option value="">휴직</option>
+							<option value="">퇴사</option>
+						</select>
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ red"></span>
+						<span class="the_name">부서</span>
+					</div>
+					<div class="pp_right">
+						<select class="form-control selbox slmr1 w-100">
+							<option value="">배차부</option>
+							<option value="">경리부</option>
+							<option value="">기사부</option>
+						</select>
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ red"></span>
+						<span class="the_name">직책</span>
+					</div>
+					<div class="pp_right">
+						<select class="form-control selbox slmr1 w-100">
+							<option value="">기사</option>
+							<option value="">대표</option>
+							<option value="">수습</option>
+							<option value="">인턴</option>
+						</select>
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ red"></span>
+						<span class="the_name">입사일자</span>
+					</div>
+					<div class="pp_right">
+						<div class="input-group date" id="datetimepicker7" data-target-input="nearest">
+							<input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker7"/>
+							<div class="input-group-append" data-target="#datetimepicker7" data-toggle="datetimepicker">
+								<div class="input-group-text"><i class="fa fa-calendar"></i></div>
+							</div>
+						</div>
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ green"></span>
+						<span class="the_name">사진</span>
+					</div>
+					<div class="pp_right">
+						<button type="button" class="btn btn-primary">프로필 등록</button>
+						<span class="dpblock m-t-2 red f-s-13">사진이 등록되지 않았습니다.</span>
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ red"></span>
+						<span class="the_name">생년월일</span>
+					</div>
+					<div class="pp_right">
+						<div class="input-group date" id="datetimepicker8" data-target-input="nearest">
+							<input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker8"/>
+							<div class="input-group-append" data-target="#datetimepicker8" data-toggle="datetimepicker">
+								<div class="input-group-text"><i class="fa fa-calendar"></i></div>
+							</div>
+						</div>
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ red"></span>
+						<span class="the_name">이메일</span>
+					</div>
+					<div class="pp_right">
+						<input type="text" class="form-control fomr1" id="" name="">
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ red"></span>
+						<span class="the_name">주소</span>
+					</div>
+					<div class="pp_right">
+						<div class="flx_aicent">
+							<input type="text" class="form-control fomr1 w-70" readonly>
+							<button type="button" class="btn btn-primary btmr1 m-l-5" onclick="">찾기</button>
+						</div>
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ red"></span>
+						<span class="the_name">상세주소</span>
+					</div>
+					<div class="pp_right">
+						<input type="text" class="form-control fomr1" id="" name="">
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ red"></span>
+						<span class="the_name">휴대전화</span>
+					</div>
+					<div class="pp_right">
+						<input type="text" class="form-control fomr1" id="" name="">
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ red"></span>
+						<span class="the_name">최종학력</span>
+					</div>
+					<div class="pp_right">
+						<select class="form-control selbox slmr1 w-100">
+							<option value="">초졸</option>
+							<option value="">중졸</option>
+							<option value="">고졸</option>
+							<option value="">전문대졸</option>
+							<option value="">대졸</option>
+						</select>
+					</div>
+				</div><!--pp_texts-->
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btmr2 btn-mint2 w130">수정하기</button>
+				<button type="button" class="btn btmr2 btn-cancel w130">삭제하기</button>
+			</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="print_report" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h3 class="pop_tlt">
+					<span class="hormark"></span>
+					<span class="htitle">보고서 출력</span>
+				</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>	
+			<div class="modal-footer">
+				<button type="button" class="btn btmr2 btn-mint2 w130">인사기록부</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="add_edu01" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h3 class="pop_tlt">
+					<span class="hormark"></span>
+					<span class="htitle">학력사항</span>
+				</h5>
+				<div class="p-l-30 m-t-3">
+					<span class="circ red"></span>
+					<span class="m-r-8">필수</span>
+					<span class="circ green"></span>
+					<span>선택</span>
+				</div>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<form>
+			<div class="modal-body">
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ red"></span>
+						<span class="the_name">학교명</span>
+					</div>
+					<div class="pp_right">
+						<input type="text" class="form-control fomr1" id="" name="">
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ red"></span>
+						<span class="the_name">입학일</span>
+					</div>
+					<div class="pp_right">
+						<div class="input-group date" id="datetimepicker9" data-target-input="nearest">
+							<input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker9"/>
+							<div class="input-group-append" data-target="#datetimepicker9" data-toggle="datetimepicker">
+								<div class="input-group-text"><i class="fa fa-calendar"></i></div>
+							</div>
+						</div>
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ red"></span>
+						<span class="the_name">졸업일</span>
+					</div>
+					<div class="pp_right">
+						<div class="input-group date" id="datetimepicker10" data-target-input="nearest">
+							<input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker10"/>
+							<div class="input-group-append" data-target="#datetimepicker10" data-toggle="datetimepicker">
+								<div class="input-group-text"><i class="fa fa-calendar"></i></div>
+							</div>
+						</div>
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ green"></span>
+						<span class="the_name">전공</span>
+					</div>
+					<div class="pp_right">
+						<input type="text" class="form-control fomr1" id="" name="">
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ green"></span>
+						<span class="the_name">비고</span>
+					</div>
+					<div class="pp_right">
+						<input type="text" class="form-control fomr1" id="" name="">
+					</div>
+				</div><!--pp_texts-->
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn bt_enroll btmr2 btn-mint2 w130">등록하기</button>
+				<button type="button" class="btn bt_repair btmr2 btn-mint2 w130">수정하기</button>
+				<button type="button" class="btn bt_repair btmr2 btn-cancel w130">삭제하기</button>
+			</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="add_edu02" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h3 class="pop_tlt">
+					<span class="hormark"></span>
+					<span class="htitle">경력정보</span>
+				</h5>
+				<div class="p-l-30 m-t-3">
+					<span class="circ red"></span>
+					<span class="m-r-8">필수</span>
+					<span class="circ green"></span>
+					<span>선택</span>
+				</div>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<form>
+			<div class="modal-body">
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ red"></span>
+						<span class="the_name">회사명</span>
+					</div>
+					<div class="pp_right">
+						<input type="text" class="form-control fomr1" id="" name="">
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ red"></span>
+						<span class="the_name">입사일</span>
+					</div>
+					<div class="pp_right">
+						<div class="input-group date" id="datetimepicker11" data-target-input="nearest">
+							<input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker11"/>
+							<div class="input-group-append" data-target="#datetimepicker11" data-toggle="datetimepicker">
+								<div class="input-group-text"><i class="fa fa-calendar"></i></div>
+							</div>
+						</div>
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ red"></span>
+						<span class="the_name">퇴사일</span>
+					</div>
+					<div class="pp_right">
+						<div class="input-group date" id="datetimepicker12" data-target-input="nearest">
+							<input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker12"/>
+							<div class="input-group-append" data-target="#datetimepicker12" data-toggle="datetimepicker">
+								<div class="input-group-text"><i class="fa fa-calendar"></i></div>
+							</div>
+						</div>
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ green"></span>
+						<span class="the_name">부서</span>
+					</div>
+					<div class="pp_right">
+						<input type="text" class="form-control fomr1" id="" name="">
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ green"></span>
+						<span class="the_name">비고</span>
+					</div>
+					<div class="pp_right">
+						<input type="text" class="form-control fomr1" id="" name="">
+					</div>
+				</div><!--pp_texts-->
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn bt_enroll btmr2 btn-mint2 w130">등록하기</button>
+				<button type="button" class="btn bt_repair btmr2 btn-mint2 w130">수정하기</button>
+				<button type="button" class="btn bt_repair btmr2 btn-cancel w130">삭제하기</button>
+			</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="add_fam01" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h3 class="pop_tlt">
+					<span class="hormark"></span>
+					<span class="htitle">가족사항</span>
+				</h5>
+				<div class="p-l-30 m-t-3">
+					<span class="circ red"></span>
+					<span class="m-r-8">필수</span>
+					<span class="circ green"></span>
+					<span>선택</span>
+				</div>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<form>
+			<div class="modal-body">
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ red"></span>
+						<span class="the_name">관계</span>
+					</div>
+					<div class="pp_right">
+						<select class="form-control selbox slmr1 w-100">
+							<option value="">부</option>
+							<option value="">모</option>
+							<option value="">배우자</option>
+							<option value="">형제</option>
+							<option value="">자매</option>
+							<option value="">자녀</option>
+							<option value="">조부</option>
+							<option value="">조모</option>
+							<option value="">기타</option>
+						</select>
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ red"></span>
+						<span class="the_name">이름</span>
+					</div>
+					<div class="pp_right">
+						<input type="text" class="form-control fomr1" id="" name="">
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ red"></span>
+						<span class="the_name">생년월일</span>
+					</div>
+					<div class="pp_right">
+						<div class="input-group date" id="datetimepicker13" data-target-input="nearest">
+							<input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker13"/>
+							<div class="input-group-append" data-target="#datetimepicker13" data-toggle="datetimepicker">
+								<div class="input-group-text"><i class="fa fa-calendar"></i></div>
+							</div>
+						</div>
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ green"></span>
+						<span class="the_name">연락처</span>
+					</div>
+					<div class="pp_right">
+						<input type="text" class="form-control fomr1" id="" name="">
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ green"></span>
+						<span class="the_name">부양여부</span>
+					</div>
+					<div class="pp_right">
+						<select class="form-control selbox slmr1 w-100">
+							<option value="">부양</option>
+							<option value="">미부양</option>
+						</select>
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ green"></span>
+						<span class="the_name">취학아동</span>
+					</div>
+					<div class="pp_right">
+						<select class="form-control selbox slmr1 w-100">
+							<option value="">해당하지않음</option>
+							<option value="">취학아동</option>
+						</select>
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ green"></span>
+						<span class="the_name">장애인여부</span>
+					</div>
+					<div class="pp_right">
+						<select class="form-control selbox slmr1 w-100">
+							<option value="">장애인</option>
+							<option value="">비장애인</option>
+						</select>
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ green"></span>
+						<span class="the_name">외국인여부</span>
+					</div>
+					<div class="pp_right">
+						<select class="form-control selbox slmr1 w-100">
+							<option value="">내국인</option>
+							<option value="">외국인</option>
+						</select>
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ green"></span>
+						<span class="the_name">비고</span>
+					</div>
+					<div class="pp_right">
+						<input type="text" class="form-control fomr1" id="" name="">
+					</div>
+				</div><!--pp_texts-->
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn bt_enroll btmr2 btn-mint2 w130">등록하기</button>
+				<button type="button" class="btn bt_repair btmr2 btn-mint2 w130">수정하기</button>
+				<button type="button" class="btn bt_repair btmr2 btn-cancel w130">삭제하기</button>
+			</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="add_fam02" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h3 class="pop_tlt">
+					<span class="hormark"></span>
+					<span class="htitle">추가인적사항</span>
+				</h5>
+				<div class="p-l-30 m-t-3">
+					<span class="circ red"></span>
+					<span class="m-r-8">필수</span>
+					<span class="circ green"></span>
+					<span>선택</span>
+				</div>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<form>
+			<div class="modal-body">
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ green"></span>
+						<span class="the_name">세대주구분</span>
+					</div>
+					<div class="pp_right">
+						<select class="form-control selbox slmr1 w-100">
+							<option value="">해당됨</option>
+							<option value="">해당되지 않음</option>
+						</select>
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ green"></span>
+						<span class="the_name">한부모가정</span>
+					</div>
+					<div class="pp_right">
+						<select class="form-control selbox slmr1 w-100">
+							<option value="">해당됨</option>
+							<option value="">해당되지 않음</option>
+						</select>
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ green"></span>
+						<span class="the_name">부녀자세대</span>
+					</div>
+					<div class="pp_right">
+						<select class="form-control selbox slmr1 w-100">
+							<option value="">해당됨</option>
+							<option value="">해당되지 않음</option>
+						</select>
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ green"></span>
+						<span class="the_name">부양가족수</span>
+					</div>
+					<div class="pp_right">
+						<select class="form-control selbox slmr1 w-100">
+							<option value="">없음</option>
+							<option value="">1명</option>
+							<option value="">2명</option>
+							<option value="">3명</option>
+							<option value="">4명</option>
+							<option value="">5명</option>
+						</select>
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ green"></span>
+						<span class="the_name">경로자</span>
+					</div>
+					<div class="pp_right">
+						<select class="form-control selbox slmr1 w-100">
+							<option value="">없음</option>
+							<option value="">1명</option>
+							<option value="">2명</option>
+							<option value="">3명</option>
+							<option value="">4명</option>
+							<option value="">5명</option>
+						</select>
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ green"></span>
+						<span class="the_name">장애인</span>
+					</div>
+					<div class="pp_right">
+						<select class="form-control selbox slmr1 w-100">
+							<option value="">없음</option>
+							<option value="">1명</option>
+							<option value="">2명</option>
+							<option value="">3명</option>
+							<option value="">4명</option>
+							<option value="">5명</option>
+						</select>
+					</div>
+				</div><!--pp_texts-->
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btmr2 btn-mint2 w130">수정하기</button>
+			</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="add_person01" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h3 class="pop_tlt">
+					<span class="hormark"></span>
+					<span class="htitle">병역정보</span>
+				</h5>
+				<div class="p-l-30 m-t-3">
+					<span class="circ red"></span>
+					<span class="m-r-8">필수</span>
+					<span class="circ green"></span>
+					<span>선택</span>
+				</div>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<form>
+			<div class="modal-body">
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ green"></span>
+						<span class="the_name">역종</span>
+					</div>
+					<div class="pp_right">
+						<input type="text" class="form-control fomr1 w-100" id="" name="">
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ green"></span>
+						<span class="the_name">군별</span>
+					</div>
+					<div class="pp_right">
+						<input type="text" class="form-control fomr1 w-100" id="" name="">
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ green"></span>
+						<span class="the_name">전역일자</span>
+					</div>
+					<div class="pp_right">
+						<div class="input-group date" id="datetimepicker14" data-target-input="nearest">
+							<input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker14"/>
+							<div class="input-group-append" data-target="#datetimepicker14" data-toggle="datetimepicker">
+								<div class="input-group-text"><i class="fa fa-calendar"></i></div>
+							</div>
+						</div>
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ green"></span>
+						<span class="the_name">면제사유</span>
+					</div>
+					<div class="pp_right">
+						<input type="text" class="form-control fomr1 w-100" id="" name="">
+					</div>
+				</div><!--pp_texts-->
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btmr2 btn-mint2 w130">수정하기</button>
+			</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="add_person02" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h3 class="pop_tlt">
+					<span class="hormark"></span>
+					<span class="htitle">장애 및 보훈사항</span>
+				</h5>
+				<div class="p-l-30 m-t-3">
+					<span class="circ red"></span>
+					<span class="m-r-8">필수</span>
+					<span class="circ green"></span>
+					<span>선택</span>
+				</div>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<form>
+			<div class="modal-body">
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ green"></span>
+						<span class="the_name">장애유형</span>
+					</div>
+					<div class="pp_right">
+						<input type="text" class="form-control fomr1 w-100" id="" name="">
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ green"></span>
+						<span class="the_name">장애인정구분</span>
+					</div>
+					<div class="pp_right">
+						<select class="form-control selbox slmr1 w-100">
+							<option value="">장애인복지법상 등록장애인</option>
+							<option value="">비등록장애인</option>
+						</select>
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ green"></span>
+						<span class="the_name">장애등급</span>
+					</div>
+					<div class="pp_right">
+						<input type="text" class="form-control fomr1 w-100" id="" name="">
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ green"></span>
+						<span class="the_name">가입일</span>
+					</div>
+					<div class="pp_right">
+						<div class="input-group date" id="datetimepicker15" data-target-input="nearest">
+							<input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker15"/>
+							<div class="input-group-append" data-target="#datetimepicker15" data-toggle="datetimepicker">
+								<div class="input-group-text"><i class="fa fa-calendar"></i></div>
+							</div>
+						</div>
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ green"></span>
+						<span class="the_name">중증여부</span>
+					</div>
+					<div class="pp_right">
+						<select class="form-control selbox slmr1 w-100">
+							<option value="">Y</option>
+							<option value="">N</option>
+						</select>
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ green"></span>
+						<span class="the_name">중증2배수인정여부</span>
+					</div>
+					<div class="pp_right">
+						<select class="form-control selbox slmr1 w-100">
+							<option value="">Y</option>
+							<option value="">N</option>
+						</select>
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ green"></span>
+						<span class="the_name">보훈여부</span>
+					</div>
+					<div class="pp_right">
+						<select class="form-control selbox slmr1 w-100">
+							<option value="">Y</option>
+							<option value="">N</option>
+						</select>
+					</div>
+				</div><!--pp_texts-->
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btmr2 btn-mint2 w130">수정하기</button>
+			</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="add_person03" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h3 class="pop_tlt">
+					<span class="hormark"></span>
+					<span class="htitle">노조가입여부</span>
+				</h5>
+				<div class="p-l-30 m-t-3">
+					<span class="circ red"></span>
+					<span class="m-r-8">필수</span>
+					<span class="circ green"></span>
+					<span>선택</span>
+				</div>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<form>
+			<div class="modal-body">
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ green"></span>
+						<span class="the_name">노조명</span>
+					</div>
+					<div class="pp_right">
+						<input type="text" class="form-control fomr1 w-100" id="" name="">
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ green"></span>
+						<span class="the_name">가입일</span>
+					</div>
+					<div class="pp_right">
+						<div class="input-group date" id="datetimepicker16" data-target-input="nearest">
+							<input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker16"/>
+							<div class="input-group-append" data-target="#datetimepicker16" data-toggle="datetimepicker">
+								<div class="input-group-text"><i class="fa fa-calendar"></i></div>
+							</div>
+						</div>
+					</div>
+				</div><!--pp_texts-->
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btmr2 btn-mint2 w130">수정하기</button>
+			</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="add_qualifi01" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h3 class="pop_tlt">
+					<span class="hormark"></span>
+					<span class="htitle">자격정보</span>
+				</h5>
+				<div class="p-l-30 m-t-3">
+					<span class="circ red"></span>
+					<span class="m-r-8">필수</span>
+					<span class="circ green"></span>
+					<span>선택</span>
+				</div>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<form>
+			<div class="modal-body">
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ red"></span>
+						<span class="the_name">자격증명</span>
+					</div>
+					<div class="pp_right">
+						<input type="text" class="form-control fomr1 w-100" id="" name="">
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ red"></span>
+						<span class="the_name">취득일자</span>
+					</div>
+					<div class="pp_right">
+						<div class="input-group date" id="datetimepicker17" data-target-input="nearest">
+							<input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker17"/>
+							<div class="input-group-append" data-target="#datetimepicker17" data-toggle="datetimepicker">
+								<div class="input-group-text"><i class="fa fa-calendar"></i></div>
+							</div>
+						</div>
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ red"></span>
+						<span class="the_name">자격번호</span>
+					</div>
+					<div class="pp_right">
+						<input type="text" class="form-control fomr1 w-100" id="" name="">
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ red"></span>
+						<span class="the_name">발급처</span>
+					</div>
+					<div class="pp_right">
+						<input type="text" class="form-control fomr1 w-100" id="" name="">
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ green"></span>
+						<span class="the_name">비고</span>
+					</div>
+					<div class="pp_right">
+						<input type="text" class="form-control fomr1 w-100" id="" name="">
+					</div>
+				</div><!--pp_texts-->
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn bt_enroll btmr2 btn-mint2 w130">등록하기</button>
+				<button type="button" class="btn bt_repair btmr2 btn-mint2 w130">수정하기</button>
+				<button type="button" class="btn bt_repair btmr2 btn-cancel w130">삭제하기</button>
+			</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="add_qualifi02" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h3 class="pop_tlt">
+					<span class="hormark"></span>
+					<span class="htitle">교육사항</span>
+				</h5>
+				<div class="p-l-30 m-t-3">
+					<span class="circ red"></span>
+					<span class="m-r-8">필수</span>
+					<span class="circ green"></span>
+					<span>선택</span>
+				</div>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<form>
+			<div class="modal-body">
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ red"></span>
+						<span class="the_name">교육명</span>
+					</div>
+					<div class="pp_right">
+						<input type="text" class="form-control fomr1 w-100" id="" name="">
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ red"></span>
+						<span class="the_name">교육시작일</span>
+					</div>
+					<div class="pp_right">
+						<div class="input-group date" id="datetimepicker18" data-target-input="nearest">
+							<input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker18"/>
+							<div class="input-group-append" data-target="#datetimepicker18" data-toggle="datetimepicker">
+								<div class="input-group-text"><i class="fa fa-calendar"></i></div>
+							</div>
+						</div>
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ red"></span>
+						<span class="the_name">교육종료일</span>
+					</div>
+					<div class="pp_right">
+						<div class="input-group date" id="datetimepicker19" data-target-input="nearest">
+							<input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker19"/>
+							<div class="input-group-append" data-target="#datetimepicker19" data-toggle="datetimepicker">
+								<div class="input-group-text"><i class="fa fa-calendar"></i></div>
+							</div>
+						</div>
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ red"></span>
+						<span class="the_name">교육기관</span>
+					</div>
+					<div class="pp_right">
+						<input type="text" class="form-control fomr1 w-100" id="" name="">
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ green"></span>
+						<span class="the_name">비고</span>
+					</div>
+					<div class="pp_right">
+						<input type="text" class="form-control fomr1 w-100" id="" name="">
+					</div>
+				</div><!--pp_texts-->
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn bt_enroll btmr2 btn-mint2 w130">등록하기</button>
+				<button type="button" class="btn bt_repair btmr2 btn-mint2 w130">수정하기</button>
+				<button type="button" class="btn bt_repair btmr2 btn-cancel w130">삭제하기</button>
+			</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="add_record01" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h3 class="pop_tlt">
+					<span class="hormark"></span>
+					<span class="htitle">인사정보</span>
+				</h5>
+				<div class="p-l-30 m-t-3">
+					<span class="circ red"></span>
+					<span class="m-r-8">필수</span>
+					<span class="circ green"></span>
+					<span>선택</span>
+				</div>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<form>
+			<div class="modal-body">
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ red"></span>
+						<span class="the_name">시행일</span>
+					</div>
+					<div class="pp_right">
+						<div class="input-group date" id="datetimepicker20" data-target-input="nearest">
+							<input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker20"/>
+							<div class="input-group-append" data-target="#datetimepicker20" data-toggle="datetimepicker">
+								<div class="input-group-text"><i class="fa fa-calendar"></i></div>
+							</div>
+						</div>
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ red"></span>
+						<span class="the_name">종류</span>
+					</div>
+					<div class="pp_right">
+						<select class="form-control selbox slmr1 w-100">
+							<option value="">포상</option>
+							<option value="">징계</option>
+							<option value="">지급</option>
+							<option value="">발령</option>
+							<option value="">장학</option>
+						</select>
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ red"></span>
+						<span class="the_name">구분</span>
+					</div>
+					<div class="pp_right">
+						<input type="text" class="form-control fomr1 w-100" id="" name="">
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ green"></span>
+						<span class="the_name">내용</span>
+					</div>
+					<div class="pp_right">
+						<input type="text" class="form-control fomr1 w-100" id="" name="">
+					</div>
+				</div><!--pp_texts-->
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn bt_enroll btmr2 btn-mint2 w130">등록하기</button>
+				<button type="button" class="btn bt_repair btmr2 btn-mint2 w130">수정하기</button>
+				<button type="button" class="btn bt_repair btmr2 btn-cancel w130">삭제하기</button>
+			</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="add_account01" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h3 class="pop_tlt">
+					<span class="hormark"></span>
+					<span class="htitle">정산정보</span>
+				</h5>
+				<div class="p-l-30 m-t-3">
+					<span class="circ red"></span>
+					<span class="m-r-8">필수</span>
+					<span class="circ green"></span>
+					<span>선택</span>
+				</div>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<form>
+			<div class="modal-body">
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ red"></span>
+						<span class="the_name">은행명</span>
+					</div>
+					<div class="pp_right">
+						<select class="form-control selbox slmr1 w-100">
+							<option value="">기업은행</option>
+							<option value="">KB국민은행</option>
+							<option value="">신한은행</option>
+						</select>
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ red"></span>
+						<span class="the_name">계좌번호</span>
+					</div>
+					<div class="pp_right">
+						<input type="text" class="form-control fomr1 w-100" id="" name="">
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ red"></span>
+						<span class="the_name">예금주</span>
+					</div>
+					<div class="pp_right">
+						<input type="text" class="form-control fomr1 w-100" id="" name="">
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ green"></span>
+						<span class="the_name">오전 기준금</span>
+					</div>
+					<div class="pp_right">
+						<input type="text" class="form-control fomr1 w-100" id="" name="">
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ green"></span>
+						<span class="the_name">오후 기준금</span>
+					</div>
+					<div class="pp_right">
+						<input type="text" class="form-control fomr1 w-100" id="" name="">
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ green"></span>
+						<span class="the_name">종일 기준금</span>
+					</div>
+					<div class="pp_right">
+						<input type="text" class="form-control fomr1 w-100" id="" name="">
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ green"></span>
+						<span class="the_name">메모</span>
+					</div>
+					<div class="pp_right">
+						<textarea type="text" class="form-control w-100 h120"></textarea>
+					</div>
+				</div><!--pp_texts-->
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btmr2 btn-mint2 w130">수정하기</button>
+			</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/locale/ko.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css" />
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" />
+<script type="text/javascript" src="../js/datepicker.js"></script>
+
+</body>
+
+</html>

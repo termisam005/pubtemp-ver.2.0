@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+ <meta  http-equiv="Content-Type"  content="text/html;charset=utf-8"/> 
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Sample01 - dashboard</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../fontawesome-free-5.13.0-web/css/all.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/com_ui.js"></script>
+</head>
+
+<body>
+
+<div class="wrap">
+	<div class="Dash_body">
+
+		<header>
+			<div class="header_in">
+				<div class="header_left">
+					<h1 class="logo biglogo">
+						<a href="../dash/dashboard.html"><img src="../images/logo_top.png" /></a>
+					</h1>
+					<p class="btn_trans"></p>
+				</div><!-- header_left -->
+
+				<div class="header_right">
+					<div class="right_div btbox">
+						<a class="go_right btn_togg">
+							<i class="fas fa-user-circle"></i>
+							<span class="user">
+								홍길동님 환영합니다.
+							</span>
+						</a>
+					</div><!-- right_div -->
+					<div class="right_div">
+						<button type="button" class="btn btn-mint3" onclick="location.href='../index.html'">로그아웃</button>
+					</div>
+				</div><!-- header_right -->
+			</div><!-- header_in -->
+		</header>
+
+		<aside class="dash_aside">
+			<div class="side_conts">
+				<h2 class="left_name">MENU</h2>
+				<ul class="left_menu">
+					<li>
+						<a class="selb_link" href="../dash/dashboard.html">
+							<img class="dash" src="../images/sv_dash.svg" />
+							<span class="menu_name">대시보드</span>
+						</a>
+					</li>
+					<li>
+						<a class="selb_link" href="../dash/dashboard_1.html">
+							<img class="dash" src="../images/sv_dash.svg" />
+							<span class="menu_name">대시보드_1</span>
+						</a>
+					</li>
+					<li>
+						<a class="selb_link" href="../dash/dashboard_2.html">
+							<img class="dash" src="../images/sv_dash.svg" />
+							<span class="menu_name">대시보드_2</span>
+						</a>
+					</li>
+					<li>
+						<a class="selb_link" href="../control/real_control.html">
+							<img src="../images/sv_time.svg" />
+							<span class="menu_name">실시간 관제</span>
+						</a>
+					</li>
+					<li>
+						<a class="selb_link" href="../drive/drive_history.html">
+							<img src="../images/sv_car.svg" />
+							<span class="menu_name">운행이력</span>
+						</a>
+					</li>
+					<li>
+						<a class="selb_link">
+							<img src="../images/sv_manage.svg" />
+							<span class="menu_name">관리메뉴</span>
+							<i class="fas fa-chevron-right"></i>
+						</a>
+						<div class="add_menu">
+							<a href="../manage/people.html">인사관리</a>
+							<a href="../manage/cars.html">차량관리</a>
+						</div>
+					</li>
+					<li>
+						<a class="selb_link">
+							<i class="fas fa-th-large link_fas"></i>
+							<span class="menu_name">레이아웃</span>
+							<i class="fas fa-chevron-right"></i>
+						</a>
+						<div class="add_menu">
+							<a href="../layout/grid.html">Grid</a>
+							<a href="../layout/flex.html">Flex</a>
+							<a href="../layout/display.html">Display</a>
+						</div>
+                    </li>
+                    <li>
+						<a class="selb_link">
+							<i class="fas fa-layer-group link_fas"></i>
+							<span class="menu_name">컴퍼넌트</span>
+							<i class="fas fa-chevron-right"></i>
+						</a>
+						<div class="add_menu">
+							<a href="../components/color.html">Color</a>
+							<a href="../components/button.html">Button</a>
+                            <a href="../components/modal.html">Modal</a>
+							<a href="../components/dropdown.html">Dropdown</a>
+							<a href="../components/table.html">table</a>
+						</div>
+					</li>
+				</ul><!-- left_menu -->
+			</div><!-- side_conts -->
+		</aside><!-- dash_aside -->
+
+		<section class="top_line">
+			<div class="jfbet">
+				<h2 class="top_title control_title">
+					Dropdown
+				</h2>
+			</div>
+		</section><!-- top_line -->
+
+		<section class="cont_bg">
+
+			<div class="row">
+				<div class="col-xl-12">
+					<dl class="dsconts">
+						<dt>
+							<article class="jfbet">
+								<h3>
+									<span class="hormark"></span>
+									<span class="htitle">예시1</span>
+								</h3>
+							</article>
+						</dt>
+						<dd>
+                            <section class="respon_w60 big_respon2">
+                                <article class="text-center p-4 m-b-10">
+
+                                    <div class="dropdown">
+                                        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+                                          Dropdown button
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                          <li><a class="dropdown-item" href="#">Action</a></li>
+                                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+									</div><!--dropdown-->
+
+									<div class="dropdown m-t-20">
+										<button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+										  드롭다운 메뉴
+										</button>
+										<div class="dropdown-menu">
+										  <a class="dropdown-item" href="#">메뉴 1</a>
+										  <a class="dropdown-item" href="#">메뉴 2</a>
+										  <a class="dropdown-item" href="#">메뉴 3</a>
+										</div>
+									</div><!--dropdown-->
+
+                                </article>
+                            </section>
+                        </dd>
+                    </dl>
+                </div><!--col-xl-12-->   
+			</div><!-- row -->
+			
+			<div class="row">
+				<div class="col-xl-12">
+					<dl class="dsconts">
+						<dt>
+							<article class="jfbet">
+								<h3>
+									<span class="hormark"></span>
+									<span class="htitle">예시2</span>
+								</h3>
+							</article>
+						</dt>
+						<dd>
+                            <section class="respon_w80 big_respon2">
+                                <article class="text-center p-4 m-t-10 m-b-10">
+                                    <div class="btn-group">
+                                        <button class="btn btn-primary dropdown-toggle" type="button"data-toggle="dropdown">
+                                          ACTION
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                          <li><a class="dropdown-item" href="#">메뉴 1</a></li>
+                                          <li><a class="dropdown-item" href="#">메뉴 2</a></li>
+                                          <li><a class="dropdown-item" href="#">메뉴 3</a></li>
+                                        </ul>
+									</div><!--btn-group-->
+									<div class="btn-group">
+                                        <button class="btn btn-info dropdown-toggle" type="button"data-toggle="dropdown">
+                                          ACTION
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                          <li><a class="dropdown-item" href="#">메뉴 1</a></li>
+                                          <li><a class="dropdown-item" href="#">메뉴 2</a></li>
+                                          <li><a class="dropdown-item" href="#">메뉴 3</a></li>
+                                        </ul>
+									</div><!--btn-group-->
+									<div class="btn-group">
+                                        <button class="btn btn-success dropdown-toggle" type="button"data-toggle="dropdown">
+                                          ACTION
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                          <li><a class="dropdown-item" href="#">메뉴 1</a></li>
+                                          <li><a class="dropdown-item" href="#">메뉴 2</a></li>
+                                          <li><a class="dropdown-item" href="#">메뉴 3</a></li>
+                                        </ul>
+									</div><!--btn-group-->
+									<div class="btn-group">
+                                        <button class="btn btn-warning dropdown-toggle" type="button"data-toggle="dropdown">
+                                          ACTION
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                          <li><a class="dropdown-item" href="#">메뉴 1</a></li>
+                                          <li><a class="dropdown-item" href="#">메뉴 2</a></li>
+                                          <li><a class="dropdown-item" href="#">메뉴 3</a></li>
+                                        </ul>
+									</div><!--btn-group-->
+									<div class="btn-group">
+                                        <button class="btn btn-danger dropdown-toggle" type="button"data-toggle="dropdown">
+                                          ACTION
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                          <li><a class="dropdown-item" href="#">메뉴 1</a></li>
+                                          <li><a class="dropdown-item" href="#">메뉴 2</a></li>
+                                          <li><a class="dropdown-item" href="#">메뉴 3</a></li>
+                                        </ul>
+									</div><!--btn-group-->
+									<div class="btn-group">
+                                        <button class="btn btn-default dropdown-toggle" type="button"data-toggle="dropdown">
+                                          ACTION
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                          <li><a class="dropdown-item" href="#">메뉴 1</a></li>
+                                          <li><a class="dropdown-item" href="#">메뉴 2</a></li>
+                                          <li><a class="dropdown-item" href="#">메뉴 3</a></li>
+                                        </ul>
+									</div><!--btn-group-->
+									<div class="btn-group">
+                                        <button class="btn btn-dark dropdown-toggle" type="button"data-toggle="dropdown">
+                                          ACTION
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                          <li><a class="dropdown-item" href="#">메뉴 1</a></li>
+                                          <li><a class="dropdown-item" href="#">메뉴 2</a></li>
+                                          <li><a class="dropdown-item" href="#">메뉴 3</a></li>
+                                        </ul>
+									</div><!--btn-group-->
+                                </article>
+                            </section>
+                        </dd>
+                    </dl>
+                </div><!--col-xl-12-->   
+			</div><!-- row -->
+			
+			<div class="row">
+				<div class="col-xl-4">
+					<dl class="dsconts">
+						<dt>
+							<article class="jfbet">
+								<h3>
+									<span class="hormark"></span>
+									<span class="htitle">예시3</span>
+								</h3>
+							</article>
+						</dt>
+						<dd>
+                            <section class="respon_w90 big_respon2">
+                                <article class="text-center p-4 m-t-10 m-b-100">
+									
+									<div class="btn-group dropup">
+										<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+											Dropup
+										</button>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item" href="#">Action</a></li>
+											<li><a class="dropdown-item" href="#">Another action</a></li>
+											<li><a class="dropdown-item" href="#">Something else here</a></li>
+											<li><hr class="dropdown-divider" /></li>
+											<li><a class="dropdown-item" href="#">Separated link</a></li>
+										</ul>
+									</div>
+
+                                </article>
+                            </section>
+                        </dd>
+                    </dl>
+				</div><!--col-xl-4-->
+				
+				<div class="col-xl-4">
+					<dl class="dsconts">
+						<dt>
+							<article class="jfbet">
+								<h3>
+									<span class="hormark"></span>
+									<span class="htitle">예시3-1</span>
+								</h3>
+							</article>
+						</dt>
+						<dd>
+                            <section class="respon_w90 big_respon2">
+                                <article class="text-center p-4 m-t-10 m-b-100">
+                                    
+									<div class="btn-group dropend">
+										<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+										  Dropright
+										</button>
+										<ul class="dropdown-menu">
+										  <li><a class="dropdown-item" href="#">Action</a></li>
+										  <li><a class="dropdown-item" href="#">Another action</a></li>
+										  <li><a class="dropdown-item" href="#">Something else here</a></li>
+										  <li><a class="dropdown-item" href="#">Separated link</a></li>
+										</ul>
+									  </div>
+
+                                </article>
+                            </section>
+                        </dd>
+                    </dl>
+				</div><!--col-xl-4-->
+				
+				<div class="col-xl-4">
+					<dl class="dsconts">
+						<dt>
+							<article class="jfbet">
+								<h3>
+									<span class="hormark"></span>
+									<span class="htitle">예시3-2</span>
+								</h3>
+							</article>
+						</dt>
+						<dd>
+                            <section class="respon_w90 big_respon2">
+                                <article class="text-center p-4 m-t-10 m-b-100">
+                                    
+									<div class="btn-group dropstart">
+										<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+										  Dropleft
+										</button>
+										<ul class="dropdown-menu">
+										  <li><a class="dropdown-item" href="#">Action</a></li>
+										  <li><a class="dropdown-item" href="#">Another action</a></li>
+										  <li><a class="dropdown-item" href="#">Something else here</a></li>
+										  <li><a class="dropdown-item" href="#">Separated link</a></li>
+										</ul>
+									</div>
+
+                                </article>
+                            </section>
+                        </dd>
+                    </dl>
+				</div><!--col-xl-4-->
+				
+            </div><!-- row -->
+
+		</section><!-- cont_bg -->
+
+	</div><!-- Dash_body -->
+</div><!-- wrap -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

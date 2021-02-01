@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+ <meta  http-equiv="Content-Type"  content="text/html;charset=utf-8"/> 
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Sample01 - dashboard</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../fontawesome-free-5.13.0-web/css/all.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/com_ui.js"></script>
+</head>
+
+<body>
+
+<div class="wrap">
+	<div class="Dash_body">
+
+		<header>
+			<div class="header_in">
+				<div class="header_left">
+					<h1 class="logo biglogo">
+						<a href="../dash/dashboard.html"><img src="../images/logo_top.png" /></a>
+					</h1>
+					<p class="btn_trans"></p>
+				</div><!-- header_left -->
+
+				<div class="header_right">
+					<div class="right_div btbox">
+						<a class="go_right btn_togg">
+							<i class="fas fa-user-circle"></i>
+							<span class="user">
+								홍길동님 환영합니다.
+							</span>
+						</a>
+					</div><!-- right_div -->
+					<div class="right_div">
+						<button type="button" class="btn btn-mint3" onclick="location.href='../index.html'">로그아웃</button>
+					</div>
+				</div><!-- header_right -->
+			</div><!-- header_in -->
+		</header>
+
+		<aside class="dash_aside">
+			<div class="side_conts">
+				<h2 class="left_name">MENU</h2>
+				<ul class="left_menu">
+					<li>
+						<a class="selb_link" href="../dash/dashboard.html">
+							<img class="dash" src="../images/sv_dash.svg" />
+							<span class="menu_name">대시보드</span>
+						</a>
+					</li>
+					<li>
+						<a class="selb_link" href="../dash/dashboard_1.html">
+							<img class="dash" src="../images/sv_dash.svg" />
+							<span class="menu_name">대시보드_1</span>
+						</a>
+                    </li>
+                    <li>
+						<a class="selb_link" href="../dash/dashboard_2.html">
+							<img class="dash" src="../images/sv_dash.svg" />
+							<span class="menu_name">대시보드_2</span>
+						</a>
+					</li>
+					<li>
+						<a class="selb_link" href="../control/real_control.html">
+							<img src="../images/sv_time.svg" />
+							<span class="menu_name">실시간 관제</span>
+						</a>
+					</li>
+					<li>
+						<a class="selb_link" href="../drive/drive_history.html">
+							<img src="../images/sv_car.svg" />
+							<span class="menu_name">운행이력</span>
+						</a>
+					</li>
+					<li>
+						<a class="selb_link">
+							<img src="../images/sv_manage.svg" />
+							<span class="menu_name">관리메뉴</span>
+							<i class="fas fa-chevron-right"></i>
+						</a>
+						<div class="add_menu">
+							<a href="../manage/people.html">인사관리</a>
+							<a href="../manage/cars.html">차량관리</a>
+						</div>
+					</li>
+					<li>
+						<a class="selb_link">
+							<i class="fas fa-th-large link_fas"></i>
+							<span class="menu_name">레이아웃</span>
+							<i class="fas fa-chevron-right"></i>
+						</a>
+						<div class="add_menu">
+							<a href="../layout/grid.html">Grid</a>
+							<a href="../layout/flex.html">Flex</a>
+							<a href="../layout/display.html">Display</a>
+						</div>
+                    </li>
+                    <li>
+						<a class="selb_link">
+							<i class="fas fa-layer-group link_fas"></i>
+							<span class="menu_name">컴퍼넌트</span>
+							<i class="fas fa-chevron-right"></i>
+						</a>
+						<div class="add_menu">
+							<a href="../components/color.html">Color</a>
+							<a href="../components/button.html">Button</a>
+                            <a href="../components/modal.html">Modal</a>
+							<a href="../components/dropdown.html">Dropdown</a>
+							<a href="../components/table.html">table</a>
+						</div>
+					</li>
+				</ul><!-- left_menu -->
+			</div><!-- side_conts -->
+		</aside><!-- dash_aside -->
+
+		<section class="top_line">
+			<div class="jfbet">
+				<h2 class="top_title control_title">
+					Table
+				</h2>
+			</div>
+		</section><!-- top_line -->
+
+		<section class="cont_bg">
+
+			<div class="row">
+				<div class="col-xl-6">
+					<dl class="dsconts">
+						<dt>
+							<article class="jfbet">
+								<h3>
+									<span class="hormark"></span>
+									<span class="htitle">예시1</span>
+								</h3>
+							</article>
+						</dt>
+						<dd>
+                            <section class="big_respon2">
+                                <div class="table_box h600">
+                                    <table class="gray_table">
+                                        <thead>
+                                            <tr>
+                                                <th>순서</th>
+                                                <th>정류장</th>
+                                                <th>ARS</th>
+                                                <th>승차승객수(명)</th>
+                                                <th>하차승객수(명)</th>
+                                                <th>승하차승객합(명)</th>
+                                                <th>비고</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>-</td>
+                                                <td>합계/평균</td>
+                                                <td>-</td>
+                                                <td>(총)1180</td>
+                                                <td>(총)1000</td>
+                                                <td>(총)2180</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>[1]송파공영차고지</td>
+                                                <td>24655</td>
+                                                <td>49</td>
+                                                <td>9</td>
+                                                <td>47</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>[2]장지역</td>
+                                                <td>24655</td>
+                                                <td>49</td>
+                                                <td>9</td>
+                                                <td>47</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>[3]석촌호수,한솥병원</td>
+                                                <td>24655</td>
+                                                <td>49</td>
+                                                <td>9</td>
+                                                <td>47</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>[4]송파역</td>
+                                                <td>24655</td>
+                                                <td>49</td>
+                                                <td>9</td>
+                                                <td>47</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>[5]복정역</td>
+                                                <td>24655</td>
+                                                <td>49</td>
+                                                <td>9</td>
+                                                <td>47</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>[5]복정역</td>
+                                                <td>24655</td>
+                                                <td>49</td>
+                                                <td>9</td>
+                                                <td>47</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>[5]복정역</td>
+                                                <td>24655</td>
+                                                <td>49</td>
+                                                <td>9</td>
+                                                <td>47</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>[5]복정역</td>
+                                                <td>24655</td>
+                                                <td>49</td>
+                                                <td>9</td>
+                                                <td>47</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>[5]복정역</td>
+                                                <td>24655</td>
+                                                <td>49</td>
+                                                <td>9</td>
+                                                <td>47</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>[5]복정역</td>
+                                                <td>24655</td>
+                                                <td>49</td>
+                                                <td>9</td>
+                                                <td>47</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>[5]복정역</td>
+                                                <td>24655</td>
+                                                <td>49</td>
+                                                <td>9</td>
+                                                <td>47</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>[5]복정역</td>
+                                                <td>24655</td>
+                                                <td>49</td>
+                                                <td>9</td>
+                                                <td>47</td>
+                                                <td>-</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div><!--table_box-->
+                            </section>     
+                        </dd>
+                    </dl>
+                </div><!--col-xl-6-->
+                <div class="col-xl-6">
+					<dl class="dsconts">
+						<dt>
+							<article class="jfbet">
+								<h3>
+									<span class="hormark"></span>
+									<span class="htitle">예시2</span>
+								</h3>
+							</article>
+						</dt>
+						<dd>
+                            <section class="big_respon2">
+                                <div class="table_box h600">
+                                    <table class="gray_table nodd_table">
+                                        <thead>
+                                            <tr>
+                                                <th>순서</th>
+                                                <th>정류장</th>
+                                                <th>ARS</th>
+                                                <th>승차승객수(명)</th>
+                                                <th>하차승객수(명)</th>
+                                                <th>승하차승객합(명)</th>
+                                                <th>비고</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>-</td>
+                                                <td>합계/평균</td>
+                                                <td>-</td>
+                                                <td>(총)1180</td>
+                                                <td>(총)1000</td>
+                                                <td>(총)2180</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>[1]송파공영차고지</td>
+                                                <td>24655</td>
+                                                <td>49</td>
+                                                <td>9</td>
+                                                <td>47</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>[2]장지역</td>
+                                                <td>24655</td>
+                                                <td>49</td>
+                                                <td>9</td>
+                                                <td>47</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>[3]석촌호수,한솥병원</td>
+                                                <td>24655</td>
+                                                <td>49</td>
+                                                <td>9</td>
+                                                <td>47</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>[4]송파역</td>
+                                                <td>24655</td>
+                                                <td>49</td>
+                                                <td>9</td>
+                                                <td>47</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>[5]복정역</td>
+                                                <td>24655</td>
+                                                <td>49</td>
+                                                <td>9</td>
+                                                <td>47</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>[5]복정역</td>
+                                                <td>24655</td>
+                                                <td>49</td>
+                                                <td>9</td>
+                                                <td>47</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>[5]복정역</td>
+                                                <td>24655</td>
+                                                <td>49</td>
+                                                <td>9</td>
+                                                <td>47</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>[5]복정역</td>
+                                                <td>24655</td>
+                                                <td>49</td>
+                                                <td>9</td>
+                                                <td>47</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>[5]복정역</td>
+                                                <td>24655</td>
+                                                <td>49</td>
+                                                <td>9</td>
+                                                <td>47</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>[5]복정역</td>
+                                                <td>24655</td>
+                                                <td>49</td>
+                                                <td>9</td>
+                                                <td>47</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>[5]복정역</td>
+                                                <td>24655</td>
+                                                <td>49</td>
+                                                <td>9</td>
+                                                <td>47</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>[5]복정역</td>
+                                                <td>24655</td>
+                                                <td>49</td>
+                                                <td>9</td>
+                                                <td>47</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>[5]복정역</td>
+                                                <td>24655</td>
+                                                <td>49</td>
+                                                <td>9</td>
+                                                <td>47</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>[5]복정역</td>
+                                                <td>24655</td>
+                                                <td>49</td>
+                                                <td>9</td>
+                                                <td>47</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>[5]복정역</td>
+                                                <td>24655</td>
+                                                <td>49</td>
+                                                <td>9</td>
+                                                <td>47</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>[5]복정역</td>
+                                                <td>24655</td>
+                                                <td>49</td>
+                                                <td>9</td>
+                                                <td>47</td>
+                                                <td>-</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="paging_zone">
+                                        <a class="prev"><i class="fas fa-caret-left"></i></a>
+                                        <a class="ondid">1</a>
+                                        <a>2</a>
+                                        <a>3</a>
+                                        <a>4</a>
+                                        <a>5</a>
+                                        <a>6</a>
+                                        <a>7</a>
+                                        <a>8</a>
+                                        <a>9</a>
+                                        <a>10</a>
+                                        <a class="next"><i class="fas fa-caret-right"></i></a>
+                                    </div><!--paging_zone-->
+                                </div><!--table_box-->
+                            </section>     
+                        </dd>
+                    </dl>
+                </div><!--col-xl-6-->      
+            </div><!-- row -->
+
+            <div class="row">
+				<div class="col-xl-12">
+					<dl class="dsconts">
+						<dt>
+							<article class="jfbet">
+								<h3>
+									<span class="hormark"></span>
+									<span class="htitle">예시3</span>
+								</h3>
+							</article>
+						</dt>
+						<dd>
+                            <section class="big_respon2">
+                                <article class="jfbet m-b-15">
+                                    <div class="betw_left">
+                                        <select class="form-control selbox">
+                                            <option>노선</option><option>1호선</option><option>2호선</option><option>3호선</option><option>4호선</option>
+                                        </select>
+                                    </div><!--betw_left-->
+                                    
+                                    <div class="betw_right">
+                                        <input type="text" class="form-control m-l-5 w120" value="" placeholder="번호검색">
+                                        <button type="submit" class="btn btn-primary m-l-5">검색</button>
+                                    </div><!--betw_right-->
+                                </article><!-- jfbet -->
+                                <div class="table_box">
+                                    <table class="gray_table bigger_table">
+                                        <thead>
+                                            <tr>
+                                                <th>순서</th>
+                                                <th>정류장</th>
+                                                <th>ARS</th>
+                                                <th>승차승객수(명)</th>
+                                                <th>하차승객수(명)</th>
+                                                <th>승하차승객합(명)</th>
+                                                <th>비고</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>-</td>
+                                                <td>합계/평균</td>
+                                                <td>-</td>
+                                                <td>(총)1180</td>
+                                                <td>(총)1000</td>
+                                                <td>(총)2180</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>[1]송파공영차고지</td>
+                                                <td>24655</td>
+                                                <td>49</td>
+                                                <td>9</td>
+                                                <td>47</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>[2]장지역</td>
+                                                <td>24655</td>
+                                                <td>49</td>
+                                                <td>9</td>
+                                                <td>47</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>[3]석촌호수,한솥병원</td>
+                                                <td>24655</td>
+                                                <td>49</td>
+                                                <td>9</td>
+                                                <td>47</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>[4]송파역</td>
+                                                <td>24655</td>
+                                                <td>49</td>
+                                                <td>9</td>
+                                                <td>47</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>[5]복정역</td>
+                                                <td>24655</td>
+                                                <td>49</td>
+                                                <td>9</td>
+                                                <td>47</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>[5]복정역</td>
+                                                <td>24655</td>
+                                                <td>49</td>
+                                                <td>9</td>
+                                                <td>47</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>[5]복정역</td>
+                                                <td>24655</td>
+                                                <td>49</td>
+                                                <td>9</td>
+                                                <td>47</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>[5]복정역</td>
+                                                <td>24655</td>
+                                                <td>49</td>
+                                                <td>9</td>
+                                                <td>47</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>[5]복정역</td>
+                                                <td>24655</td>
+                                                <td>49</td>
+                                                <td>9</td>
+                                                <td>47</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>[5]복정역</td>
+                                                <td>24655</td>
+                                                <td>49</td>
+                                                <td>9</td>
+                                                <td>47</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>[5]복정역</td>
+                                                <td>24655</td>
+                                                <td>49</td>
+                                                <td>9</td>
+                                                <td>47</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>[5]복정역</td>
+                                                <td>24655</td>
+                                                <td>49</td>
+                                                <td>9</td>
+                                                <td>47</td>
+                                                <td>-</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="paging_zone">
+                                        <a class="prev"><i class="fas fa-caret-left"></i></a>
+                                        <a class="ondid">1</a>
+                                        <a>2</a>
+                                        <a>3</a>
+                                        <a>4</a>
+                                        <a>5</a>
+                                        <a>6</a>
+                                        <a>7</a>
+                                        <a>8</a>
+                                        <a>9</a>
+                                        <a>10</a>
+                                        <a class="next"><i class="fas fa-caret-right"></i></a>
+                                    </div><!--paging_zone-->
+                                </div><!--table_box-->
+                            </section>     
+                        </dd>
+                    </dl>
+                </div><!--col-xl-12-->      
+            </div><!-- row -->
+
+            <div class="row">
+				<div class="col-xl-12">
+					<dl class="dsconts">
+						<dt>
+							<article class="jfbet">
+								<h3>
+									<span class="hormark"></span>
+									<span class="htitle">예시4</span>
+								</h3>
+							</article>
+						</dt>
+						<dd>
+                            <section class="big_respon2">
+                                <article class="jfbet m-b-15">
+                                    <div class="betw_left">
+                                        <select class="form-control selbox">
+                                            <option>노선</option><option>1호선</option><option>2호선</option><option>3호선</option><option>4호선</option>
+                                        </select>
+                                    </div><!--betw_left-->
+                                    <div class="betw_right">
+                                        <input type="text" class="form-control m-l-5 w120" value="" placeholder="번호검색">
+                                        <button type="submit" class="btn btn-primary m-l-5">검색</button>
+                                    </div><!--betw_right-->
+                                </article><!-- jfbet -->
+                                <div class="table_box">
+                                    <table class="gray_table nodd_table bigger_table">
+                                        <thead>
+                                            <tr>
+                                                <th>순서</th>
+                                                <th>정류장</th>
+                                                <th>ARS</th>
+                                                <th>승차승객수(명)</th>
+                                                <th>하차승객수(명)</th>
+                                                <th>승하차승객합(명)</th>
+                                                <th>비고</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>-</td>
+                                                <td>합계/평균</td>
+                                                <td>-</td>
+                                                <td>(총)1180</td>
+                                                <td>(총)1000</td>
+                                                <td>(총)2180</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>[1]송파공영차고지</td>
+                                                <td>24655</td>
+                                                <td>49</td>
+                                                <td>9</td>
+                                                <td>47</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>[2]장지역</td>
+                                                <td>24655</td>
+                                                <td>49</td>
+                                                <td>9</td>
+                                                <td>47</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>[3]석촌호수,한솥병원</td>
+                                                <td>24655</td>
+                                                <td>49</td>
+                                                <td>9</td>
+                                                <td>47</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>[4]송파역</td>
+                                                <td>24655</td>
+                                                <td>49</td>
+                                                <td>9</td>
+                                                <td>47</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>[5]복정역</td>
+                                                <td>24655</td>
+                                                <td>49</td>
+                                                <td>9</td>
+                                                <td>47</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>[5]복정역</td>
+                                                <td>24655</td>
+                                                <td>49</td>
+                                                <td>9</td>
+                                                <td>47</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>[5]복정역</td>
+                                                <td>24655</td>
+                                                <td>49</td>
+                                                <td>9</td>
+                                                <td>47</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>[5]복정역</td>
+                                                <td>24655</td>
+                                                <td>49</td>
+                                                <td>9</td>
+                                                <td>47</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>[5]복정역</td>
+                                                <td>24655</td>
+                                                <td>49</td>
+                                                <td>9</td>
+                                                <td>47</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>[5]복정역</td>
+                                                <td>24655</td>
+                                                <td>49</td>
+                                                <td>9</td>
+                                                <td>47</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>[5]복정역</td>
+                                                <td>24655</td>
+                                                <td>49</td>
+                                                <td>9</td>
+                                                <td>47</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>[5]복정역</td>
+                                                <td>24655</td>
+                                                <td>49</td>
+                                                <td>9</td>
+                                                <td>47</td>
+                                                <td>-</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="paging_area">
+										<ul>
+											<li class="first">
+												<a><i class="fas fa-step-backward"></i></a>
+											</li>
+											<li class="prev">
+												<a><i class="fas fa-caret-left"></i></a>
+											</li>
+											<li class="contact">
+												<a>1</a>
+											</li>
+											<li>
+												<a>2</a>
+											</li>
+											<li>
+												<a>3</a>
+											</li>
+											<li>
+												<a>4</a>
+											</li>
+											<li>
+												<a>5</a>
+											</li>
+											<li>
+												<a>6</a>
+											</li>
+											<li>
+												<a>7</a>
+											</li>
+											<li>
+												<a>8</a>
+											</li>
+											<li class="next">
+												<a><i class="fas fa-caret-right"></i></a>
+											</li>
+											<li class="last">
+												<a><i class="fas fa-step-forward"></i></a>
+											</li>
+										</ul>
+									</div><!--paging_area-->
+                                </div><!--table_box-->
+                            </section>     
+                        </dd>
+                    </dl>
+                </div><!--col-xl-12-->      
+            </div><!-- row -->
+
+            <div class="row">
+				<div class="col-xl-6">
+					<dl class="dsconts">
+						<dt>
+							<article class="jfbet">
+								<h3>
+									<span class="hormark"></span>
+									<span class="htitle">예시5</span>
+								</h3>
+							</article>
+						</dt>
+						<dd>
+                            <section class="big_respon2">
+                                <div class="table_box m-t-15">
+                                    <table class="table">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">First</th>
+                                            <th scope="col">Last</th>
+                                            <th scope="col">Handle</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <th scope="row">1</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">2</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">3</th>
+                                            <td colspan="2">Larry the Bird</td>
+                                            <td>@twitter</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">4</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">5</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">6</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">7</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">8</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">9</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">10</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                          </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="flx_jfcent p-t-10 p-b-20" aria-label="">
+                                        <ul class="pagination">
+                                          <li class="page-item disabled">
+                                            <a class="page-link" tabindex="-1" aria-disabled="true">Previous</a>
+                                          </li>
+                                          <li class="page-item active" aria-current="page">
+                                            <a class="page-link">1</a>
+                                          </li>
+                                          <li class="page-item">
+                                            <a class="page-link">2</a>
+                                          </li>
+                                          <li class="page-item">
+                                            <a class="page-link">3</a>
+                                          </li>
+                                          <li class="page-item">
+                                            <a class="page-link">Next</a>
+                                          </li>
+                                        </ul>
+                                    </div>
+                                </div><!--table_box-->
+                            </section>     
+                        </dd>
+                    </dl>
+                </div><!--col-xl-6-->
+                <div class="col-xl-6">
+					<dl class="dsconts">
+						<dt>
+							<article class="jfbet">
+								<h3>
+									<span class="hormark"></span>
+									<span class="htitle">예시6</span>
+								</h3>
+							</article>
+						</dt>
+						<dd>
+                            <section class="big_respon2">
+                                <div class="table_box m-t-15">                                    
+                                    <table class="table table-striped">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">First</th>
+                                            <th scope="col">Last</th>
+                                            <th scope="col">Handle</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <th scope="row">1</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">2</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">3</th>
+                                            <td colspan="2">Larry the Bird</td>
+                                            <td>@twitter</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">4</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">5</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">6</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">7</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">8</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">9</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">10</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                          </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="flx_jfcent p-t-10 p-b-20" aria-label="">
+                                        <ul class="pagination">
+                                            <li class="page-item">
+                                              <a class="page-link" aria-label="Previous">
+                                                <span aria-hidden="true">&laquo;</span>
+                                              </a>
+                                            </li>
+                                            <li class="page-item contact" aria-current="page">
+                                                <a class="page-link">1</a>
+                                            </li>
+                                            <li class="page-item">
+                                                <a class="page-link">2</a>
+                                            </li>
+                                            <li class="page-item">
+                                                <a class="page-link">3</a>
+                                            </li>
+                                            <li class="page-item">
+                                              <a class="page-link" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                              </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div><!--table_box-->
+                            </section>     
+                        </dd>
+                    </dl>
+                </div><!--col-xl-6-->   
+            </div><!-- row -->
+
+		</section><!-- cont_bg -->
+
+	</div><!-- Dash_body -->
+</div><!-- wrap -->
+
+</body>
+
+ </html>

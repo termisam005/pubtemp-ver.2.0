@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+ <meta  http-equiv="Content-Type"  content="text/html;charset=utf-8"/> 
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Sample01 - dashboard</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../fontawesome-free-5.13.0-web/css/all.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/com_ui.js"></script>
+</head>
+
+<body>
+
+<div class="wrap">
+	<div class="Dash_body">
+
+		<header>
+			<div class="header_in">
+				<div class="header_left">
+					<h1 class="logo biglogo">
+						<a href="../dash/dashboard.html"><img src="../images/logo_top.png" /></a>
+					</h1>
+					<p class="btn_trans"></p>
+				</div><!-- header_left -->
+
+				<div class="header_right">
+					<div class="right_div btbox">
+						<a class="go_right btn_togg">
+							<i class="fas fa-user-circle"></i>
+							<span class="user">
+								홍길동님 환영합니다.
+							</span>
+						</a>
+					</div><!-- right_div -->
+					<div class="right_div">
+						<button type="button" class="btn btn-mint3" onclick="location.href='../index.html'">로그아웃</button>
+					</div>
+				</div><!-- header_right -->
+			</div><!-- header_in -->
+		</header>
+
+		<aside class="dash_aside">
+			<div class="side_conts">
+				<h2 class="left_name">MENU</h2>
+				<ul class="left_menu">
+					<li>
+						<a class="selb_link" href="../dash/dashboard.html">
+							<img class="dash" src="../images/sv_dash.svg" />
+							<span class="menu_name">대시보드</span>
+						</a>
+					</li>
+					<li>
+						<a class="selb_link" href="../dash/dashboard_1.html">
+							<img class="dash" src="../images/sv_dash.svg" />
+							<span class="menu_name">대시보드_1</span>
+						</a>
+					</li>
+					<li>
+						<a class="selb_link" href="../dash/dashboard_2.html">
+							<img class="dash" src="../images/sv_dash.svg" />
+							<span class="menu_name">대시보드_2</span>
+						</a>
+					</li>
+					<li>
+						<a class="selb_link" href="../control/real_control.html">
+							<img src="../images/sv_time.svg" />
+							<span class="menu_name">실시간 관제</span>
+						</a>
+					</li>
+					<li>
+						<a class="selb_link" href="../drive/drive_history.html">
+							<img src="../images/sv_car.svg" />
+							<span class="menu_name">운행이력</span>
+						</a>
+					</li>
+					<li>
+						<a class="selb_link">
+							<img src="../images/sv_manage.svg" />
+							<span class="menu_name">관리메뉴</span>
+							<i class="fas fa-chevron-right"></i>
+						</a>
+						<div class="add_menu">
+							<a href="../manage/people.html">인사관리</a>
+							<a href="../manage/cars.html">차량관리</a>
+						</div>
+					</li>
+					<li>
+						<a class="selb_link">
+							<i class="fas fa-th-large link_fas"></i>
+							<span class="menu_name">레이아웃</span>
+							<i class="fas fa-chevron-right"></i>
+						</a>
+						<div class="add_menu">
+							<a href="../layout/grid.html">Grid</a>
+							<a href="../layout/flex.html">Flex</a>
+							<a href="../layout/display.html">Display</a>
+						</div>
+					</li>
+					<li>
+						<a class="selb_link">
+							<i class="fas fa-layer-group link_fas"></i>
+							<span class="menu_name">컴퍼넌트</span>
+							<i class="fas fa-chevron-right"></i>
+						</a>
+						<div class="add_menu">
+							<a href="../components/color.html">Color</a>
+							<a href="../components/button.html">Button</a>
+                            <a href="../components/modal.html">Modal</a>
+							<a href="../components/dropdown.html">Dropdown</a>
+							<a href="../components/table.html">table</a>
+						</div>
+					</li>
+				</ul><!-- left_menu -->
+			</div><!-- side_conts -->
+		</aside><!-- dash_aside -->
+
+		<section class="top_line">
+			<div class="jfbet">
+				<h2 class="top_title control_title">
+					운행이력
+					<div class="time_explain">
+                        <p class="call">최종로딩시간</p>
+                        <p class="time_box">
+                            <span class="timer">2020-07-09 22:25:30</span>
+                        </p>
+					</div>
+				</h2>
+				<div class="location">
+					<p>
+						<img class="ion" src="../images/sv_home.svg" />Home
+					</p>
+					<p class="arrow">
+						<img src="../images/sv_arr_loc.svg" />
+					</p>
+					<p>운행이력</p>
+				</div><!--location-->
+			</div>
+		</section><!-- top_line -->
+
+		<section class="content">
+
+			<div class="row">
+				<div class="col-lg-12">
+					<dl class="dsconts">
+						<dt>
+							<article class="jfbet">
+								<h3>
+									<span class="hormark"></span>
+									<span class="htitle">운행이력조회</span>
+								</h3>
+							</article>
+						</dt>
+						<dd>
+							<article class="flx_aicent m-t-5 m-b-20">
+								<div class="wrap_canlendar m-r-20">
+									<div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+										<input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1"/>
+										<div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
+											<div class="input-group-text"><i class="fa fa-calendar"></i></div>
+										</div>
+									</div>
+									<p class="term">~</p>
+									<div class="input-group date" id="datetimepicker2" data-target-input="nearest">
+										<input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker2"/>
+										<div class="input-group-append" data-target="#datetimepicker2" data-toggle="datetimepicker">
+											<div class="input-group-text"><i class="fa fa-calendar"></i></div>
+										</div>
+									</div>
+								</div><!-- wrap_canlendar -->
+								<!-- 달력 End -->
+								<div class="flx_aistart">
+									<select class="form-control selbox">
+										<option>차번호</option><option>기사명</option><option>지역명</option>
+									</select>
+									<input type="text" class="form-control m-l-5 w150" value="서울12가 5321" placeholder="">
+									<button type="submit" class="btn btn-primary m-l-5">검색</button>
+								</div><!--flx_aistart-->
+							</article>
+
+							<article>
+								<div class="table_box">
+									<table class="gray_table nodd_table drive_table1">
+                                        <thead>
+                                            <tr>
+                                                <th>번호</th>
+												<th>운행일자</th>
+												<th>차번</th>
+												<th>기사명</th>
+												<th>영업횟수</th>
+												<th>시작시간</th>
+												<th>종료시간</th>
+												<th>운행시간</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+												<td>1</td>
+												<td>2020-12-13</td>
+												<td>서울12사2323</td>
+												<td>김길동</td>
+												<td>41</td>
+												<td>18:00:15</td>
+												<td>01:12:07</td>
+												<td>07:38:30</td>
+											</tr>
+											<tr>
+												<td>2</td>
+												<td>2020-12-14</td>
+												<td>서울12사2323</td>
+												<td>최일환</td>
+												<td>40</td>
+												<td>18:00:15</td>
+												<td>01:12:07</td>
+												<td>07:38:30</td>
+											</tr>
+											<tr>
+												<td>3</td>
+												<td>2020-12-14</td>
+												<td>서울12사2323</td>
+												<td>정대만</td>
+												<td>38</td>
+												<td>18:00:15</td>
+												<td>01:12:07</td>
+												<td>07:38:30</td>
+											</tr>
+                                        </tbody>
+                                    </table>
+									<div class="paging_area">
+										<ul>
+											<li class="first">
+												<a><i class="fas fa-step-backward"></i></a>
+											</li>
+											<li class="prev">
+												<a><i class="fas fa-caret-left"></i></a>
+											</li>
+											<li class="contact">
+												<a>1</a>
+											</li>
+											<li>
+												<a>2</a>
+											</li>
+											<li>
+												<a>3</a>
+											</li>
+											<li>
+												<a>4</a>
+											</li>
+											<li>
+												<a>5</a>
+											</li>
+											<li>
+												<a>6</a>
+											</li>
+											<li>
+												<a>7</a>
+											</li>
+											<li>
+												<a>8</a>
+											</li>
+											<li class="next">
+												<a><i class="fas fa-caret-right"></i></a>
+											</li>
+											<li class="last">
+												<a><i class="fas fa-step-forward"></i></a>
+											</li>
+										</ul>
+									</div><!--paging_area-->
+								</div><!--table_box-->
+							</article>
+						</dd>
+					</dl><!-- dsconts -->
+				</div>
+			</div><!--row-->
+
+			<div class="row driving_view">
+				<div class="col-lg-12">
+					<dl class="dsconts">
+						<dt>
+							<article class="jfbet">
+								<h3>
+									<span class="hormark"></span>
+									<span class="htitle">운행개요</span>
+								</h3>
+							</article>
+						</dt>
+						<dd>
+							<article class="Overview_wrap">
+								<div class="row">
+
+									<div class="col-lg-4">
+										<article class="drive_btn_wrap wrap_canlendar">
+											<div class="form-group w-48">
+												<p class="m-t-5 m-b-5">조회 시작시간</p>
+												<div class="input-group date w-100" id="datetimepicker3" data-target-input="nearest">
+													<input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker3"/>
+													<div class="input-group-append" data-target="#datetimepicker3" data-toggle="datetimepicker">
+														<div class="input-group-text"><i class="fa fa-calendar"></i></div>
+													</div>
+												</div>			
+											</div>
+											<div class="form-group w-48">
+												<p class="m-t-5 m-b-5">조회 종료시간</p>
+												<div class="input-group date w-100" id="datetimepicker4" data-target-input="nearest">
+													<input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker4"/>
+													<div class="input-group-append" data-target="#datetimepicker4" data-toggle="datetimepicker">
+														<div class="input-group-text"><i class="fa fa-calendar"></i></div>
+													</div>
+												</div>
+											</div>
+										</article><!--drive_btn_wrap-->
+
+										<article class="drive_btn_wrap m-t-10">
+											<button type="button" class="btn btmr3 btn-info w-48">
+												<span class="btcall">
+													<img src="../images/sv_drive_play.svg" />
+													주행시작
+												</span>
+											</button>
+											<button type="button" class="btn btmr3 btn-success w-48">
+												<span class="btcall">
+													<img src="../images/sv_drive_down.svg" />
+													내보내기
+												</span>
+											</button>
+										</article><!--drive_btn_wrap-->
+										
+										<article class="h500 m-t-30">
+											<div class="table_box">
+												<table class="gray_table nodd_table drive_table2">
+													<thead>
+														<tr>
+															<th>시간</th>
+															<th>평균속력</th>
+															<th>내용</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>23:59:00 ~ 23:59:43</td>
+															<td>58.0</td>
+															<td>차고지 도착</td>
+														</tr>
+														<tr>
+															<td>23:59:00 ~ 23:59:43</td>
+															<td>62.0</td>
+															<td>운행 (42)</td>
+														</tr>
+														<tr>
+															<td>23:59:00 ~ 23:59:43</td>
+															<td>60.0</td>
+															<td>공차운행</td>
+														</tr>
+														<tr>
+															<td>23:59:00 ~ 23:59:43</td>
+															<td>63.0</td>
+															<td>운행 (41)</td>
+														</tr>
+														<tr>
+															<td>23:59:00 ~ 23:59:43</td>
+															<td>54.0</td>
+															<td>공차운행</td>
+														</tr>
+														<tr>
+															<td>23:59:00 ~ 23:59:43</td>
+															<td>60.0</td>
+															<td>운행 (40)</td>
+														</tr>
+														<tr>
+															<td>23:59:00 ~ 23:59:43</td>
+															<td>56.0</td>
+															<td>공차운행</td>
+														</tr>
+														<tr>
+															<td>23:59:00 ~ 23:59:43</td>
+															<td>50.0</td>
+															<td>운행 (42)</td>
+														</tr>
+														<tr>
+															<td>23:59:00 ~ 23:59:43</td>
+															<td>46.0</td>
+															<td>차고지 도착</td>
+														</tr>
+														<tr>
+															<td>23:59:00 ~ 23:59:43</td>
+															<td>52.0</td>
+															<td>운행 (42)</td>
+														</tr>
+													</tbody>
+												</table>
+
+												<div class="paging_area">
+													<ul>
+														<li class="first">
+															<a><i class="fas fa-step-backward"></i></a>
+														</li>
+														<li class="prev">
+															<a><i class="fas fa-caret-left"></i></a>
+														</li>
+														<li class="contact">
+															<a>1</a>
+														</li>
+														<li>
+															<a>2</a>
+														</li>
+														<li>
+															<a>3</a>
+														</li>
+														<li>
+															<a>4</a>
+														</li>
+														<li>
+															<a>5</a>
+														</li>
+														<li>
+															<a>6</a>
+														</li>
+														<li>
+															<a>7</a>
+														</li>
+														<li>
+															<a>8</a>
+														</li>
+														<li class="next">
+															<a><i class="fas fa-caret-right"></i></a>
+														</li>
+														<li class="last">
+															<a><i class="fas fa-step-forward"></i></a>
+														</li>
+													</ul>
+												</div><!--paging_area-->
+											</div>
+										</article>
+									</div>
+
+									<div class="col-lg-8">
+										<div class="mini_info">
+											<article class="flx_aicent">
+												<h3>
+													<span class="starting green"></span>
+													<span class="htitle">운행요약정보</span>
+												</h3>
+												<h4 class="m-l-8">한국12가3456 (16:19:09 ~ 23:59:43)</h4>
+											</article>
+											<dl class="dsconts h200">
+												<dd>
+													<article class="rank_wrap">
+														<div class="row">
+															<div class="col-sm-6">
+																<div class="rank_box">
+																	<div class="ranking">
+																		평균 속력
+																	</div>
+																	<div class="right">
+																		<div class="half">
+																			<span class="car">55km/h(실차)</span>
+																		</div>
+																		<div class="half">
+																			<span class="car">54km/h(공차)</span>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="col-sm-6">
+																<div class="rank_box">
+																	<div class="ranking">
+																		수입금
+																	</div>
+																	<div class="right">
+																		<div class="half">
+																			<span class="car">287,190원(전체)</span>
+																		</div>
+																		<div class="half">
+																			<span class="car">41,027원(시간당)</span>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="col-sm-6">
+																<div class="rank_box">
+																	<div class="ranking">
+																		최고 속력
+																	</div>
+																	<div class="right">
+																		<div class="half">
+																			<span class="car">80km/h(실차)</span>
+																		</div>
+																		<div class="half">
+																			<span class="car">80km/h(공차)</span>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="col-sm-6">
+																<div class="rank_box">
+																	<div class="ranking">
+																		이동 거리
+																	</div>
+																	<div class="right">
+																		<div class="half">
+																			<span class="car">713km/h(실차)</span>
+																		</div>
+																		<div class="half">
+																			<span class="car">487km/h(공차)</span>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</article>
+												</dd>
+											</dl>
+										</div><!--mini_info-->								
+
+										<div class="chart_body bord1 h400 m-t-20">
+											<img src="../images/img_chart3.png" />
+										</div><!--chart_body-->
+									</div>
+
+								</div><!--row-->
+							</article><!--Overview_wrap-->
+						</dd>
+					</dl><!-- dsconts -->
+				</div>
+			</div><!--row-->
+
+		</section><!-- content -->
+
+	</div><!-- Dash_body -->
+</div><!-- wrap -->
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/locale/ko.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css" />
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" />
+<script type="text/javascript" src="../js/datepicker.js"></script>
+
+</body>
+
+</html>

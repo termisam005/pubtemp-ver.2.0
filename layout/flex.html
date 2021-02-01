@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+ <meta  http-equiv="Content-Type"  content="text/html;charset=utf-8"/> 
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Sample01 - dashboard</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../fontawesome-free-5.13.0-web/css/all.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/com_ui.js"></script>
+</head>
+
+<body>
+
+<div class="wrap">
+	<div class="Dash_body">
+
+		<header>
+			<div class="header_in">
+				<div class="header_left">
+					<h1 class="logo biglogo">
+						<a href="../dash/dashboard.html"><img src="../images/logo_top.png" /></a>
+					</h1>
+					<p class="btn_trans"></p>
+				</div><!-- header_left -->
+
+				<div class="header_right">
+					<div class="right_div btbox">
+						<a class="go_right btn_togg">
+							<i class="fas fa-user-circle"></i>
+							<span class="user">
+								홍길동님 환영합니다.
+							</span>
+						</a>
+					</div><!-- right_div -->
+					<div class="right_div">
+						<button type="button" class="btn btn-mint3" onclick="location.href='../index.html'">로그아웃</button>
+					</div>
+				</div><!-- header_right -->
+			</div><!-- header_in -->
+		</header>
+
+		<aside class="dash_aside">
+			<div class="side_conts">
+				<h2 class="left_name">MENU</h2>
+				<ul class="left_menu">
+					<li>
+						<a class="selb_link" href="../dash/dashboard.html">
+							<img class="dash" src="../images/sv_dash.svg" />
+							<span class="menu_name">대시보드</span>
+						</a>
+					</li>
+					<li>
+						<a class="selb_link" href="../dash/dashboard_1.html">
+							<img class="dash" src="../images/sv_dash.svg" />
+							<span class="menu_name">대시보드_1</span>
+						</a>
+                    </li>
+                    <li>
+						<a class="selb_link" href="../dash/dashboard_2.html">
+							<img class="dash" src="../images/sv_dash.svg" />
+							<span class="menu_name">대시보드_2</span>
+						</a>
+					</li>
+					<li>
+						<a class="selb_link" href="../control/real_control.html">
+							<img src="../images/sv_time.svg" />
+							<span class="menu_name">실시간 관제</span>
+						</a>
+					</li>
+					<li>
+						<a class="selb_link" href="../drive/drive_history.html">
+							<img src="../images/sv_car.svg" />
+							<span class="menu_name">운행이력</span>
+						</a>
+					</li>
+					<li>
+						<a class="selb_link">
+							<img src="../images/sv_manage.svg" />
+							<span class="menu_name">관리메뉴</span>
+							<i class="fas fa-chevron-right"></i>
+						</a>
+						<div class="add_menu">
+							<a href="../manage/people.html">인사관리</a>
+							<a href="../manage/cars.html">차량관리</a>
+						</div>
+					</li>
+					<li>
+						<a class="selb_link">
+							<i class="fas fa-th-large link_fas"></i>
+							<span class="menu_name">레이아웃</span>
+							<i class="fas fa-chevron-right"></i>
+						</a>
+						<div class="add_menu">
+							<a href="../layout/grid.html">Grid</a>
+							<a href="../layout/flex.html">Flex</a>
+							<a href="../layout/display.html">Display</a>
+						</div>
+                    </li>
+                    <li>
+						<a class="selb_link">
+							<i class="fas fa-layer-group link_fas"></i>
+							<span class="menu_name">컴퍼넌트</span>
+							<i class="fas fa-chevron-right"></i>
+						</a>
+						<div class="add_menu">
+							<a href="../components/color.html">Color</a>
+							<a href="../components/button.html">Button</a>
+                            <a href="../components/modal.html">Modal</a>
+							<a href="../components/dropdown.html">Dropdown</a>
+							<a href="../components/table.html">table</a>
+						</div>
+					</li>
+				</ul><!-- left_menu -->
+			</div><!-- side_conts -->
+		</aside><!-- dash_aside -->
+
+		<section class="top_line">
+			<div class="jfbet">
+				<h2 class="top_title control_title">
+                    Flex 레이아웃
+                    <span class="more_exp">(item-box를 감싸는라인의 flex 속성)</span>
+                </h2> 
+			</div>
+		</section><!-- top_line -->
+
+		<section class="cont_bg">
+
+			<div class="row">
+				<div class="col-xl-12">
+					<dl class="dsconts">
+						<dt>
+							<article class="jfbet">
+								<h3>
+									<span class="hormark"></span>
+                                    <span class="htitle">예시1</span>
+								</h3>
+							</article>
+						</dt>
+						<dd>
+                            <section class="respon_w60 big_respon2">
+                                <article class="border p-4 m-t-10 m-b-20">
+                                    <div>
+                                        <div class="col-example">
+                                            <span class="f-s-15">item 1</span>
+                                        </div>
+                                        <div class="col-example">
+                                            <span class="f-s-15">item 2</span>
+                                        </div>
+                                        <div class="col-example">
+                                            <span class="f-s-15">item 3</span>
+                                        </div>
+                                    </div>
+                                    <div class="m-t-20 m-b-20">
+                                        <p class="txt2 m-t-0">
+                                            <span class="f-s-18 f-w-500">.dpflx</span>
+                                        </p>
+                                        <div class="dpflx">
+                                            <div class="col-example">
+                                                <span class="f-s-15">item 1</span>
+                                            </div>
+                                            <div class="col-example">
+                                                <span class="f-s-15">item 2</span>
+                                            </div>
+                                            <div class="col-example">
+                                                <span class="f-s-15">item 3</span>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                    <div class="m-t-20">
+                                        <p class="txt2 m-t-0">
+                                            <span class="f-s-18 f-w-500">.flx_jfstart</span>
+                                        </p>
+                                        <div class="flx_jfstart">
+                                            <div class="col-example">
+                                                <span class="f-s-15">item 1</span>
+                                            </div>
+                                            <div class="col-example">
+                                                <span class="f-s-15">item 2</span>
+                                            </div>
+                                            <div class="col-example">
+                                                <span class="f-s-15">item 2</span>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </article>
+                                <!--<article>
+                                    <div class="docs-pills border">
+                                        <div class="">
+                                            <span class="f-s-15">HTML</span>
+                                        </div>
+                                        <div class="tab-content">
+                                            <div class="tab-pane fade active show">
+                                                <div class="code-toolbar">
+                                                    <pre>
+                                                        <code class="language-html">
+                                                            
+                                                        </code>
+                                                    </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>-->
+                            </section>     
+                        </dd>
+                    </dl>
+                </div><!--col-xl-12-->         
+            </div><!-- row -->
+            
+            <div class="row">
+				<div class="col-xl-6">
+					<dl class="dsconts">
+						<dt>
+							<article class="jfbet">
+								<h3>
+									<span class="hormark"></span>
+									<span class="htitle">예시1-1</span>
+								</h3>
+							</article>
+						</dt>
+						<dd>
+                            <section class="respon_w90 big_respon2">
+                                <article class="p-4 m-t-10 m-b-10">
+                                    <div class="m-b-20">
+                                        <p class="flx_jfcent txt2 m-t-0">
+                                            <span class="f-s-18 f-w-500">.flx_jfcent</span>
+                                        </p>
+                                        <div class="flx_jfcent">
+                                            <div class="col-example">
+                                                <span class="f-s-15">item 1</span>
+                                            </div>
+                                            <div class="col-example">
+                                                <span class="f-s-15">item 2</span>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                    <div class="m-b-10">
+                                        <p class="flx_jfcent txt2 m-t-0">
+                                            <span class="f-s-18 f-w-500">.flx_jfcent</span>
+                                        </p>
+                                        <div class="flx_jfcent">
+                                            <div class="col-example">
+                                                <span class="f-s-15">item 1</span>
+                                            </div>
+                                            <div class="col-example">
+                                                <span class="f-s-15">item 2</span>
+                                            </div>
+                                            <div class="col-example">
+                                                <span class="f-s-15">item 1</span>
+                                            </div>
+                                            <div class="col-example">
+                                                <span class="f-s-15">item 2</span>
+                                            </div>
+                                            <div class="col-example">
+                                                <span class="f-s-15">item 2</span>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </article>
+                            </section>     
+                        </dd>
+                    </dl>
+                </div><!--col-xl-6-->
+                <div class="col-xl-6">
+					<dl class="dsconts">
+						<dt>
+							<article class="jfbet">
+								<h3>
+									<span class="hormark"></span>
+									<span class="htitle">예시1-2</span>
+								</h3>
+							</article>
+						</dt>
+						<dd>
+                            <section class="respon_w90 big_respon2">
+                                <article class="p-4 m-t-10 m-b-10">
+                                    <div class="m-b-20">
+                                        <p class="flx_jfend txt2 m-t-0">
+                                            <span class="f-s-18 f-w-500">.flx_jfend</span>
+                                        </p>
+                                        <div class="flx_jfend">
+                                            <div class="col-example">
+                                                <span class="f-s-15">item 1</span>
+                                            </div>
+                                            <div class="col-example">
+                                                <span class="f-s-15">item 2</span>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                    <div class="m-b-10">
+                                        <p class="flx_jfend txt2 m-t-0">
+                                            <span class="f-s-18 f-w-500">.flx_jfend</span>
+                                        </p>
+                                        <div class="flx_jfend">
+                                            <div class="col-example">
+                                                <span class="f-s-15">item 1</span>
+                                            </div>
+                                            <div class="col-example">
+                                                <span class="f-s-15">item 2</span>
+                                            </div>
+                                            <div class="col-example">
+                                                <span class="f-s-15">item 1</span>
+                                            </div>
+                                            <div class="col-example">
+                                                <span class="f-s-15">item 2</span>
+                                            </div>
+                                            <div class="col-example">
+                                                <span class="f-s-15">item 2</span>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </article>
+                            </section>     
+                        </dd>
+                    </dl>
+                </div><!--col-xl-6-->     
+            </div><!-- row -->
+
+            <div class="row">
+				<div class="col-xl-6">
+					<dl class="dsconts">
+						<dt>
+							<article class="jfbet">
+								<h3>
+									<span class="hormark"></span>
+									<span class="htitle">예시1-3</span>
+								</h3>
+							</article>
+						</dt>
+						<dd>
+                            <section class="big_respon2">
+                                <article class="border p-4 m-t-10 m-b-20">
+                                    <div class="m-b-20">
+                                        <p class="flx_jfbet txt2 m-t-0">
+                                            <span class="f-s-18 f-w-500">.flx_jfbet</span>
+                                        </p>
+                                        <div class="flx_jfbet">
+                                            <div class="col-example">
+                                                <span class="f-s-15">item 1</span>
+                                            </div>
+                                            <div class="col-example">
+                                                <span class="f-s-15">item 2</span>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                    <div class="m-b-10">
+                                        <p class="flx_jfbet txt2 m-t-0">
+                                            <span class="f-s-18 f-w-500">.flx_jfbet</span>
+                                        </p>
+                                        <div class="flx_jfbet">
+                                            <div class="col-example">
+                                                <span class="f-s-15">item 1</span>
+                                            </div>
+                                            <div class="col-example">
+                                                <span class="f-s-15">item 2</span>
+                                            </div>
+                                            <div class="col-example">
+                                                <span class="f-s-15">item 1</span>
+                                            </div>
+                                            <div class="col-example">
+                                                <span class="f-s-15">item 2</span>
+                                            </div>
+                                            <div class="col-example">
+                                                <span class="f-s-15">item 2</span>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </article>
+                            </section>     
+                        </dd>
+                    </dl>
+                </div><!--col-xl-6-->
+                <div class="col-xl-6">
+					<dl class="dsconts">
+						<dt>
+							<article class="jfbet">
+								<h3>
+									<span class="hormark"></span>
+									<span class="htitle">예시1-4</span>
+								</h3>
+							</article>
+						</dt>
+						<dd>
+                            <section class="big_respon2">
+                                <article class="border p-4 m-t-10 m-b-20">
+                                    <div class="m-b-20">
+                                        <p class="flx_jfard txt2 m-t-0">
+                                            <span class="f-s-18 f-w-500">.flx_jfard</span>
+                                        </p>
+                                        <div class="flx_jfard">
+                                            <div class="col-example">
+                                                <span class="f-s-15">item 1</span>
+                                            </div>
+                                            <div class="col-example">
+                                                <span class="f-s-15">item 2</span>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                    <div class="m-b-10">
+                                        <p class="flx_jfard txt2 m-t-0">
+                                            <span class="f-s-18 f-w-500">.flx_jfard</span>
+                                        </p>
+                                        <div class="flx_jfard">
+                                            <div class="col-example">
+                                                <span class="f-s-15">item 1</span>
+                                            </div>
+                                            <div class="col-example">
+                                                <span class="f-s-15">item 2</span>
+                                            </div>
+                                            <div class="col-example">
+                                                <span class="f-s-15">item 1</span>
+                                            </div>
+                                            <div class="col-example">
+                                                <span class="f-s-15">item 2</span>
+                                            </div>
+                                            <div class="col-example">
+                                                <span class="f-s-15">item 2</span>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </article>
+                            </section>     
+                        </dd>
+                    </dl>
+                </div><!--col-xl-6-->     
+            </div><!-- row -->
+
+            <div class="row">
+				<div class="col-xl-12">
+					<dl class="dsconts">
+						<dt>
+							<article class="jfbet">
+								<h3>
+									<span class="hormark"></span>
+									<span class="htitle">예시2</span>
+								</h3>
+							</article>
+						</dt>
+						<dd>
+                            <section class="respon_w60 big_respon2">
+                                <article class="border p-4 m-t-10 m-b-20">
+                                    <div class="m-b-20">
+                                        <p class="flx_aistart txt2 m-t-0">
+                                            <span class="f-s-18 f-w-500">.flx_aistart</span>
+                                        </p>
+                                        <div class="flx_aistart">
+                                            <div class="col-example h50">
+                                                <span class="f-s-15">item 1</span>
+                                            </div>
+                                            <div class="col-example h100">
+                                                <span class="f-s-15">item 2</span>
+                                            </div>
+                                            <div class="col-example h50">
+                                                <span class="f-s-15">item 3</span>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                    <div class="m-b-20">
+                                        <p class="flx_aicent txt2 m-t-0">
+                                            <span class="f-s-18 f-w-500">.flx_aicent</span>
+                                        </p>
+                                        <div class="flx_aicent">
+                                            <div class="col-example h50">
+                                                <span class="f-s-15">item 1</span>
+                                            </div>
+                                            <div class="col-example h100">
+                                                <span class="f-s-15">item 2</span>
+                                            </div>
+                                            <div class="col-example h50">
+                                                <span class="f-s-15">item 1</span>
+                                            </div>
+                                            <div class="col-example h100">
+                                                <span class="f-s-15">item 2</span>
+                                            </div>
+                                            <div class="col-example h50">
+                                                <span class="f-s-15">item 2</span>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                    <div class="m-b-20">
+                                        <p class="flx_aiend txt2 m-t-0">
+                                            <span class="f-s-18 f-w-500">.flx_aiend</span>
+                                        </p>
+                                        <div class="flx_aiend">
+                                            <div class="col-example h50">
+                                                <span class="f-s-15">item 1</span>
+                                            </div>
+                                            <div class="col-example h100">
+                                                <span class="f-s-15">item 2</span>
+                                            </div>
+                                            <div class="col-example h50">
+                                                <span class="f-s-15">item 1</span>
+                                            </div>
+                                            <div class="col-example h100">
+                                                <span class="f-s-15">item 2</span>
+                                            </div>
+                                            <div class="col-example h50">
+                                                <span class="f-s-15">item 2</span>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                    <div class="m-b-20">
+                                        <p class="flx_aj_cent txt2 m-t-0">
+                                            <span class="f-s-18 f-w-500">.flx_aj_cent</span>
+                                        </p>
+                                        <div class="flx_aj_cent">
+                                            <div class="col-example h50">
+                                                <span class="f-s-15">item 1</span>
+                                            </div>
+                                            <div class="col-example h100">
+                                                <span class="f-s-15">item 2</span>
+                                            </div>
+                                            <div class="col-example h50">
+                                                <span class="f-s-15">item 1</span>
+                                            </div>
+                                            <div class="col-example h100">
+                                                <span class="f-s-15">item 2</span>
+                                            </div>
+                                            <div class="col-example h50">
+                                                <span class="f-s-15">item 2</span>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </article>
+                            </section>    
+                        </dd>
+                    </dl>
+                </div><!--col-xl-12-->         
+            </div><!-- row -->
+
+            <div class="row">
+				<div class="col-xl-12">
+					<dl class="dsconts">
+						<dt>
+							<article class="jfbet">
+								<h3>
+									<span class="hormark"></span>
+									<span class="htitle">예시3 - 동시사용</span>
+								</h3>
+							</article>
+						</dt>
+						<dd>
+                            <section class="respon_w60 big_respon2">
+                                <article class="border p-4 m-t-10 m-b-20">
+                                    <div class="m-b-20">
+                                        <p class="flx_aistart flx_jfstart txt2 m-t-0">
+                                            <span class="f-s-18 f-w-500">.flx_aistart .flx_jfstart</span>
+                                        </p>
+                                        <div class="flx_aistart flx_jfstart">
+                                            <div class="col-example h50">
+                                                <span class="f-s-15">item 1</span>
+                                            </div>
+                                            <div class="col-example h100">
+                                                <span class="f-s-15">item 2</span>
+                                            </div>
+                                            <div class="col-example h50">
+                                                <span class="f-s-15">item 3</span>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                    <div class="m-b-20">
+                                        <p class="flx_aicent flx_jfcent txt2 m-t-0">
+                                            <span class="f-s-18 f-w-500">.flx_aicent .flx_jfcent</span>
+                                        </p>
+                                        <div class="flx_aicent flx_jfcent">
+                                            <div class="col-example h50">
+                                                <span class="f-s-15">item 1</span>
+                                            </div>
+                                            <div class="col-example h100">
+                                                <span class="f-s-15">item 2</span>
+                                            </div>
+                                            <div class="col-example h50">
+                                                <span class="f-s-15">item 1</span>
+                                            </div>
+                                            <div class="col-example h100">
+                                                <span class="f-s-15">item 2</span>
+                                            </div>
+                                            <div class="col-example h50">
+                                                <span class="f-s-15">item 2</span>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                    <div class="m-b-20">
+                                        <p class="flx_aiend flx_jfend txt2 m-t-0">
+                                            <span class="f-s-18 f-w-500">.flx_aiend .flx_jfend</span>
+                                        </p>
+                                        <div class="flx_aiend flx_jfend">
+                                            <div class="col-example h50">
+                                                <span class="f-s-15">item 1</span>
+                                            </div>
+                                            <div class="col-example h100">
+                                                <span class="f-s-15">item 2</span>
+                                            </div>
+                                            <div class="col-example h50">
+                                                <span class="f-s-15">item 1</span>
+                                            </div>
+                                            <div class="col-example h100">
+                                                <span class="f-s-15">item 2</span>
+                                            </div>
+                                            <div class="col-example h50">
+                                                <span class="f-s-15">item 2</span>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </article>
+                            </section>    
+                        </dd>
+                    </dl>
+                </div><!--col-xl-12-->         
+            </div><!-- row -->
+
+		</section><!-- cont_bg -->
+
+	</div><!-- Dash_body -->
+</div><!-- wrap -->
+
+</body>
+
+ </html>

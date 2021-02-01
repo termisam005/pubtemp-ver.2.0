@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+ <meta  http-equiv="Content-Type"  content="text/html;charset=utf-8"/> 
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>마이택시 관제플랫폼</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../fontawesome-free-5.13.0-web/css/all.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/com_ui.js"></script>
+</head>
+
+<body>
+
+<div class="wrap">
+	<div class="Dash_body">
+
+		<header>
+			<div class="header_in">
+				<div class="header_left">
+					<h1 class="logo biglogo">
+						<a href="../dash/dashboard.html"><img src="../images/logo_top.png" /></a>
+					</h1>
+					<p class="btn_trans"></p>
+				</div><!-- header_left -->
+
+				<div class="header_right">
+					<div class="right_div btbox">
+						<a class="go_right btn_togg">
+							<i class="fas fa-user-circle"></i>
+							<span class="user">
+								홍길동님 환영합니다.
+							</span>
+						</a>
+					</div><!-- right_div -->
+					<div class="right_div">
+						<button type="button" class="btn btn-mint3" onclick="location.href='../index.html'">로그아웃</button>
+					</div>
+				</div><!-- header_right -->
+			</div><!-- header_in -->
+		</header>
+
+		<aside class="dash_aside">
+			<div class="side_conts">
+				<h2 class="left_name">MENU</h2>
+				<ul class="left_menu">
+					<li>
+						<a class="selb_link" href="../dash/dashboard.html">
+							<img class="dash" src="../images/sv_dash.svg" />
+							<span class="menu_name">대시보드</span>
+						</a>
+					</li>
+					<li>
+						<a class="selb_link" href="../dash/dashboard_1.html">
+							<img class="dash" src="../images/sv_dash.svg" />
+							<span class="menu_name">대시보드_1</span>
+						</a>
+					</li>
+					<li>
+						<a class="selb_link" href="../dash/dashboard_2.html">
+							<img class="dash" src="../images/sv_dash.svg" />
+							<span class="menu_name">대시보드_2</span>
+						</a>
+					</li>
+					<li>
+						<a class="selb_link" href="../control/real_control.html">
+							<img src="../images/sv_time.svg" />
+							<span class="menu_name">실시간 관제</span>
+						</a>
+					</li>
+					<li>
+						<a class="selb_link" href="../drive/drive_history.html">
+							<img src="../images/sv_car.svg" />
+							<span class="menu_name">운행이력</span>
+						</a>
+					</li>
+					<li>
+						<a class="selb_link">
+							<img src="../images/sv_manage.svg" />
+							<span class="menu_name">관리메뉴</span>
+							<i class="fas fa-chevron-right"></i>
+						</a>
+						<div class="add_menu">
+							<a href="../manage/people.html">인사관리</a>
+							<a href="../manage/cars.html">차량관리</a>
+						</div>
+					</li>
+					<li>
+						<a class="selb_link">
+							<i class="fas fa-th-large link_fas"></i>
+							<span class="menu_name">레이아웃</span>
+							<i class="fas fa-chevron-right"></i>
+						</a>
+						<div class="add_menu">
+							<a href="../layout/grid.html">Grid</a>
+							<a href="../layout/flex.html">Flex</a>
+							<a href="../layout/display.html">Display</a>
+						</div>
+					</li>
+					<li>
+						<a class="selb_link">
+							<i class="fas fa-layer-group link_fas"></i>
+							<span class="menu_name">컴퍼넌트</span>
+							<i class="fas fa-chevron-right"></i>
+						</a>
+						<div class="add_menu">
+							<a href="../components/color.html">Color</a>
+							<a href="../components/button.html">Button</a>
+							<a href="../components/modal.html">Modal</a>
+							<a href="../components/dropdown.html">Dropdown</a>
+							<a href="../components/table.html">table</a>
+						</div>
+					</li>
+				</ul><!-- left_menu -->
+			</div><!-- side_conts -->
+		</aside><!-- dash_aside -->
+
+		<section class="top_line">
+			<div class="jfbet">
+				<h2 class="top_title control_title">
+					대시보드
+					<div class="time_explain">
+                        <p class="call">최종로딩시간</p>
+                        <p class="time_box">
+                            <span class="timer">2020년 11월 26일 (목) 17시 41분 26초</span>
+						</p>
+						<p class="call m-l-30">화면 자동 갱신</p>
+                        <p class="time_box">
+                            <span class="timer">23초</span>
+                        </p>
+					</div>
+				</h2>
+				<div class="location">
+					<p>
+						<img class="ion" src="../images/sv_home.svg" />Home
+					</p>
+					<p class="arrow">
+						<img src="../images/sv_arr_loc.svg" />
+					</p>
+					<p>대시보드</p>
+				</div><!--location-->
+			</div>
+		</section><!-- top_line -->
+
+		<section class="content">
+
+			<div class="row">
+				<div class="col-lg-4">
+					<dl class="dsconts h300">
+						<dt>
+							<article class="jfbet">
+								<h3>
+									<span class="hormark"></span>
+									<span class="htitle">현재수입</span>
+								</h3>
+							</article>
+						</dt>
+						<dd>
+							<div class="big_respon1">
+								<article class="big_status flx_jfcent no_flwrap m-t-50">
+									<div class="img_zone">
+										<img src="../images/img_money.png" />
+									</div>
+									<div class="status_zone">
+										<div class="big_result">
+											<span class="unit">총</span>
+											<span class="numbers">3,720,000</span>
+											<span class="unit">원</span>
+										</div>
+										<div class="time_load">
+											2020-07-09  22:25:30<span class="reload">갱신</span>
+										</div>
+									</div><!--status_zone-->
+								</article><!--big_status-->
+							</div>
+						</dd>
+					</dl><!-- dsconts -->
+				</div><!-- col-lg-4 -->
+
+				<div class="col-lg-4">
+					<dl class="dsconts h300">
+						<dt>
+							<article class="jfbet">
+								<h3>
+									<span class="hormark"></span>
+									<span class="htitle">증감율</span>
+								</h3>
+							</article>
+						</dt>
+						<dd>
+							<div class="big_respon1">
+								<article class="big_status flx_jfcent no_flwrap m-t-25">
+									<div class="img_zone m-t-20">
+										<img src="../images/img_plus.png" />
+									</div>
+									<div class="status_zone">
+										<div class="big_growth over">
+											<div class="whats">
+												전일대비<span class="pcblock">증감율</span>
+											</div>
+											<div class="results">
+												<p class="sentence">
+													<span><img src="../images/sv_up_red.svg" /></span>
+													<span>1,210,000</span>
+													<span>원</span>
+												</p>
+												<p class="sentence">
+													<span><img src="../images/sv_up_red.svg" /></span>
+													<span>21.00</span>
+													<span>%</span>
+												</p>
+											</div>
+										</div><!--big_growth-->
+										<div class="big_growth">
+											<div class="whats">
+												전월대비<span class="pcblock">증감율</span>
+											</div>
+											<div class="results">
+												<p class="sentence down">
+													<span><img src="../images/sv_down_blue.svg" /></span>
+													<span>150,000</span>
+													<span>원</span>
+												</p>
+												<p class="sentence down">
+													<span><img src="../images/sv_down_blue.svg" /></span>
+													<span>21.00</span>
+													<span>%</span>
+												</p>
+											</div>
+										</div><!--big_growth-->
+									</div><!--status_zone-->
+								</article><!--big_status-->
+							</div>
+						</dd>
+					</dl><!-- dsconts -->
+				</div><!-- col-lg-4 -->
+
+				<div class="col-lg-4">
+					<dl class="dsconts h300">
+						<dt>
+							<article class="jfbet">
+								<h3>
+									<span class="hormark"></span>
+									<span class="htitle">현황</span>
+								</h3>
+							</article>
+						</dt>
+						<dd>	
+							<article class="gr_status_wrap">
+								<div class="status_board">
+									<div class="head">건별</div>
+									<div class="board_cont">
+										<div class="board_line">
+											<p class="call">
+												<span class="starting green"></span>
+												<span>카드</span>
+											</p>
+											<p class="text">
+												<span class="count">78</span>
+												<span class="unit">건</span>
+											</p>
+										</div>
+										<div class="board_line">
+											<p class="call">
+												<span class="starting green"></span>
+												<span>마카롱</span>
+											</p>
+											<p class="text">
+												<span class="count">66</span>
+												<span class="unit">건</span>
+											</p>
+										</div>
+										<div class="board_line">
+											<p class="call">
+												<span class="starting green"></span>
+												<span>현금</span>
+											</p>
+											<p class="text">
+												<span class="count">12</span>
+												<span class="unit">건</span>
+											</p>
+										</div>
+									</div><!--board_cont-->
+								</div><!--status_board-->
+
+								<div class="status_board">
+									<div class="head">금액별</div>
+									<div class="board_cont">
+										<div class="board_line">
+											<p class="call">
+												<span class="starting pink"></span>
+												<span>카드</span>
+											</p>
+											<p class="text">
+												<span class="count">0</span>
+												<span>원</span>
+											</p>
+										</div>
+										<div class="board_line">
+											<p class="call">
+												<span class="starting pink"></span>
+												<span>마카롱</span>
+											</p>
+											<p class="text">
+												<span class="count">693,000</span>
+												<span>원</span>
+											</p>
+										</div>
+										<div class="board_line">
+											<p class="call">
+												<span class="starting pink"></span>
+												<span>현금</span>
+											</p>
+											<p class="text">
+												<span class="count">0</span>
+												<span>원</span>
+											</p>
+										</div>
+									</div><!--board_cont-->
+								</div><!--status_board-->
+							</article><!--gr_status_wrap-->
+						</dd>
+					</dl><!-- dsconts -->
+				</div><!-- col-lg-4 -->
+			</div><!-- row -->
+
+			<div class="row">
+				<div class="col-lg-8">
+					<dl class="dsconts h560">
+						<dt>
+							<article class="jfbet">
+								<h3>
+									<span class="hormark"></span>
+									<span class="htitle">차트</span>
+								</h3>
+							</article>
+						</dt>
+						<dd>
+							<div>
+								<section class="tab_line">
+									<button type="button" class="tab_btn tabt1 on" onclick="tab1();">주간</button>
+									<button type="button" class="tab_btn tabt2" onclick="tab2();">월간</button>
+								</section><!--tab_line-->
+								<section class="chart_body line h400">
+									<div class="tab_chart1 m-t-50">
+										<img src="../images/img_chart1.png" />
+									</div>
+									<div class="tab_chart2">
+										<img src="../images/img_chart2.png" />
+									</div>
+								</section><!--chart_body-->
+							</div>
+						</dd>
+					</dl><!-- dsconts -->
+				</div>
+
+				<div class="col-lg-4">
+					<dl class="dsconts h270">
+						<dt>
+							<article class="jfbet">
+								<h3>
+									<span class="hormark"></span>
+									<span class="htitle">수익 모델별 현황</span>
+								</h3>
+							</article>
+						</dt>
+						<dd>
+							<article class="model_wrap p-t-5">
+								<div class="model_line no_flwrap m-b-25">
+									<div class="model_left">
+										일반 콜
+									</div><!--model_left-->
+									<div class="model_right no_flwrap">
+										<p class="grow_bar" style="width:65%">
+											<span class="grbar red"></span>
+										</p>
+										<p class="p_count">
+											<span class="number">1,200,000</span>
+											<span>원</span>
+										</p>
+									</div><!--model_right-->
+								</div><!--model_line-->
+								<div class="model_line no_flwrap m-b-25">
+									<div class="model_left">
+										예약
+									</div><!--model_left-->
+									<div class="model_right no_flwrap">
+										<p class="grow_bar" style="width:50%">
+											<span class="grbar yellow"></span>
+										</p>
+										<p class="p_count">
+											<span class="number">720,000</span>
+											<span>원</span>
+										</p>
+									</div><!--model_right-->
+								</div><!--model_line-->
+								<div class="model_line no_flwrap m-b-25">
+									<div class="model_left">
+										생수+디퓨저
+									</div><!--model_left-->
+									<div class="model_right no_flwrap">
+										<p class="grow_bar" style="width:40%">
+											<span class="grbar mint"></span>
+										</p>
+										<p class="p_count">
+											<span class="number">150,000</span>
+											<span>원</span>
+										</p>
+									</div><!--model_right-->
+								</div><!--model_line-->
+								<div class="model_line no_flwrap m-b-25">
+									<div class="model_left">
+										입원동행 서비스
+									</div><!--model_left-->
+									<div class="model_right no_flwrap">
+										<p class="grow_bar" style="width:30%">
+											<span class="grbar blue"></span>
+										</p>
+										<p class="p_count">
+											<span class="number">70,000</span>
+											<span>원</span>
+										</p>
+									</div><!--model_right-->
+								</div><!--model_line-->
+							</article><!--model_wrap-->
+						</dd>
+					</dl><!-- dsconts -->
+
+					<dl class="dsconts h270 m-t-20">
+						<dt>
+							<article class="jfbet">
+								<h3>
+									<span class="hormark"></span>
+									<span class="htitle">월간 기사순위</span>
+								</h3>
+							</article>
+						</dt>
+						<dd>
+							<article class="rank_wrap">
+								<div class="row">
+									<div class="col-sm-6">
+										<div class="rank_box">
+											<div class="ranking">1</div>
+											<div class="right">
+												<div class="half">
+													<span class="car">서울12가3214</span>김길동
+												</div>
+												<div class="half">
+													1,221 만원
+												</div>
+											</div>
+										</div><!--rank_box-->
+									</div>
+									<div class="col-sm-6">
+										<div class="rank_box">
+											<div class="ranking">2</div>
+											<div class="right">
+												<div class="half">
+													<span class="car">서울12가3214</span>김길동
+												</div>
+												<div class="half">
+													1,221 만원
+												</div>
+											</div>
+										</div><!--rank_box-->
+									</div>
+									<div class="col-sm-6">
+										<div class="rank_box">
+											<div class="ranking">3</div>
+											<div class="right">
+												<div class="half">
+													<span class="car">서울12가3214</span>김길동
+												</div>
+												<div class="half">
+													1,221 만원
+												</div>
+											</div>
+										</div><!--rank_box-->
+									</div>
+									<div class="col-sm-6">
+										<div class="rank_box">
+											<div class="ranking">4</div>
+											<div class="right">
+												<div class="half">
+													<span class="car">서울12가3214</span>김길동
+												</div>
+												<div class="half">
+													1,221 만원
+												</div>
+											</div>
+										</div><!--rank_box-->
+									</div>
+								</div><!--row-->
+							</article><!--rank_wrap-->
+						</dd>
+					</dl><!-- dsconts -->
+				</div>
+			</div><!--row-->
+
+		</section><!-- content -->
+
+	</div><!-- Dash_body -->
+</div><!-- wrap -->
+
+</body>
+
+ </html>

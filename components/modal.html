@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+ <meta  http-equiv="Content-Type"  content="text/html;charset=utf-8"/> 
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Sample01 - dashboard</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../fontawesome-free-5.13.0-web/css/all.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/com_ui.js"></script>
+</head>
+
+<body>
+
+<div class="wrap">
+	<div class="Dash_body">
+
+		<header>
+			<div class="header_in">
+				<div class="header_left">
+					<h1 class="logo biglogo">
+						<a href="../dash/dashboard.html"><img src="../images/logo_top.png" /></a>
+					</h1>
+					<p class="btn_trans"></p>
+				</div><!-- header_left -->
+
+				<div class="header_right">
+					<div class="right_div btbox">
+						<a class="go_right btn_togg">
+							<i class="fas fa-user-circle"></i>
+							<span class="user">
+								홍길동님 환영합니다.
+							</span>
+						</a>
+					</div><!-- right_div -->
+					<div class="right_div">
+						<button type="button" class="btn btn-mint3" onclick="location.href='../index.html'">로그아웃</button>
+					</div>
+				</div><!-- header_right -->
+			</div><!-- header_in -->
+		</header>
+
+		<aside class="dash_aside">
+			<div class="side_conts">
+				<h2 class="left_name">MENU</h2>
+				<ul class="left_menu">
+					<li>
+						<a class="selb_link" href="../dash/dashboard.html">
+							<img class="dash" src="../images/sv_dash.svg" />
+							<span class="menu_name">대시보드</span>
+						</a>
+					</li>
+					<li>
+						<a class="selb_link" href="../dash/dashboard_1.html">
+							<img class="dash" src="../images/sv_dash.svg" />
+							<span class="menu_name">대시보드_1</span>
+						</a>
+					</li>
+					<li>
+						<a class="selb_link" href="../dash/dashboard_2.html">
+							<img class="dash" src="../images/sv_dash.svg" />
+							<span class="menu_name">대시보드_2</span>
+						</a>
+					</li>
+					<li>
+						<a class="selb_link" href="../control/real_control.html">
+							<img src="../images/sv_time.svg" />
+							<span class="menu_name">실시간 관제</span>
+						</a>
+					</li>
+					<li>
+						<a class="selb_link" href="../drive/drive_history.html">
+							<img src="../images/sv_car.svg" />
+							<span class="menu_name">운행이력</span>
+						</a>
+					</li>
+					<li>
+						<a class="selb_link">
+							<img src="../images/sv_manage.svg" />
+							<span class="menu_name">관리메뉴</span>
+							<i class="fas fa-chevron-right"></i>
+						</a>
+						<div class="add_menu">
+							<a href="../manage/people.html">인사관리</a>
+							<a href="../manage/cars.html">차량관리</a>
+						</div>
+					</li>
+					<li>
+						<a class="selb_link">
+							<i class="fas fa-th-large link_fas"></i>
+							<span class="menu_name">레이아웃</span>
+							<i class="fas fa-chevron-right"></i>
+						</a>
+						<div class="add_menu">
+							<a href="../layout/grid.html">Grid</a>
+							<a href="../layout/flex.html">Flex</a>
+							<a href="../layout/display.html">Display</a>
+						</div>
+                    </li>
+                    <li>
+						<a class="selb_link">
+							<i class="fas fa-layer-group link_fas"></i>
+							<span class="menu_name">컴퍼넌트</span>
+							<i class="fas fa-chevron-right"></i>
+						</a>
+						<div class="add_menu">
+							<a href="../components/color.html">Color</a>
+							<a href="../components/button.html">Button</a>
+                            <a href="../components/modal.html">Modal</a>
+							<a href="../components/dropdown.html">Dropdown</a>
+							<a href="../components/table.html">table</a>
+						</div>
+					</li>
+				</ul><!-- left_menu -->
+			</div><!-- side_conts -->
+		</aside><!-- dash_aside -->
+
+		<section class="top_line">
+			<div class="jfbet">
+				<h2 class="top_title control_title">
+					Modal
+				</h2>
+			</div>
+		</section><!-- top_line -->
+
+		<section class="cont_bg">
+
+			<div class="row">
+				<div class="col-xl-12">
+					<dl class="dsconts">
+						<dt>
+							<article class="jfbet">
+								<h3>
+									<span class="hormark"></span>
+									<span class="htitle">기본</span>
+								</h3>
+							</article>
+						</dt>
+						<dd>
+                            <section class="respon_w60 big_respon2 wrap_button">
+                                <article class="text-center m-t-20 m-b-30">  
+                                    <button type="button" class="btn btmr2 btn-primary" data-toggle="modal" data-target="#exampleModal1">
+                                        확인
+									</button>
+									<button type="button" class="btn btmr2 btn-success" data-toggle="modal" data-target="#exampleModal2">
+                                        확인
+									</button>
+                                </article>
+                            </section>
+                        </dd>
+                    </dl>
+                </div><!--col-xl-12-->   
+            </div><!-- row -->
+
+            <div class="row">
+				<div class="col-xl-6">
+					<dl class="dsconts">
+						<dt>
+							<article class="jfbet">
+								<h3>
+									<span class="hormark"></span>
+									<span class="htitle">예시2</span>
+								</h3>
+							</article>
+						</dt>
+						<dd>
+                            <section class="respon_w80 big_respon2">
+                                <article class="text-center m-t-20 m-b-30">  
+									<button type="button" class="btn btmr2 btn-primary" data-toggle="modal" data-target="#exampleFrameModal1">
+										TOP
+                                    </button>
+                                </article>
+                            </section>
+                        </dd>
+                    </dl>
+				</div><!--col-xl-6-->
+				<div class="col-xl-6">
+					<dl class="dsconts">
+						<dt>
+							<article class="jfbet">
+								<h3>
+									<span class="hormark"></span>
+									<span class="htitle">예시2-1</span>
+								</h3>
+							</article>
+						</dt>
+						<dd>
+                            <section class="respon_w80 big_respon2">
+                                <article class="text-center m-t-20 m-b-30">  
+                                    <button type="button" class="btn btmr2 btn-primary" data-toggle="modal" data-target="#exampleFrameModal2">
+                                        BOTTOM
+                                    </button>
+                                </article>
+                            </section>
+                        </dd>
+                    </dl>
+				</div><!--col-xl-6-->
+			</div><!-- row -->
+			
+			<div class="row">
+				<div class="col-xl-6">
+					<dl class="dsconts">
+						<dt>
+							<article class="jfbet">
+								<h3>
+									<span class="hormark"></span>
+									<span class="htitle">예시3</span>
+								</h3>
+							</article>
+						</dt>
+						<dd>
+                            <section class="respon_w80 big_respon2">
+                                <article class="text-center m-t-20 m-b-30">  
+                                    <button type="button" class="btn btmr2 btn-primary" data-toggle="modal" data-target="#exampleSideModal1">
+                                        Right TOP
+                                    </button>
+                                </article>
+                            </section>
+                        </dd>
+                    </dl>
+				</div><!--col-xl-6-->
+				<div class="col-xl-6">
+					<dl class="dsconts">
+						<dt>
+							<article class="jfbet">
+								<h3>
+									<span class="hormark"></span>
+									<span class="htitle">예시4</span>
+								</h3>
+							</article>
+						</dt>
+						<dd>
+                            <section class="respon_w80 big_respon2">
+                                <article class="text-center m-t-20 m-b-30">  
+                                    <button type="button" class="btn btmr2 btn-primary" data-toggle="modal" data-target="#exampleSideModal2">
+                                        Left TOP
+                                    </button>
+                                </article>
+                            </section>
+                        </dd>
+                    </dl>
+				</div><!--col-xl-6-->
+			</div>
+			<div class="row">	
+                <div class="col-xl-6">
+					<dl class="dsconts">
+						<dt>
+							<article class="jfbet">
+								<h3>
+									<span class="hormark"></span>
+									<span class="htitle">예시5</span>
+								</h3>
+							</article>
+						</dt>
+						<dd>
+                            <section class="respon_w80 big_respon2">
+                                <article class="text-center m-t-20 m-b-30">  
+                                    <button type="button" class="btn btmr2 btn-primary" data-toggle="modal" data-target="#exampleSideModal3">
+                                        Right BOTTOM
+                                    </button>
+                                </article>
+                            </section>
+                        </dd>
+                    </dl>
+				</div><!--col-xl-6-->
+				<div class="col-xl-6">
+					<dl class="dsconts">
+						<dt>
+							<article class="jfbet">
+								<h3>
+									<span class="hormark"></span>
+									<span class="htitle">예시6</span>
+								</h3>
+							</article>
+						</dt>
+						<dd>
+                            <section class="respon_w80 big_respon2">
+                                <article class="text-center m-t-20 m-b-30">  
+                                    <button type="button" class="btn btmr2 btn-primary" data-toggle="modal" data-target="#exampleSideModal4">
+                                        Left BOTTOM
+                                    </button>
+                                </article>
+                            </section>
+                        </dd>
+                    </dl>
+                </div><!--col-xl-6-->
+            </div><!-- row -->
+
+		</section><!-- cont_bg -->
+	</div><!-- Dash_body -->
+</div><!-- wrap -->
+
+<!-- Modal 1 -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h3 class="pop_tlt">
+					<span class="hormark"></span>
+					<span class="htitle">인사추가</span>
+				</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<form>
+			<div class="modal-body">
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ red"></span>
+						<span class="the_name">이름</span>
+					</div>
+					<div class="pp_right">
+						<input type="text" class="form-control fomr1" id="" name="">
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ red"></span>
+						<span class="the_name">상태</span>
+					</div>
+					<div class="pp_right">
+						<select class="form-control selbox slmr1 w-100">
+							<option value="">재직</option>
+							<option value="">휴직</option>
+							<option value="">퇴사</option>
+						</select>
+					</div>
+				</div><!--pp_texts-->
+				<div class="pp_texts">
+					<div class="pp_left circ_txt">
+						<span class="circ red"></span>
+						<span class="the_name">입사일자</span>
+					</div>
+					<div class="pp_right">
+						<div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+							<input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1"/>
+							<div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
+								<div class="input-group-text"><i class="fa fa-calendar"></i></div>
+							</div>
+						</div>
+					</div>
+				</div><!--pp_texts-->	
+			</div>
+			<div class="modal-footer">
+                <button type="button" class="btn btmr2 btn-mint2 w130">수정하기</button>
+				<button type="button" class="btn btmr2 btn-cancel w130" data-dismiss="modal">닫기</button>
+			</div>
+			</form>
+		</div>
+	</div>
+</div>
+<!-- Modal 1 End -->
+
+<!-- Modal 2-->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleFrameModal1" aria-hidden="true">
+	<div class="modal-dialog">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">...</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-secondary" data-dismiss="modal">
+			Close
+		  </button>
+		  <button type="button" class="btn btn-primary">Save changes</button>
+		</div>
+	  </div>
+	</div>
+  </div>
+  <!-- Modal 2 End -->
+
+<!-- top Modal -->
+<div class="modal fade" id="exampleFrameModal1" tabindex="-1" aria-labelledby="exampleFrameModal1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">...</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+          Close
+        </button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- top Modal End -->
+
+<!-- bottom Modal -->
+<div class="modal fade bottom" id="exampleFrameModal2" tabindex="-1" aria-labelledby="exampleFrameModal2" aria-hidden="true">
+	<div class="modal-dialog modal-frame modal-bottom">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">...</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-secondary" data-dismiss="modal">
+			Close
+		  </button>
+		  <button type="button" class="btn btn-primary">Save changes</button>
+		</div>
+	  </div>
+	</div>
+</div>
+<!-- bottom Modal End -->
+
+<!-- right top Modal -->
+<div class="modal fade right" id="exampleSideModal1" tabindex="-1" aria-labelledby="exampleSideModal1" aria-hidden="true">
+	<div class="modal-dialog modal-side modal-top-right">
+		<div class="modal-content">
+			<div class="modal-header bg-info text-white">
+				<h5 class="modal-title" id="exampleSideModal1">Product in the cart</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-3 text-center">
+						<i class="fas fa-shopping-cart fa-4x text-info"></i>
+					</div>
+
+					<div class="col-9">
+						<p>Do you need more time to make a purchase decision?</p>
+						<p>No pressure, your product will be waiting for you in the cart.</p>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-info">Go to the cart</button>
+				<button type="button" class="btn btn-outline-info" data-dismiss="modal">
+					Close
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- right top Modal End -->
+
+<!-- left top Modal -->
+<div class="modal fade left" id="exampleSideModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-side modal-top-left">
+		<div class="modal-content">
+			<div class="modal-header bg-primary">
+			<h5 class="modal-title text-white" id="exampleModalLabel">Be always up to date</h5>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+		<div class="modal-body text-center">
+			<i class="fas fa-bell fa-4x text-primary mb-4"></i>
+			<p>Do you want to receive the push notification about the newest posts?</p>
+			</div>
+			<div class="modal-footer d-flex justify-content-center">
+			<button type="button" class="btn btn-outline-primary" data-dismiss="modal">
+				No
+			</button>
+			<button type="button" class="btn btn-primary">Yes</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- left top Modal End -->
+
+<!-- right bottom Modal -->
+<div class="modal fade right" id="exampleSideModal3" tabindex="-1" aria-labelledby="exampleSideModal2" aria-hidden="true">
+	<div class="modal-dialog modal-side modal-bottom-right">
+		<div class="modal-content">
+		  <div class="modal-header bg-primary text-white">
+			<h5 class="modal-title" id="exampleSideModal2">Related article</h5>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		  </div>
+		  <div class="modal-body">
+			<div class="row">
+			  <div class="col-md-6 mb-4">
+				<div class="bg-image hover-overlay ripple shadow-2-strong">
+				  <img
+					src="https://mdbootstrap.com/img/new/standard/city/041.jpg"
+					class="img-fluid"
+				  />
+				  <a href="#!">
+					<div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+				  </a>
+				</div>
+			  </div>
+
+			  <div class="col-md-6 mb-4">
+				<p><strong>Doloremque vero ex debitis veritatis?</strong></p>
+				<p class="text-muted">
+				  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod itaque voluptate
+				  nesciunt laborum incidunt. Officia, quam consectetur. Earum eligendi aliquam
+				  illum alias.
+				</p>
+			  </div>
+			</div>
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-primary">Read more</button>
+			<button type="button" class="btn btn-outline-primary" data-dismiss="modal">
+			  Close
+			</button>
+		  </div>
+		</div>
+	  </div>
+</div>
+<!-- right bottom Modal End -->
+
+<!-- exampleSideModal4 -->
+<div class="modal fade left" id="exampleSideModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-side modal-bottom-left">
+  <div class="modal-content">
+	<div class="modal-header">
+	  <h5 class="modal-title" id="exampleModalLabel">Subscribe</h5>
+	  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		<span aria-hidden="true">&times;</span>
+	</button>
+	</div>
+	<div class="modal-body p-4">
+	  <form>
+		<!-- Name input -->
+		<div class="form-outline mb-4">
+		  <input type="text" id="form5Example1" class="form-control" />
+		</div>
+		<div class="form-outline mb-4">
+		  <input type="email" id="form5Example2" class="form-control" />
+		</div>
+		<!-- Submit button -->
+		<button type="submit" class="btn btn-primary btn-block">Subscribe</button>
+	  </form>
+	</div>
+  </div>
+</div>
+</div>
+<!-- exampleSideModal4 End -->
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/locale/ko.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css" />
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" />
+<script type="text/javascript" src="../js/datepicker.js"></script>
+
+
+
+
+</body>
+
+</html>
