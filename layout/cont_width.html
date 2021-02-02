@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+ <meta  http-equiv="Content-Type"  content="text/html;charset=utf-8"/> 
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Sample01 - dashboard</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../fontawesome-free-5.13.0-web/css/all.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/com_ui.js"></script>
+</head>
+
+<body>
+
+<div class="wrap">
+	<div class="Dash_body">
+
+		<header>
+			<div class="header_in">
+				<div class="header_left">
+					<h1 class="logo biglogo">
+						<a href="../dash/dashboard.html"><img src="../images/logo_top.png" /></a>
+					</h1>
+					<p class="btn_trans"></p>
+				</div><!-- header_left -->
+
+				<div class="header_right">
+					<div class="right_div btbox">
+						<a class="go_right btn_togg">
+							<i class="fas fa-user-circle"></i>
+							<span class="user">
+								홍길동님 환영합니다.
+							</span>
+						</a>
+					</div><!-- right_div -->
+					<div class="right_div">
+						<button type="button" class="btn btn-mint3" onclick="location.href='../index.html'">로그아웃</button>
+					</div>
+				</div><!-- header_right -->
+			</div><!-- header_in -->
+		</header>
+
+		<aside class="dash_aside">
+			<div class="side_conts">
+				<h2 class="left_name">MENU</h2>
+				<ul class="left_menu">
+					<li>
+						<a class="selb_link" href="../dash/dashboard.html">
+							<img class="dash" src="../images/sv_dash.svg" />
+							<span class="menu_name">대시보드</span>
+						</a>
+					</li>
+					<li>
+						<a class="selb_link" href="../dash/dashboard_1.html">
+							<img class="dash" src="../images/sv_dash.svg" />
+							<span class="menu_name">대시보드_1</span>
+						</a>
+                    </li>
+                    <li>
+						<a class="selb_link" href="../dash/dashboard_2.html">
+							<img class="dash" src="../images/sv_dash.svg" />
+							<span class="menu_name">대시보드_2</span>
+						</a>
+					</li>
+					<li>
+						<a class="selb_link" href="../control/real_control.html">
+							<img src="../images/sv_time.svg" />
+							<span class="menu_name">실시간 관제</span>
+						</a>
+					</li>
+					<li>
+						<a class="selb_link" href="../drive/drive_history.html">
+							<img src="../images/sv_car.svg" />
+							<span class="menu_name">운행이력</span>
+						</a>
+					</li>
+					<li>
+						<a class="selb_link">
+							<img src="../images/sv_manage.svg" />
+							<span class="menu_name">관리메뉴</span>
+							<i class="fas fa-chevron-right"></i>
+						</a>
+						<div class="add_menu">
+							<a href="../manage/people.html">인사관리</a>
+							<a href="../manage/cars.html">차량관리</a>
+						</div>
+					</li>
+					<li>
+						<a class="selb_link">
+							<i class="fas fa-th-large link_fas"></i>
+							<span class="menu_name">레이아웃</span>
+							<i class="fas fa-chevron-right"></i>
+						</a>
+						<div class="add_menu">
+							<a href="../layout/grid.html">Grid</a>
+							<a href="../layout/flex.html">Flex</a>
+							<a href="../layout/display.html">Display</a>
+							<a href="../layout/cont_width.html">Cont width</a>
+						</div>
+                    </li>
+                    <li>
+						<a class="selb_link">
+							<i class="fas fa-layer-group link_fas"></i>
+							<span class="menu_name">컴퍼넌트</span>
+							<i class="fas fa-chevron-right"></i>
+						</a>
+						<div class="add_menu">
+							<a href="../components/color.html">Color</a>
+							<a href="../components/button.html">Button</a>
+                            <a href="../components/modal.html">Modal</a>
+							<a href="../components/dropdown.html">Dropdown</a>
+							<a href="../components/table.html">Table</a>
+							<a href="../components/tooltip.html">Tooltip</a>
+						</div>
+					</li>
+					<li>
+						<a class="selb_link">
+							<i class="fas fa-edit link_fas"></i>
+							<span class="menu_name">Form</span>
+							<i class="fas fa-chevron-right"></i>
+						</a>
+						<div class="add_menu">
+                            <a href="../form/form1.html">form1</a>
+                            <a href="../form/form2.html">form2</a>
+						</div>
+                    </li>
+				</ul><!-- left_menu -->
+			</div><!-- side_conts -->
+		</aside><!-- dash_aside -->
+
+		<section class="top_line">
+			<div class="jfbet">
+				<h2 class="top_title control_title">
+                    컨텐츠 넓이
+                    <span class="more_exp"></span>
+                </h2> 
+			</div>
+		</section><!-- top_line -->
+
+		<section class="cont_bg">
+
+            <div class="row">
+                <div class="col-xl-6">
+					<dl class="dsconts">
+						<dt>
+							<article class="jfbet">
+								<h3>
+									<span class="hormark"></span>
+									<span class="htitle">예시1-1</span>
+								</h3>
+							</article>
+						</dt>
+						<dd>
+                            <div class="border p-4">
+                                <p class="txt2">block 태그의 기본넓이는 100% 입니다.</p>
+                                <p class="txt2">block 태그 (다음 내용을 밑으로 떨어트림) - <span class="blue">div, section, article, p, li, dt, dd, header, nav, main</span> 등</p>
+                                <p class="txt2">inline 태그 (다음 내용과 가로정렬 할수있음) - <span class="blue">a, span, b, strong</span> 등</p>
+                            </div>   
+                        </dd>
+                    </dl>
+                </div><!--col-xl-6-->
+				<div class="col-xl-6">
+					<dl class="dsconts">
+						<dt>
+							<article class="jfbet">
+								<h3>
+									<span class="hormark"></span>
+									<span class="htitle">예시1-2</span>
+								</h3>
+							</article>
+						</dt>
+						<dd>
+                            <section class="w-90">
+                                <p class="txt2 m-t-0">
+                                    <span class="f-s-18">
+                                        <span class="more_exp m-r-5">클래스 </span>.w-90
+                                    </span>
+                                </p>
+                                <article class="border p-4">
+                                    <p class="txt2"><span class="blue">.w-90</span> 은 단순 왼쪽정열에 컨텐츠넓이 90% 를 뜻합니다.</p>
+									<p class="txt2"><span class="blue">.w-80</span> 은 넓이 80% 를 뜻합니다. <span class="blue">.w-100 .w-70 .w-60 .w-50</span> 등도 같은 원리.</p>
+									<p class="txt2"><span class="blue">.w50</span> 은 넓이 50px 를 뜻합니다. <span class="blue">.w100 .w150 .w200 .w250</span> 등도 같은 원리.</p>
+									<p class="txt2">그 외에 높이 px 를 뜻하는 <span class="blue">.h100 .h200 .h300</span> 등이 있습니다.</p>
+									<p class="txt2">높이에 퍼센트를 주는 클래스는 지정하지 않았습니다. css 에 자신있는 분만 따로 스타일을 만들어서 작업하길 권유드립니다.</p>
+								</article>
+                            </section>    
+                        </dd>
+                    </dl>
+                </div><!--col-xl-6-->     
+            </div><!-- row -->
+
+            <div class="row">
+                <div class="col-xl-6">
+					<dl class="dsconts">
+						<dt>
+							<article class="jfbet">
+								<h3>
+									<span class="hormark"></span>
+									<span class="htitle">예시1-3</span>
+								</h3>
+							</article>
+						</dt>
+						<dd>
+                            <section class="respon_w90">
+                                <p class="txt2 m-t-0">
+                                    <span class="f-s-18">
+                                        <span class="more_exp m-r-5">클래스 </span>.respon_w90
+                                    </span>
+                                </p>
+                                <article class="border p-4">
+                                    <p class="txt2"><span class="blue">.respon_w90</span> 는 중앙정렬에 컨텐츠넓이 90% 를 뜻합니다.</p>
+									<p class="txt2"><span class="blue">respon</span> 이라는 명칭이 붙은 클래스는 모바일 사이즈에서 (767px 이하) 넓이 100% 로 바뀝니다.</p>
+								</article>
+                            </section>    
+                        </dd>
+                    </dl>
+                </div><!--col-xl-6-->
+                <div class="col-xl-6">
+					<dl class="dsconts">
+						<dt>
+							<article class="jfbet">
+								<h3>
+									<span class="hormark"></span>
+									<span class="htitle">예시1-4</span>
+								</h3>
+							</article>
+						</dt>
+						<dd>
+                            <section class="respon_w80">
+                                <p class="txt2 m-t-0">
+                                    <span class="f-s-18">
+                                        <span class="more_exp m-r-5">클래스 </span>.respon_w80
+                                    </span>
+                                </p>
+                                <article class="border p-4">
+                                    <p class="txt2"><span class="blue">.respon_w80</span> 는 중앙정렬에 컨텐츠넓이 80% 를 뜻합니다.</p>
+                                    <p class="txt2"><span class="blue">.respon_w70 .respon_w60 .respon_w50</span> 등도 같은 원리입니다.</p>
+                                </article>
+                            </section>    
+                        </dd>
+                    </dl>
+                </div><!--col-xl-6-->
+            </div>
+
+			<div class="row">
+				<div class="col-xl-12">
+					<dl class="dsconts">
+						<dt>
+							<article class="jfbet">
+								<h3>
+									<span class="hormark"></span>
+                                    <span class="htitle">예시2-1</span>
+								</h3>
+							</article>
+						</dt>
+						<dd>
+                            <section class="respon_w40 big_respon1">
+                                <p class="txt2 m-t-0">
+                                    <span class="f-s-18">
+                                        <span class="more_exp m-r-5">클래스 동시사용 </span>.respon_w40 .big_respon1
+                                    </span>
+                                </p>
+                                <article class="bg-primary p-4">
+                                    <p class="txt1 text-light">.respon_w40 는 중앙정렬에 컨텐츠넓이 40% 를 뜻합니다.</p>
+                                    <p class="txt1 text-light">.big_respon1 는 화면넓이 1600px 이하에서는 무조건 컨텐츠넓이가 100% 됩니다.</p>
+                                </article>
+                            </section>     
+                        </dd>
+                    </dl>
+                </div><!--col-xl-12-->         
+			</div><!-- row -->
+			
+			<div class="row">
+				<div class="col-xl-12">
+					<dl class="dsconts">
+						<dt>
+							<article class="jfbet">
+								<h3>
+									<span class="hormark"></span>
+                                    <span class="htitle">예시2-2</span>
+								</h3>
+							</article>
+						</dt>
+						<dd>
+                            <section class="respon_w50 big_respon2">
+                                <p class="txt2 m-t-0">
+                                    <span class="f-s-18">
+                                        <span class="more_exp m-r-5">클래스 동시사용 </span>.respon_w50 .big_respon2
+                                    </span>
+                                </p>
+                                <article class="bg-secondary p-4">
+                                    <p class="txt1 text-light">.respon_w50 는 중앙정렬에 컨텐츠넓이 50% 를 뜻합니다.</p>
+                                    <p class="txt1 text-light">.big_respon2 는 화면넓이 1430px 이하에서는 무조건 컨텐츠넓이가 100% 됩니다.</p>
+                                </article>
+                            </section>     
+                        </dd>
+                    </dl>
+                </div><!--col-xl-12-->         
+			</div><!-- row -->
+			
+			<div class="row">
+				<div class="col-xl-12">
+					<dl class="dsconts m-b-50">
+						<dt>
+							<article class="jfbet">
+								<h3>
+									<span class="hormark"></span>
+                                    <span class="htitle">예시2-3</span>
+								</h3>
+							</article>
+						</dt>
+						<dd>
+                            <section class="respon_w60 big_respon3">
+                                <p class="txt2 m-t-0">
+                                    <span class="f-s-18">
+                                        <span class="more_exp m-r-5">클래스 동시사용 </span>.respon_w60 .big_respon3
+                                    </span>
+                                </p>
+                                <article class="bg-success p-4">
+                                    <p class="txt1 text-light">.respon_w60 는 중앙정렬에 컨텐츠넓이 60% 를 뜻합니다.</p>
+                                    <p class="txt1 text-light">.big_respon3 는 화면넓이 1200px 이하에서는 무조건 컨텐츠넓이가 100% 됩니다.</p>
+                                </article>
+                            </section>     
+                        </dd>
+                    </dl>
+                </div><!--col-xl-12-->         
+			</div><!-- row -->
+			
+			<div class="row">
+				<div class="col-xl-12">
+					<dl class="dsconts m-b-50">
+						<dt>
+							<article class="jfbet">
+								<h3>
+									<span class="hormark"></span>
+                                    <span class="htitle">예시2-4</span>
+								</h3>
+							</article>
+						</dt>
+						<dd>
+                            <section class="respon_w70 big_respon4">
+                                <p class="txt2 m-t-0">
+                                    <span class="f-s-18">
+                                        <span class="more_exp m-r-5">클래스 동시사용 </span>.respon_w70 .big_respon4
+                                    </span>
+                                </p>
+                                <article class="bg-info p-4">
+                                    <p class="txt1 text-light">.respon_w70 는 중앙정렬에 컨텐츠넓이 70% 를 뜻합니다.</p>
+                                    <p class="txt1 text-light">.big_respon4 는 화면넓이 1024px 이하에서는 무조건 컨텐츠넓이가 100% 됩니다.</p>
+                                </article>
+                            </section>     
+                        </dd>
+                    </dl>
+                </div><!--col-xl-12-->         
+            </div><!-- row -->
+
+		</section><!-- cont_bg -->
+
+	</div><!-- Dash_body -->
+</div><!-- wrap -->
+
+</body>
+
+</html>

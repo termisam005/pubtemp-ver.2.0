@@ -120,9 +120,9 @@ a:focus, a:hover {text-decoration:none;}
 .form-control{height:30px; padding:4px 10px; font-size: 14px;}
 .form-control.disabled{background-color: #ededed;}
 .selbox{width:120px; height:30px; font-size:14px; padding: 2px 6px 2px 4px;}
-.txt1{font-size: 17px; font-weight:500; color:#353535; letter-spacing: 0px; margin:10px 0px 15px;}
-.txt2{font-size: 15px; font-weight:400; color:#353535; letter-spacing: 0px; margin:10px 0px 10px;}
-.txt3{font-size: 14px; font-weight:400; color:#5c5c5c; letter-spacing: 0px; margin:10px 0px;}
+.txt1{font-size: 17px; font-weight:500; color:#353535; letter-spacing: 0px; margin:10px 0px 15px; word-break: break-all;}
+.txt2{font-size: 15px; font-weight:400; color:#353535; letter-spacing: 0px; margin:10px 0px 10px; word-break: break-all;}
+.txt3{font-size: 14px; font-weight:400; color:#5c5c5c; letter-spacing: 0px; margin:10px 0px; word-break: break-all;}
 .red{color:#d9534f;}
 .blue{color:#2e89bf;}
 .purple{color: #905;}
@@ -451,6 +451,9 @@ header{
 	transform:translateY(-50%);
 	font-size: 10px;
 	display:block;
+}
+.left_menu.trans li > a > i{
+	display: none;
 }
 .left_menu li > a > .link_fas{
 	position: relative;
@@ -4947,6 +4950,8 @@ h3 .hormak.green{
 	}
 	.big_respon2{
 		width:100% !important;
+		flex: 0 0 100%;
+		max-width: 100%;
 	}
 	.big_respon1_50{
 		width:50% !important;
@@ -4968,6 +4973,8 @@ h3 .hormak.green{
 	}
 	.big_respon3{
 		width:100% !important;
+		flex: 0 0 100%;
+		max-width: 100%;
 	}
 	.big_respon2_50{
 		width:50% !important;
@@ -4978,6 +4985,9 @@ h3 .hormak.green{
 }
 
 @media screen and (max-width: 1024px){
+	.big_respon2_50{
+		width:100% !important;
+	}
 	.big_respon4{
 		width:100% !important;
 	}
