@@ -228,7 +228,7 @@ header{
 }
 .logo a{
 	display:block;
-	padding:8px 8px 3px;
+	padding:5px 6px 3px;
 }
 .logo a img{
 	width:120px;
@@ -369,6 +369,15 @@ header{
     font-weight: 500;
     letter-spacing: 2px;
 }
+.left_name > a{
+	font:inherit;
+	font-weight:500;
+	color: #718594;
+	letter-spacing: 1.5px;
+}
+.left_name > a:hover{
+	color: #fff;
+}
 .left_name.trans{
 	padding: 25px 15px 22px 15px;
 }
@@ -382,7 +391,7 @@ header{
 .left_menu > li > a{
 	display: block;
     width: 100%;
-	padding: 22px 25px 20px 18px;
+	padding: 25px 25px 23px 18px;
 	font-weight: 500;
     color: #718594 !important;
 	font-size:15px;
@@ -443,10 +452,10 @@ header{
 .left_menu.trans > li > a > img{
 	display: none;
 }
-.left_menu li > a > i{
+.left_menu li > a > .fa-chevron-right{
 	position:absolute;
 	right:22px;
-	top:50%;
+	top:53%;
 	margin:0px;
 	transform:translateY(-50%);
 	font-size: 10px;
@@ -462,6 +471,12 @@ header{
     transform: none;
     font-size: 15px;
     margin:2px 10px 0px 0px;
+}
+.left_menu li > a > .fa-image{
+	font-size: 16px;
+}
+.left_menu li > a > .fa-chart-pie{
+	font-size: 16px;
 }
 .left_menu li > a > .fa.arrow{
 	position:absolute;
@@ -511,7 +526,7 @@ header{
 	background-color: #27485f;*/
 	color:#fff;
 }
-.selb_link > i{
+.selb_link > .fa-chevron-right{
     -moz-transition: -moz-transform 0.5s;
     -o-transition: -o-transform 0.5s;
     -webkit-transition: -webkit-transform 0.5s;
@@ -529,19 +544,19 @@ header{
 .left_menu > li.active > .selb_link .fa.arrow::before{
 	content: "\f104";
 }
-.selb_link.contact > i{
+.selb_link.contact > .fa-chevron-right{
 	-moz-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
 }
-.selb_link.rotate90 > i{
+.selb_link.rotate90 > .fa-chevron-right{
 	-moz-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
 }
-li.active .selb_link > i{
+li.active .selb_link > .fa-chevron-right{
 	-moz-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
@@ -549,11 +564,16 @@ li.active .selb_link > i{
 	transition: none;
     top: 47%;
 }
-li.active .selb_link.contact > i{
+li.active .selb_link.contact > .fa-chevron-right{
 	-moz-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
+
+	-moz-transition: -moz-transform 0.5s;
+    -o-transition: -o-transform 0.5s;
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
 }
 
 .content{
@@ -744,7 +764,7 @@ h3 .htitle{
 .chart_body{
 	width:100%;
 	padding:0px;
-	margin:0px 0px 15px;
+	margin:0px 0px 20px;
 }
 .map_box{
 	width:100%;
@@ -1489,7 +1509,13 @@ h3 .htitle{
 	text-align: center;
 }
 .login_box .over h1{
-	margin:0px 0px 3px;
+	margin:15px 0px 2px;
+}
+.login_box .title {
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+    letter-spacing:0.5px;
 }
 .login_box .over p{
 	font-size: 17px;
@@ -4578,17 +4604,19 @@ h3 .hormak.green{
 }
 .left_menu.blue > li > a:hover{
 	background-color: #172e71;
-	background: #005196;
 	background: #0059a7;
 }
 .left_menu.blue > li > .contact{
 	background-color: #00559e;
-	background: #005196;
+	background: #0059a7;
+}
+.left_menu.blue > li.active > a{
 	background: #0059a7;
 }
 .left_menu.blue .add_menu{
 	background: #014784;
-	border:none;
+	border-top: 1px solid #0066bf;
+    border-bottom: 1px solid #0066bf;
 }
 .left_menu.blue .add_menu a{
 	background-color: #014784;
@@ -4843,6 +4871,52 @@ h3 .hormak.green{
 .txtip a{
 	color:#007bff;
 }
+
+/*chart*/
+#chartdiv01 {
+	width: 100%;
+	height: 400px;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+#chartdiv02 {
+	width: 500px;
+	height: 300px;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+	font-weight: 500;
+}
+#chartdiv03 {
+	width: 100%;
+	height: 400px;
+	font-size: 13px;
+}
+#chartdiv04 {
+	width: 100%;
+	height: 400px;
+	font-size: 12px;
+}
+
+#chartdiv11 {
+	width: 100%;
+	height: 400px;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+	font-size: 12px;
+}
+#chartdiv12 {
+	width: 100%;
+	height: 400px;
+	font-size: 9px;
+}
+#chartdiv13 {
+	width: 100%;
+	height:400px;
+	font-size: 13px;
+}
+#chartdiv14 {
+	width: 100%;
+	height:400px;
+	font-size: 12px;
+}
+
 
 
 

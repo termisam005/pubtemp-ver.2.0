@@ -14,23 +14,6 @@ $(document).ready(function(){
 });
 
 
-/*Calendar*/
-/*$(document).ready(function(){
-	$(function () {
-		$(".datepicker01").datepicker({ 
-			autoclose: true, 
-			todayHighlight: true,
-			format:"yyyy-mm-dd",
-		}).datepicker('update', new Date());
-		$(".datepicker02").datepicker({ 
-			autoclose: true, 
-			todayHighlight: true,
-			format:"yyyy-mm-dd",
-		}).datepicker('update', new Date());
-	});
-});*/
-
-
 /*left_menu*/
 $( document ).ready(function() {
 	$('.selb_link').click(function(){
@@ -40,6 +23,19 @@ $( document ).ready(function() {
 			$(this).next(".add_menu").slideToggle().siblings(".add_menu:visible").slideToggle();
 	});	
 });
+
+/*left menu open*/
+$(function() {
+    var url = window.location;
+    var element = $('.add_menu a').filter(function() {
+        return this.href == url || url.href.indexOf(this.href) == 0;
+	}).addClass('backcc').parent().parent().addClass('active').parent();
+	
+    if (element.is('.left_menu > li')) {
+        element.addClass('active');
+    }
+});
+
 
 
 /*toggle button*/

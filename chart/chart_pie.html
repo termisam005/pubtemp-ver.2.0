@@ -126,7 +126,7 @@
 		<section class="top_line">
 			<div class="jfbet">
 				<h2 class="top_title control_title">
-					Tooltip
+					Pie Chart
 				</h2>
 			</div>
 		</section><!-- top_line -->
@@ -145,28 +145,14 @@
 							</article>
 						</dt>
 						<dd>
-                            <section class="respon_w70 big_respon2">
-                                <article class="border text-center p-4 m-t-20 m-b-30">
-                                    <p class="txtip">
-                                    	툴팁 예시입니다.
-                                    	<a href="#" data-toggle="tooltip" title="안녕! 나는 툴팁이야.">마우스를 올려보세요.</a>
-                                    </p>
-								</article>
-								<article class="border text-center p-4 m-t-10 m-b-30">
-  									<p class="txtip m-b-20">버튼에 마우스를 올려보세요.</p>
-									<div class="parent">
-										<button class="btn btn-success btn-ex1">버튼 입니다.</button>
-									</div>
-								</article>
-								<article class="border text-center p-4 m-t-10 m-b-30">
-									<p class="txtip m-b-20">버튼에 마우스를 올려보세요.</p>
-  									<button class="btn btn-success btn-ex2">버튼 입니다.</button>
-							  	</article>
+                            <section class="respon_w80 big_respon2">
+                                <article class="chart_body">
+                                    <div id="chartdiv01"></div>
+								</article><!--chart_body-->
                             </section>
                         </dd>
                     </dl>
                 </div><!--col-xl-6-->
-
                 <div class="col-xl-6">
 					<dl class="dsconts">
 						<dt>
@@ -178,30 +164,51 @@
 							</article>
 						</dt>
 						<dd>
-                            <section class="respon_w70 big_respon2">
-                                <article class="border text-center p-4 m-t-20 m-b-30">
-                                    <h3 class="m-b-5">툴팁 옵션입니다.</h3>
-									<p class="txtip m-b-20">버튼에 마우스를 올려보세요.</p>
-									<div class="flx_jfbet">
-										<button class="btn btn-warning bt-op-top">Top</button>
-										<button class="btn btn-success bt-op-bottom">Bottom</button>
-										<button class="btn btn-danger bt-op-left">Left</button>
-										<button class="btn btn-primary bt-op-right">Right</button>
-									</div>
-								</article>
-								<article class="border text-center p-4 m-t-10 m-b-50">
-                                    <h3 class="m-b-5">툴팁 옵션입니다.</h3>
-									<p class="txtip m-b-20">버튼을 클릭 해보세요.</p>
-									<p class="txtip m-b-15">
-										<a href="#" data-toggle="tooltip_op" title="Hellow!">Tooltip Example</a>
-									</p>
-									<div class="flx_jfbet">
-										<button type="button" class="btn btn-primary bt-op-show">보여주다</button>
-										<button type="button" class="btn btn-warning bt-op-hide">숨기다</button>
-										<button type="button" class="btn btn-success bt-op-toggle">토글</button>
-										<button type="button" class="btn btn-danger bt-op-dis">없애다</button>
-									</div>
-								</article>			
+                            <section class="respon_w80 big_respon2">
+                                <article class="chart_body">
+                                    <div id="chartdiv02"></div>                                
+								</article><!--chart_body-->
+                            </section>
+                        </dd>
+                    </dl>
+                </div><!--col-xl-6--> 
+			</div><!-- row -->
+			
+			<div class="row">
+				<div class="col-xl-6">
+					<dl class="dsconts">
+						<dt>
+							<article class="jfbet">
+								<h3>
+									<span class="hormark"></span>
+									<span class="htitle">예시3</span>
+								</h3>
+							</article>
+						</dt>
+						<dd>
+                            <section class="respon_w90 big_respon2">
+                                <article class="chart_body">
+                                    <div id="chartdiv03"></div>
+								</article><!--chart_body-->
+                            </section>
+                        </dd>
+                    </dl>
+                </div><!--col-xl-6-->
+                <div class="col-xl-6">
+					<dl class="dsconts">
+						<dt>
+							<article class="jfbet">
+								<h3>
+									<span class="hormark"></span>
+									<span class="htitle">예시4</span>
+								</h3>
+							</article>
+						</dt>
+						<dd>
+                            <section class="big_respon2">
+                                <article class="chart_body">
+                                    <div id="chartdiv04"></div>                                
+								</article><!--chart_body-->
                             </section>
                         </dd>
                     </dl>
@@ -213,8 +220,11 @@
 	</div><!-- Dash_body -->
 </div><!-- wrap -->
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!--chart cdn-->
+<script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+<script src="../js/pie.js"></script>
 
 </body>
 

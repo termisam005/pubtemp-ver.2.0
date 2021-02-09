@@ -26,7 +26,7 @@
 			<div class="header_in">
 				<div class="header_left">
 					<h1 class="logo biglogo">
-						<a href="../dash/dashboard.html"><img src="../images/logo_top.png" /></a>
+						<a href="../guide/guide.html"><img src="../images/logo_ui_wh.png" /></a>
 					</h1>
 					<p class="btn_trans"></p>
 				</div><!-- header_left -->
@@ -49,49 +49,10 @@
 
 		<aside class="dash_aside">
 			<div class="side_conts">
-				<h2 class="left_name">MENU</h2>
+				<h2 class="left_name">
+					<a href="../guide/guide.html">이용가이드</a>
+				</h2>
 				<ul class="left_menu">
-					<li>
-						<a class="selb_link" href="../dash/dashboard.html">
-							<img class="dash" src="../images/sv_dash.svg" />
-							<span class="menu_name">대시보드</span>
-						</a>
-					</li>
-					<li>
-						<a class="selb_link" href="../dash/dashboard_1.html">
-							<img class="dash" src="../images/sv_dash.svg" />
-							<span class="menu_name">대시보드_1</span>
-						</a>
-					</li>
-					<li>
-						<a class="selb_link" href="../dash/dashboard_2.html">
-							<img class="dash" src="../images/sv_dash.svg" />
-							<span class="menu_name">대시보드_2</span>
-						</a>
-					</li>
-					<li>
-						<a class="selb_link" href="../control/real_control.html">
-							<img src="../images/sv_time.svg" />
-							<span class="menu_name">실시간 관제</span>
-						</a>
-					</li>
-					<li>
-						<a class="selb_link" href="../drive/drive_history.html">
-							<img src="../images/sv_car.svg" />
-							<span class="menu_name">운행이력</span>
-						</a>
-					</li>
-					<li>
-						<a class="selb_link">
-							<img src="../images/sv_manage.svg" />
-							<span class="menu_name">관리메뉴</span>
-							<i class="fas fa-chevron-right"></i>
-						</a>
-						<div class="add_menu">
-							<a href="../manage/people.html">인사관리</a>
-							<a href="../manage/cars.html">차량관리</a>
-						</div>
-					</li>
 					<li>
 						<a class="selb_link">
 							<i class="fas fa-th-large link_fas"></i>
@@ -116,7 +77,8 @@
 							<a href="../components/button.html">Button</a>
                             <a href="../components/modal.html">Modal</a>
 							<a href="../components/dropdown.html">Dropdown</a>
-							<a href="../components/table.html">table</a>
+							<a href="../components/table.html">Table</a>
+							<a href="../components/tooltip.html">Tooltip</a>
 						</div>
 					</li>
 					<li>
@@ -128,6 +90,33 @@
 						<div class="add_menu">
                             <a href="../form/form1.html">form1</a>
                             <a href="../form/form2.html">form2</a>
+						</div>
+					</li>
+					<li>
+						<a class="selb_link">
+							<i class="fas fa-chart-pie link_fas"></i>
+							<span class="menu_name">Chart</span>
+							<i class="fas fa-chevron-right"></i>
+						</a>
+						<div class="add_menu">
+							<a href="../chart/chart_pie.html">Pie chart</a>
+							<a href="../chart/chart_xy.html">XY chart</a>
+						</div>
+					</li>
+					<li>
+						<a class="selb_link">
+							<i class="fas fa-image link_fas"></i>
+							<span class="menu_name">갤러리</span>
+							<i class="fas fa-chevron-right"></i>
+						</a>
+						<div class="add_menu">
+                            <a href="../갤러리/dashboard.html">dashboard</a>
+							<a href="../갤러리/dashboard_1.html">dashboard_1</a>
+							<a href="../갤러리/dashboard_2.html">dashboard_2</a>
+							<a href="../갤러리/real_control.html">실시간 관제</a>
+							<a href="../갤러리/drive_history.html">운행이력</a>
+							<a href="../갤러리/people.html">인사관리</a>
+							<a href="../갤러리/cars.html">차량관리</a>
 						</div>
                     </li>
 				</ul><!-- left_menu -->
@@ -216,25 +205,25 @@
 						</div>
 						<div class="icon_line m-t-5">
 							<div class="icon_box">
-								<button type="button" class="btn_mark" onclick="location.href='../manage/people.html'">
+								<button type="button" class="btn_mark" onclick="javascript:void(0);">
 									<span class="people"></span>
 									<span class="word">인사관리</span>
 								</button>
 							</div>
 							<div class="icon_box">
-								<button type="button" class="btn_mark" onclick="location.href='../manage/cars.html'">
+								<button type="button" class="btn_mark" onclick="javascript:void(0);">
 									<span class="taxi"></span>
 									<span class="word">차량관리</span>
 								</button>
 							</div>
 							<div class="icon_box">
-								<button type="button" class="btn_mark" onclick="location.href='../drive/drive_history.html'">
+								<button type="button" class="btn_mark" onclick="javascript:void(0);">
 									<span class="clock"></span>
 									<span class="word">운행이력</span>
 								</button>
 							</div>
 							<div class="icon_box">
-								<button type="button" class="btn_mark" onclick="location.href='../manage/cars.html'">
+								<button type="button" class="btn_mark" onclick="javascript:void(0);">
 									<span class="money"></span>
 									<span class="word">수입금</span>
 								</button>
